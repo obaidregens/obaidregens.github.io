@@ -1,16 +1,5 @@
-# obaidregens.github.io
+# obaid.wtf
 
-My personal blog powered by Jekyll and the [no-style-please](https://github.com/riggraz/no-style-please) theme.
+blog hosted at [obaid.wtf/jotbook](https://obaid.wtf/jotbook)
 
-## Running Locally
-
-```bash
-bundle install
-bundle exec jekyll serve
-```
-
-Then visit `http://localhost:4000`
-
-## License
-
-Content is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+<img width="613" height="720" alt="Screenshot 2025-12-30 at 7 45 26 PM" src="https://github.com/user-attachments/assets/0b334c17-e920-41a8-b934-f46f3383231d" />
