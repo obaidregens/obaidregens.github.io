@@ -1,8 +1,9 @@
-title: My Blog
-author: Obaid Regens
-email: your-email@example.com
+title: obaid's longer thoughts
+author: obaid
+email: me@obaid.wtf
 description: >-
-  A minimalist blog powered by Jekyll and no-style-please theme
+  politics + systems + economics + markets + binary technologies + innovation + sciences + futbol + overton window/pop culture
+  this is very prone to change as I add, drop more interests
 
 baseurl: ""
 url: "https://obaidregens.github.io"
