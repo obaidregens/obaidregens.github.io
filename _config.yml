@@ -1,0 +1,34 @@
+title: My Blog
+author: Obaid Regens
+email: your-email@example.com
+description: >-
+  A minimalist blog powered by Jekyll and no-style-please theme
+
+baseurl: ""
+url: "https://obaidregens.github.io"
+
+# Build settings
+remote_theme: riggraz/no-style-please
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-remote-theme
+
+# Theme settings
+theme_config:
+  appearance: "auto" # can be "light", "dark" or "auto"
+  back_home_text: "home" # customize text for homepage link in post layout
+  date_format: "%Y-%m-%d" # customize how date is formatted
+  show_description: true # show blog description in home page
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
