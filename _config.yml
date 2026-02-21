@@ -9,19 +9,15 @@ baseurl: ""
 url: "https://obaidregens.github.io"
 
 # Build settings
-remote_theme: riggraz/no-style-please
+remote_theme: jekyll/minima
+
+minima:
+  hide_site_feed_link: true
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-remote-theme
-
-# Theme settings
-theme_config:
-  appearance: "auto" # can be "light", "dark" or "auto"
-  back_home_text: "home" # customize text for homepage link in post layout
-  date_format: "%Y-%m-%d" # customize how date is formatted
-  show_description: true # show blog description in home page
 
 # Exclude from processing
 exclude:

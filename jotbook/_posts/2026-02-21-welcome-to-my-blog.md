@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Welcome to My Blog"
-date: 2024-12-22
-categories: blog
+date: 2026-02-21
 ---
 
 Welcome to my new blog! This site is powered by Jekyll and uses the minimalist **no-style-please** theme.
