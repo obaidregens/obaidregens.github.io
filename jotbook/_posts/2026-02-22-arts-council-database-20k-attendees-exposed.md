@@ -140,5 +140,3 @@ and an actor with bad intentions wouldn't be interested in just researching this
   </video>
   <img src="/assets/visits_per_hour.webp" style="flex:1;min-width:0;border-radius:11px;object-fit:cover;" />
 </div>
-
-If even one of you after reading this extends their self-imposed barrier of possibilities by even an inch, either in terms of software or general ambition, my job here is done. That would be my biggest source of fulfillment.
