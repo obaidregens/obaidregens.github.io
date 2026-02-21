@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Announcement: The Arts Council of Pakistan has a database of 20k+ attendees and full write access completely exposed."
+title: "The Arts Council of Pakistan has a database of 20k+ attendees and full write access completely exposed. Right now."
 date: 2026-02-22
 ---
 
