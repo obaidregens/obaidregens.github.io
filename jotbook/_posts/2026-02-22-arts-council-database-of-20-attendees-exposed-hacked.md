@@ -1,20 +1,22 @@
 ---
 layout: post
-title: "The Arts Council of Pakistan's database has been hacked. I did it."
-date: 2026-02-21
+title: "Announcement: The Arts Council of Pakistan has a database of 20k+ attendees and full write access completely exposed."
+date: 2026-02-22
 ---
 
-At exactly 4:32pm, 16.02.2026, I discovered something I thought was absolutely insane.
+_And as I click publish on this post, the database is still, publicly exposed and has <u>not been patched</u>._
 
-Mostly anyone in the city knows them: The Arts Council of Pakistan Karachi has a school now offering full 4-year diploma courses and is one of the biggest organizers of events in Karachi today.
+At exactly 4:32pm, 16.02.2026, I discovered something I think was absolutely insane.
 
-They also have a website to list their events and that website, as I discovered, is powered by a Supabase database with no disabled security controls, and an API Key being used publicly and openly from the web app, in raw-text.
+Most anyone in the city's heard of them: The Arts Council of Pakistan Karachi has a school that now offers full 4-year diploma courses and also happens to be one of the biggest organizers of events in Karachi today.
 
-Not only that, but this events database was being used for their entire offline and ticketing and attendee management, exposing 20,000+ people's personal information: names, emails, phone numbers, order QRs, payment amounts, and much, much more.
+They also have a website to list their events and that website, as I discovered, is powered by a Supabase database with disabled security controls, and an API Key being used publicly from the web app. In. Raw. Text.
 
-If I were to draw an analogy for non-technical people, this data leak was not me finding a crevice in the wall I could use to slip a hook in and open the window. This was leaving the door to your most valuable safe wide-open, and then leaving a trail of breadcrumbs and carefully placed cardboard signs to it screaming "I'm exposed and vulnerable.".
+Not only that, but this events database is being used for their entire offline ticketing and attendee management, exposing 20,000+ people's personal information: names, emails, phone numbers, order QRs, payment amounts, and much, much more.
 
-> This was leaving the door to your most valuable safe wide-open, and then leaving a trail of breadcrumbs and carefully placed cardboard signs to it screaming "I'm exposed and vulnerable.".
+If I were to draw an analogy for non-technical people, this <u>data breach</u> is not me finding a crevice in the wall I could use to slip a hook in and open the window. This is leaving the door to your most valuable safe wide-open, and then leaving a trail of breadcrumbs and carefully placed cardboard signs to it screaming "I'm exposed and vulnerable.".
+
+> This is leaving the door to your most valuable safe wide-open, and then leaving a trail of breadcrumbs and carefully placed cardboard signs to it screaming "I'm exposed and vulnerable.".
 
 As a thought experiment, let's examine a few possibilities of what could have happened (or perhaps has been secretly happening) because of this leak:
 
@@ -22,23 +24,23 @@ As a thought experiment, let's examine a few possibilities of what could have ha
 2. Scammers could pose as the Arts Council, building trust as they knew their exact details, and exactly they were on given dates and down to how much they paid for each event.
 3. Use it to issue themselves free tickets for events, without any pre-screening or payment: Perhaps even set up a third-party market for Arts Council events selling tickets for a 100Rs each.
 
-And what's worse, this vulnerability couldn't possibly be just an oversight. 
+And what's worse, this vulnerability couldn't possibly be just an oversight.
 
 Before you are _allowed_ to disable Supabase's default security settings, you must confirm repeatedly you are aware of the dangers and consequences of doing so, and not only that, but while it is disabled you are repeatedly sent notifications, emails, and reminders telling you to re-enable it.
 
-Someone, somewhere chose to intentionally ignore all that.
+Some irresponsible and wreckless developer, somewhere, chose to intentionally ignore all that. The API key was also not exposed recently: I've found traces of it in web backups going all the way back to September 2025.
 
-This API key was also not exposed recently. I've found traces of it in web backups going all the way back to September 2025.
+Many of own friends, regular attendees of Arts Council events' who trusted the administration with their names, numbers, and contact information, and personal details have their data publicly exposed within, so this is personal to me.
 
-Since I discovered this vulnerability, I have been worried, at a cost to myself, of how to reach out to the Arts Council *without* alerting any bad actors, and worried whether I could even communicate to them the sensitivity of what they have wrought, because let's be frank, someone who exposed their entire system and the personal information of 20,000+ people has to be an icon of irresponsibility and callousness.
+Since I discovered this vulnerability, I have been worried sick about how to reach out to the Arts Council *without* alerting any bad actors, and worried whether I could even communicate to them the sensitivity of what they have wrought, because let's be frank, someone who exposed their entire system and the personal information of 20,000+ people has to be an icon of irresponsibility and callousness.
 
-Right now, the website is still exposed as it was. But I'm making this announcement publicly and alerting the Arts Council because I've replaced data of the 20,000+ attendees with a non-sensitive, synthetic dataset that both protects the original attendees and doesn't break the Arts Council's systems.
+Right now, the website and database are still exposed as it was. But I'm making this announcement publicly and alerting the Arts Council because before doing so, I've replaced data of the 20,000+ attendees with a non-sensitive, synthetic dataset that both protects the original attendees and doesn't break the Arts Council's systems.
 
-Beyond my need to protect these people who have been put at risk due to no fault of their own but trusting ACP, I have no responsibility towards anyone.
+Beyond my need to protect these innocent people (including my friends) who have been put at risk due to no fault of their own, I do not have the tools to do anything else.
 
-Now that it's public, I hope they fix this quickly before their system is crashed. I wish them the best of luck if they on top of this recklessness, made no backups and had their financial accounting also, solely dependent on this database.
+I've also sent an email to the Arts Council at `info@acpkhi.com`, with a link to this article and informing them of this bug. I hope they fix this quickly before their system crashes, and I wish them the best of luck if on top of this recklessness, they have made no backups and had their financial accounting also, solely dependent on this database.
 
-The next part is targeted specifically at developers, engineers, data scientists, and people interested in binary sciences... I will use this leak as a practical, educational example to demonstrate the dangers of ignoring security, breaking down the attack vectors I can think of leveraging against an exposed database like this and how to protect against it.
+But I see an educational moment in this. The next part of this post is targeted specifically at developers, engineers, data scientists, and people interested in binary sciences... for whom I will use this breach as a practical example of what __NOT__ to do, demonstrate the dangers of ignoring security, and break down all the attack vectors I can think of leveraging against an exposed database like this... and how to in the future, protect against them.
 
 ----
 
@@ -52,7 +54,7 @@ This was not a temporary security relaxation for whatever reason, I traced its h
 
 ### Producing the synthetic dataset
 
-I needed to protect the attendee's data before announcing publicly, but make sure I didn't break the site. So after being inspired by some discussions with a friend, I had an interesting idea: replacing the original attendees with a synthetic dataset.
+I needed to protect the attendee's (including my friends!) data before announcing, but also make sure I didn't break the site. So after being inspired by some discussions with a friend, I had an interesting idea: replacing the original attendees with a synthetic dataset.
 
 Now, any random dataset with the same schema would do, but I wanted to do a little experiment: How close could LLMs and matching statistical distribution get the synthetic to the original dataset?
 
@@ -82,7 +84,7 @@ So how did I go about producing it? I analyzed, with help from Claude ofc, the s
   
   But this heavy correlation didn't just extend to events but also to specific ticket types. VIPs for example, almost never had their name, email or anything recorded. Which makes sense. How *many* of the attendees would have their information recorded was also matched hyper-specifically to the original dataset, _per-event-per-ticket-type_, then displaced by the same +-50% random displacement.
 
-All this extremely niche statistical programming was done to produce a dataset near-unrecognizable from the original, but even this wouldn't be enough to achieve that result.
+All this extremely niche statistical programming was done to produce a dataset near-unrecognizable from the original, but even this wouldn't be enough to achieve that perfect result.
 
 ### Using LLMs as a name-generator
 
@@ -92,7 +94,7 @@ This, was not a job for statistical rules in a Python script. For this, I had to
 
 Using Sonnet 4.6, I first generated, at random, triplets of Pakistani names (both two-word and one), emails and mobiles, in the same format, all riddled with similar typos and patterns as the original dataset.
 
-Since I needed to generate thousands of rows and Claude was expensive/slow... I experimented with other APIs: ChatGPT was bad, and so was GLM-5.Amusingly, they both leaned towards famous Pakistani personalites even when I made it explicity clear I didn't want that.
+Since I needed to generate thousands of rows and Claude was expensive/slow... I experimented with other APIs: ChatGPT was bad, and so was GLM-5. Amusingly, they both leaned towards famous Pakistani personalites even when I made it explicity clear I didn't want that.
 
 GLM-5 though, did prove to give survivable results after a few rounds of prompt engineering when I generated the first 100 synthetics from Claude and used those as an example for GLM-5 to copy.
 
@@ -106,11 +108,11 @@ Only when I explicitly mentioned it did it go "oh, that's an amazing idea". LLMs
 
 ## Image as an attack vector
 
-While investigating the events table to see what would be vulnerable to an XSS attack, I noticed nearly all fields were text and the app was built with Vue. Because modern PWAs protect incredibly well against such injections, I had to look for alternatives.
+While investigating the events table to see what would be vulnerable to an XSS attack, I noticed nearly all fields were text and the app was built with Vue. Because modern PWAs protect very well against such injections by default, I looked for alternatives.
 
 One field caught my eye: the image URL.
 
-Now, I could probably store and fetch excessive amounts of data on load and possibly overload the database, make the arts council's egress bill skyrocket, or prevent the site from loading for visitors, that would be immediately obvious.
+Now, I could probably store and fetch excessive amounts of data on load and possibly overload the database, make the arts council's egress bill skyrocket, or prevent the site from loading for visitors, but that would be immediately obvious.
 
 So, I set up an edge function. With a simple script that would masquerade as an image (with .jpeg extension), capture information about the visitor, and quietly redirect to the real image.
 
@@ -124,9 +126,9 @@ But even for anyone looking at the source: I used the original Supabase project'
 
 ➡ <mark>up.railway.app</mark>
 
-Because of just this _tiny change_ to one image URL, I've been collecting the exact location (through IP address), time, device (user agent), and other extensive analytics on every single person who's visited the Arts Council's website for the past 5 days.
+Because of just this _tiny change_ to one image URL, I (and anyone else could) have been collecting the exact location (through IP address), time, device (user agent), and other extensive analytics on every single person who's visited the Arts Council's website for the past 5 days.
 
-and an actor with bad intentions wouldn't be interested in just researching this :)
+and an actor with bad intentions wouldn't be interested in just researching this.
 
 <video autoplay muted loop style="width:100%;max-width:800px;margin:1rem 0 0;border-radius:11px;">
   <source src="/assets/visitors_location-compressed.mp4" type="video/mp4">
@@ -138,3 +140,5 @@ and an actor with bad intentions wouldn't be interested in just researching this
   </video>
   <img src="/assets/visits_per_hour.webp" style="flex:1;min-width:0;border-radius:11px;object-fit:cover;" />
 </div>
+
+If even one of you after reading this extends their self-imposed barrier of possibilities by even an inch, either in terms of software or general ambition, my job here is done. That would be my biggest source of fulfillment.
