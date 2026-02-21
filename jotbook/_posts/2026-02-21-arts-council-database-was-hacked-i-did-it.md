@@ -124,7 +124,7 @@ But even for anyone looking at the source: I used the original Supabase project'
 
 ➡ <mark>up.railway.app</mark>
 
-Because of just this _tiny change_ to one image URL, I've been collecting the exact location, time, device, and other extensive analytics on every single person who's visited the Arts Council's website for the past 5 days.
+Because of just this _tiny change_ to one image URL, I've been collecting the exact location (through IP address), time, device (user agent), and other extensive analytics on every single person who's visited the Arts Council's website for the past 5 days.
 
 and an actor with bad intentions wouldn't be interested in just researching this :)
 
