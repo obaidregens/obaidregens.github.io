@@ -2,6 +2,7 @@
 layout: post
 title: "The Arts Council of Pakistan has a database of 20k+ attendees and full write access completely exposed. Right now."
 date: 2026-02-22
+image: /assets/probabilistic_programming.webp
 ---
 
 _And as I click publish on this post, the database is still, publicly exposed and has <u>not been patched</u>._
