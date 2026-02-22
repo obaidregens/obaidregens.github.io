@@ -35,7 +35,7 @@ Many of own friends, regular attendees of Arts Council events' who trusted the a
 
 Since I discovered this vulnerability, I have been worried sick about how to reach out to the Arts Council *without* alerting any bad actors, and worried whether I could even communicate to them the sensitivity of what they have wrought, because let's be frank, someone who exposed their entire system and the personal information of 20,000+ people has to be an icon of irresponsibility and callousness.
 
-Right now, the website and database are still exposed as it was. But I'm making this announcement publicly and alerting the Arts Council because before doing so, I've replaced data of the 20,000+ attendees with a non-sensitive, synthetic dataset that both protects the original attendees and doesn't break the Arts Council's systems.
+Right now, the website and database are still exposed as they were. But I'm making this announcement publicly and alerting the Arts Council because before doing so because I've replaced data of the 20,000+ attendees with a non-sensitive, synthetic dataset that both protects the original attendees and doesn't break the Arts Council's systems.
 
 Beyond my need to protect these innocent people (including my friends) who have been put at risk due to no fault of their own, I do not have the tools to do anything else.
 
