@@ -22,14 +22,14 @@ If I were to draw an analogy for non-technical people, this <u>data breach</u> i
 As a thought experiment, let's examine a few possibilities of what could have happened (or perhaps has been secretly happening) because of this leak:
 
 1. Someone could sell this personal data dump on some online anonymous forums, for idk, some bitcoin.
-2. Scammers could pose as the Arts Council, building trust as they knew their exact details, and exactly they were on given dates and down to how much they paid for each event.
-3. Use it to issue themselves free tickets for events, without any pre-screening or payment: Perhaps even set up a third-party market for Arts Council events selling tickets for a 100Rs each.
+2. Scammers could pose as the Arts Council, building trust as they knew people's exact details, exactly where they were on given dates down to how much they paid for each event.
+3. Use it to issue themselves free tickets for events, without any pre-screening or payment: Perhaps even set up a third-party market for Arts Council events selling tickets for 100Rs each.
 
 And what's worse, this vulnerability couldn't possibly be just an oversight.
 
 Before you are _allowed_ to disable Supabase's default security settings, you must confirm repeatedly you are aware of the dangers and consequences of doing so, and not only that, but while it is disabled you are repeatedly sent notifications, emails, and reminders telling you to re-enable it.
 
-Some irresponsible and wreckless developer, somewhere, chose to intentionally ignore all that. The API key was also not exposed recently: I've found traces of it in web backups going all the way back to September 2025.
+Some irresponsible and reckless developer, somewhere, chose to intentionally ignore all that. The API key was also not exposed recently: I've found traces of it in web backups going all the way back to September 2025.
 
 Many of own friends, regular attendees of Arts Council events' who trusted the administration with their names, numbers, and contact information, and personal details have their data publicly exposed within, so this is personal to me.
 
@@ -119,7 +119,7 @@ So, I set up an edge function. With a simple script that would masquerade as an 
 
 To a visitor, there would be no difference. They're still seeing the image.
 
-But even for anyone looking at the source: I used the original Supabase project's id in my edge function so the URL difference was almost imperceptable.
+But even for anyone looking at the source: I used the original Supabase project's id in my edge function so the URL difference was almost imperceptible.
 
 <img src="/assets/image_attack.webp" style="width:100%;border-radius:11px;margin:1rem 0;" />
 
