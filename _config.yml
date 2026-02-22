@@ -14,6 +14,10 @@ remote_theme: jekyll/minima
 
 minima:
   hide_site_feed_link: true
+  social_links:
+    - title: Obaid on LinkedIn
+      icon: linkedin
+      url: "https://www.linkedin.com/in/wtfobaid/"
 
 plugins:
   - jekyll-feed

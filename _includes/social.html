@@ -1,0 +1,11 @@
+<div class="custom-social-links">
+  <ul>
+    {% for link in site.minima.social_links %}
+    <li>
+      <a href="{{ link.url }}" target="_blank" rel="me noopener" title="{{ link.title }}">
+        <span class="fa-brands fa-{{ link.icon }} fa-lg"></span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
