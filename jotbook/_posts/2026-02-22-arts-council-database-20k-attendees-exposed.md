@@ -80,7 +80,6 @@ So how did I go about producing it? I analyzed, with help from Claude ofc, the s
 
 - Attendees usually purchased tickets together in groups (of at least 2), but how big of a group was and what % of the attendees were in groups vs by themselves was heavily dependent on the event, so we calculated the per-event distributions individually and matched that in the synthetic (with +- 50% random displacement again, of course).
 
-
 - Mobiles and emails were almost always recorded for attendees except for the free events, in which case were mostly not.
   
   But this heavy correlation didn't just extend to events but also to specific ticket types. VIPs for example, almost never had their name, email or anything recorded. Which makes sense. How *many* of the attendees would have their information recorded was also matched hyper-specifically to the original dataset, _per-event-per-ticket-type_, then displaced by the same +-50% random displacement.
@@ -106,6 +105,12 @@ Probabilistically, the script had already calculated which fields need to be fil
 \* As a final note on this topic, people who depend on AI for agentic behaviour, this is sometimes what it lacks. This idea of statistically copying patterns of the database with some randomization... even after I gave Claude the hint I wanted to replace the database and prompted it for ideas, it didn't suggest.
 
 Only when I explicitly mentioned it did it go "oh, that's an amazing idea". LLMs still very much lack in creative imagination.
+
+#### QR code tickets
+
+One of the fields was `qr_codes`, a base64 png image directly stored as a text field and presumably used at the ticketing counter. Decoding it revealed the pattern `{order_number}-{index_in_a_group_buying_tickets_together}`.
+
+After the synthetic data was produced, I simply followed the same pattern to encode it back and produce a QR code ticket for all synthetic attendees.
 
 ## Image as an attack vector
 
