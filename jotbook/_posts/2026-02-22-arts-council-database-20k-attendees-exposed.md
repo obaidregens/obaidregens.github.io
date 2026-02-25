@@ -5,6 +5,10 @@ date: 2026-02-22
 image: /assets/probabilistic_programming.webp
 ---
 
+__Update:__ <i><mark>Around 2pm on February 23, the old API keys were discovered revoked and the database locked down. Some time on February 24, the database was opened up again with Row-Level Security (RLS) enabled</mark>, although some vulnerabilities were as I found still present: ones that could make it very easy to crash or upset their systems, but not any that expose their 20,000+ attendees; so I'm ending this story here. On to new projects.</i>
+
+<hr style="border:none;border-top:3px dotted #c2255c;margin-top:4px;" />
+
 _And as I click publish on this post, the database is still, publicly exposed and has <u>not been patched</u>._
 
 At exactly 4:32pm, 16.02.2026, I discovered something I think was absolutely insane.
@@ -63,7 +67,9 @@ And you can judge, because this is what our produced final-dataset looks like:
 
 {% include walkin-grid.html %}
 
-_btw, the sheet above is loading __directly from__ the Arts Council's Supabase database, now filled with our synthetic attendees. You can see exactly __HOW__ bad the situation is_.
+_Since RLS was re-enabled, the synthetic dataset now loads from a CSV file instead. Download the full dataset (with QR codes) [here](/assets/walkin_ticket_orders_synthetic_ALL_COLUMNS.csv)._
+
+<span style="color:gray">~~_btw, the sheet above is loading __directly from__ the Arts Council's Supabase database, now filled with our synthetic attendees. You can see exactly __HOW__ bad the situation is_~~.</span>
 
 So how did I go about producing it? I analyzed, with help from Claude ofc, the statistical distribution and patterns in the original dataset and discovered some hyper-specific and extremely niche patterns, for example:
 

@@ -43,18 +43,10 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/ag-grid-community@31.3.2/dist/ag-grid-community.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
 <script>
 (function () {
-  const ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRjaW9meWl5ZmJscXRsb3pxYnp3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDkzMjkzNDksImV4cCI6MjA2NDkwNTM0OX0.YsW85udKbzcg-Hu3w9gzGtzh0wjA5c2QaOh2XwdN4dg';
-  const BASE_URL = 'https://dciofyiyfblqtlozqbzw.supabase.co/rest/v1/walkin_ticket_orders';
-  const SELECT = [
-    'order_number','customer_name','customer_mobile','customer_email',
-    'ticket_type','buyer_category','quantity','unit_price',
-    'discount_per_ticket','total_amount','holder_names',
-    'membership_no','student_id','printed','refund','remarks','created_at'
-  ].join(',');
-
-  const pkr = v => v != null ? `₨${Number(v).toLocaleString()}` : '';
+  const pkr = v => v != null && v !== '' ? `₨${Number(v).toLocaleString()}` : '';
   const cap = v => v ? v[0].toUpperCase() + v.slice(1) : '';
 
   const columnDefs = [
@@ -71,54 +63,31 @@
     { field: 'holder_names',        headerName: 'Holder(s)',    width: 150 },
     { field: 'membership_no',       headerName: 'Membership #', width: 125 },
     { field: 'student_id',          headerName: 'Student ID',   width: 100 },
-    { field: 'printed',             headerName: 'Printed',      width: 80,  valueFormatter: p => p.value ? 'Yes' : 'No' },
+    { field: 'printed',             headerName: 'Printed',      width: 80,  valueFormatter: p => p.value === 'TRUE' || p.value === true ? 'Yes' : 'No' },
     { field: 'refund',              headerName: 'Refund',       width: 85 },
     { field: 'remarks',             headerName: 'Remarks',      width: 150 },
     { field: 'created_at',          headerName: 'Created At',   width: 160, valueFormatter: p => p.value ? new Date(p.value).toLocaleString() : '' },
   ];
 
-  const datasource = {
-    getRows(params) {
-      const { startRow, endRow, sortModel, successCallback, failCallback } = params;
-      const limit = endRow - startRow;
-      const offset = startRow;
-
-      let order = 'created_at.desc';
-      if (sortModel && sortModel.length) {
-        order = sortModel.map(s => `${s.colId}.${s.sort}`).join(',');
-      }
-
-      fetch(`${BASE_URL}?select=${SELECT}&limit=${limit}&offset=${offset}&order=${order}`, {
-        headers: {
-          'apikey': ANON_KEY,
-          'Authorization': `Bearer ${ANON_KEY}`,
-          'Prefer': 'count=exact'
-        }
-      })
-      .then(res => {
-        const range = res.headers.get('Content-Range');
-        let total = -1;
-        if (range) {
-          const n = range.split('/')[1];
-          if (n && n !== '*') total = parseInt(n, 10);
-        }
-        return res.json().then(data => ({ data, total }));
-      })
-      .then(({ data, total }) => successCallback(data, total))
-      .catch(() => failCallback());
-    }
-  };
-
-  agGrid.createGrid(document.getElementById('walkin-grid'), {
+  const grid = agGrid.createGrid(document.getElementById('walkin-grid'), {
     columnDefs,
     defaultColDef: { resizable: true, sortable: true },
     rowHeight: 24,
     headerHeight: 26,
-    rowModelType: 'infinite',
-    datasource,
-    cacheBlockSize: 100,
-    maxBlocksInCache: 10,
-    infiniteInitialRowCount: 100,
+    rowModelType: 'clientSide',
+    rowData: [],
+    overlayLoadingTemplate: '<span>Loading synthetic dataset...</span>',
+  });
+
+  grid.showLoadingOverlay();
+
+  Papa.parse('/assets/walkin_ticket_orders_synthetic.csv', {
+    download: true,
+    header: true,
+    skipEmptyLines: true,
+    complete({ data }) {
+      grid.setGridOption('rowData', data);
+    },
   });
 })();
 </script>
