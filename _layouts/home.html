@@ -1,0 +1,38 @@
+---
+layout: base
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {% assign posts = site.posts %}
+
+  {%- if posts.size > 0 -%}
+    {%- if page.list_title -%}
+      <h2 class="post-list-heading">{{ page.list_title }}</h2>
+    {%- endif -%}
+    <ul class="post-list">
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      {%- for post in posts -%}
+      <li>
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {%- assign ptitle = post.title | downcase -%}
+            {%- assign tparts = post.title | split: " — " -%}
+            {%- if ptitle contains "jotbook page" -%}{{ tparts[0] | escape }} <span class="jotbook-suffix"><span class="fa-brands fa-linkedin" style="margin-right: 0.2em; vertical-align: middle;"></span>{{ tparts[1] | escape }}</span>
+            {%- else -%}{{ post.title | escape }}{%- endif -%}
+          </a>
+        </h3>
+        {%- if site.minima.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+</div>
