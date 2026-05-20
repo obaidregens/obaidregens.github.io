@@ -68,3 +68,48 @@ body, header {
   font-optical-sizing: auto;
   font-weight: 400;
 }
+
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #ccc;
+
+  a {
+    display: flex !important;
+    flex-direction: column;
+    max-width: 48%;
+    text-decoration: none;
+
+    &:hover {
+      background-color: transparent !important;
+      padding: 0 !important;
+
+      .post-nav-title {
+        text-decoration: underline;
+        text-decoration-color: #c2255c;
+        text-decoration-style: dotted;
+        text-decoration-thickness: 3px;
+        text-underline-offset: 4px;
+      }
+    }
+  }
+
+  .post-nav-next {
+    margin-left: auto;
+    text-align: right;
+  }
+
+  .post-nav-label {
+    font-size: 0.8rem;
+    color: #666;
+    text-transform: lowercase;
+  }
+
+  .post-nav-title {
+    font-size: 0.95rem;
+    color: #000;
+  }
+}
