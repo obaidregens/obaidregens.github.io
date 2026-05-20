@@ -25,9 +25,9 @@ If I were to draw an analogy for non-technical people, this <u>data breach</u> i
 
 As a thought experiment, let's examine a few possibilities of what could have happened (or perhaps has been secretly happening) because of this leak:
 
-1. Someone could sell this personal data dump on some online anonymous forums, for idk, some bitcoin.
-2. Scammers could pose as the Arts Council, building trust as they knew people's exact details, exactly where they were on given dates down to how much they paid for each event.
-3. Use it to issue themselves free tickets for events, without any pre-screening or payment: Perhaps even set up a third-party market for Arts Council events selling tickets for 100Rs each.
+**1\. Someone could sell** this personal data dump on some online anonymous forums, for idk, some bitcoin.
+**2\. Scammers could pose** as the Arts Council, building trust as they knew people's exact details, exactly where they were on given dates down to how much they paid for each event.
+**3\. Use it to** issue themselves free tickets for events, without any pre-screening or payment: Perhaps even set up a third-party market for Arts Council events selling tickets for 100Rs each.
 
 And what's worse, this vulnerability couldn't possibly be just an oversight.
 

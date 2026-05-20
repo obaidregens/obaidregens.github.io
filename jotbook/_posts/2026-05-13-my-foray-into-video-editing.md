@@ -2,12 +2,13 @@
 layout: post
 title: "My foray into video editing"
 date: 2026-05-13
-published: false
 ---
 
-If you've watched enough reels, videos, TikToks, or similar modern-era short-form content, you know what "video editing" is, and the goals it should achieve.
+When I say "video-editing", even though it is such a modern phenomena, you would likely don't need an explanation because our world has quickly exploded into saturation from it.
 
-But if somehow, you are from a different generation, live under a rock or are having your first contact with the modern human-internet society, you would need an explanation.
+you've watched enough reels, videos, TikToks, or similar modern-era short-form content, you know what "video editing" is, and the goals it should achieve.
+
+But if somehow, you are from a different generation, live under a rock, or are having your first contact with the modern human-internet society, you would likely need an explanation.
 
 Likely, this description will not match any who come across this blog, but it does allow me a natural, imaginatory medium to break down and explore this process in the level I want to.
 
@@ -543,8 +544,8 @@ Theory is complete. So we begin.
   };
 
   const STEPS = [
-    { id:1, label:'Step 1 · Color grade', title:'Silvertone filter applied', change:'Silvertone', desc:'Silvertone from the Photos app was applied to give it a cinematic look and obscure the lack of color depth in the footage. Tested with a few LUTs from CapCut for a long time before settling on this one.', lanes:[] },
-    { id:2, label:'Step 2 · Crop', title:'Cropped to 9:16 Reel', change:'9:16 crop', desc:'The footage is scaled up 1.21× and cropped to 1080×1920 for Instagram Reels. 111.56px are cut from each side (centred horizontally), 396.65px from the top, and 8px from the bottom.', lanes:[] },
+    { id:1, label:'Step 1 · Color grade', title:'Silvertone filter applied', change:'Silvertone', desc:'Simply, at first the Silvertone filter from the Photos app was applied to give it a cinematic look and obscure the lack of color depth in the footage. Tested with a few LUTs from CapCut for a long time before settling on this one.', lanes:[] },
+    { id:2, label:'Step 2 · Cropped for a reel', title:'Cropped to 9:16 Reel', change:'9:16 crop', desc:'I scaled the footage up 1.21× (to bring the subject in view) and cropped to 1080×1920, the dimension for Instagram Reels.', lanes:[] },
     { id:3, label:'Step 3 · Frame overlay', title:'iPhone frame overlaid', change:'iPhone frame', desc:'A screenshot of the Camera app open — screen covered — was used as the frame. Every background removal tool tried, including Canva, failed to cleanly isolate it. Claude Code was used instead to strip all black pixels, then the threshold was dialled up experimentally until t7 — the darkest 7 shades of black — gave the cleanest result.', lanes:[] },
     { id:4, label:'Step 4 · Dynamic Island', title:'Dynamic Island cutout added', change:'Dynamic Island', desc:'The iPhone frame image includes the Dynamic Island — the pill-shaped cutout at the top of the screen. To make it transparent in the composite, a matching ellipse was punched through the video layer beneath it, so the frame’s existing hole aligns perfectly and the background shows through rather than a solid fill.', lanes:[] },
     { id:5, label:'Step 5 · Prefix clip', title:'Prefix clip merged before the shot', change:'Prefix clip', desc:'The recording opens with a lead-in shot — captured immediately before the main footage. Its last frame is identical to the first frame of the main clip, so the cut is invisible when they’re joined.', lanes:[] },

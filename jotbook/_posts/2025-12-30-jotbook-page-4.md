@@ -4,9 +4,9 @@ title: "Spotify has been scraped — jotbook page 4"
 date: 2025-12-30
 ---
 
-1. We are going through the great unlearning. App developers make an app today only to realize their moat is nothing but a context-retrieved .md file, and their app as a wrapper on top is nothing but an annoyance that turns people away because they have to use "yet another app".
+**1\. We are going** through the great unlearning. App developers make an app today only to realize their moat is nothing but a context-retrieved .md file, and their app as a wrapper on top is nothing but an annoyance that turns people away because they have to use "yet another app".
 
-2. You might have seen the news that Anna's Archive has archived, through scraping, the near-entirety of Spotify's songs catalogue, equivalent to 99.6% of its (ambiguous, but presumably all-time) listens.
+**2\. You might have** seen the news that Anna's Archive has archived, through scraping, the near-entirety of Spotify's songs catalogue, equivalent to 99.6% of its (ambiguous, but presumably all-time) listens.
 
 - I have followed and been a supporter of Anna's Archive for a long time, they have a very noble mission to preserve human knowledge, and generally try to provide a catalogue of all books and research papers on the planet, for free. They have without a doubt, the most comprehensive website in the world for this.
 

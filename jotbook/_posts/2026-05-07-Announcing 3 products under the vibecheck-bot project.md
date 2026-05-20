@@ -24,15 +24,15 @@ Whether Reddit did this to invite more undetected bots to run through their plat
 
 There's actually a lot of credit that goes to Lukas in this app, from inspiration, ideas, and more. One of those was to describe this as the reddit version of "Return YouTube Dislike", a chrome extension that actually went pretty viral. That is exactly what one of the 3 products launching today does.
 
-1. "Return Reddit History" is a chrome extension that in-line, injects hidden posts and comments back into every user's profile page. The way Reddit was meant to be experienced.
+**1\. "Return Reddit History"** is a chrome extension that in-line, injects hidden posts and comments back into every user's profile page. The way Reddit was meant to be experienced.
 
 [IMAGE]
 
-2. The website is our full, most comprehensive app, Enter a username, it takes a few mins and analyzes a user's entire profile down to their posting times, top word counts, a bullet point summary of everything they've spoke about and contrasts in what they've chosen to reveal vs hide,
+**2\. The website is** our full, most comprehensive app, Enter a username, it takes a few mins and analyzes a user's entire profile down to their posting times, top word counts, a bullet point summary of everything they've spoke about and contrasts in what they've chosen to reveal vs hide,
 
 [Screen Recording]
 
-3. The u/vibecheck-bot, mention from any subreddit and it'll reply to your comment with the bullet point summary of the user. Easiest to use without installing or ever switching tabs.
+**3\. The u/vibecheck-bot**, mention from any subreddit and it'll reply to your comment with the bullet point summary of the user. Easiest to use without installing or ever switching tabs.
 
 [Screen Recording]
 
