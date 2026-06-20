@@ -2,25 +2,24 @@
 layout: post
 title: "My foray into video editing"
 date: 2026-05-13
+unfinished: true
 ---
 
-When I say "video-editing", even though it is such a modern phenomena, you would likely don't need an explanation because our world has quickly exploded into saturation from it.
+"video-editing" is a very modern phenomena. "film" has existed for a long time, but it was by definition a series, any series, of pictures that conveyed a story. captured through camera, drawn through animation or whatever.
 
-you've watched enough reels, videos, TikToks, or similar modern-era short-form content, you know what "video editing" is, and the goals it should achieve.
+Edited videos are its evolution, but still somehow, very different. The focus of "video-editing" isn't on on the timeline, but the canvas: images are placed on any of its parts, either cleanly in grids or overlapping, as a series of moving pictures or still, and for any duration of time.
 
-But if somehow, you are from a different generation, live under a rock, or are having your first contact with the modern human-internet society, you would likely need an explanation.
+But unlike film which had one dimension, the timeline, video-editing has two:
 
-Likely, this description will not match any who come across this blog, but it does allow me a natural, imaginatory medium to break down and explore this process in the level I want to.
+the timeline... and now, the canvas.
 
-"film", was by definition a series of pictures that conveyed a story, and often capturing reality-like movement through the camera. Any kind.
+and it is that exponential explosion of creative possibilities which has led into the art form we know as video-editing today.
 
-Edited videos are its evolution, but somehow, different. The focus of video-editing is not on the timeline, but the canvas. Where the canvas exists, images are placed on any part of it, either cleanly separated or overlapping, as a series of moving pictures or one individual picture, and for any duration of time.
+And that art-form I tried to experiment with to learn, how much of it can be a repeatable workflow edited by Claude, and how much of it completely original.
 
-Essentially, unlike film which had one dimension, the timeline, this has two: the canvas and the timeline.
+I should mention that my theory on this is my own. Actually original. I intentionally block out and avoid research when theorizing or thinking deeply, to avoid polluting my headspace with ideas only occurring as a result of external reinforcement.
 
-I should mention that this theory is completely original. I intentionally block out and avoid research when theorizing or thinking deeply, to avoid polluting my headspace with ideas only occurring as a result of reinforcement.
-
-Theory is complete. So we begin.
+theory is complete. So we begin.
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -545,9 +544,9 @@ Theory is complete. So we begin.
 
   const STEPS = [
     { id:1, label:'Step 1 · Color grade', title:'Silvertone filter applied', change:'Silvertone', desc:'Simply, at first the Silvertone filter from the Photos app was applied to give it a cinematic look and obscure the lack of color depth in the footage. Tested with a few LUTs from CapCut for a long time before settling on this one.', lanes:[] },
-    { id:2, label:'Step 2 · Cropped for a reel', title:'Cropped to 9:16 Reel', change:'9:16 crop', desc:'I scaled the footage up 1.21× (to bring the subject in view) and cropped to 1080×1920, the dimension for Instagram Reels.', lanes:[] },
-    { id:3, label:'Step 3 · Frame overlay', title:'iPhone frame overlaid', change:'iPhone frame', desc:'A screenshot of the Camera app open — screen covered — was used as the frame. Every background removal tool tried, including Canva, failed to cleanly isolate it. Claude Code was used instead to strip all black pixels, then the threshold was dialled up experimentally until t7 — the darkest 7 shades of black — gave the cleanest result.', lanes:[] },
-    { id:4, label:'Step 4 · Dynamic Island', title:'Dynamic Island cutout added', change:'Dynamic Island', desc:'The iPhone frame image includes the Dynamic Island — the pill-shaped cutout at the top of the screen. To make it transparent in the composite, a matching ellipse was punched through the video layer beneath it, so the frame’s existing hole aligns perfectly and the background shows through rather than a solid fill.', lanes:[] },
+    { id:2, label:'Step 2 · Cropped for a reel', title:'Cropped to 9:16 Reel', change:'9:16 crop', desc:'scaled the footage up 1.21× (to bring the subject in view) and cropped to 1080×1920, the dimension for Instagram Reels.', lanes:[] },
+    { id:3, label:'Step 3 · Frame overlay', title:'iPhone frame overlaid', change:'iPhone frame', desc:'Screenshot of the Camera app open — screen covered by my hand as closely as possible, was used. But even with the seemingly pitch black background every background removal tool I tried, including Canva, failed to cleanly isolate it.\nThe reason turned out to be, even though invisible to the naked eye, light had leaked through causing an invisible shadow that I could only see when segmenting every unique pixel. So I expanded my flexibility, dialling it up and down until t7, the darkest 7 shades of black — gave me the cleanest result.', lanes:[] },
+    { id:4, label:'Step 4 · Dynamic Island', title:'Dynamic Island cutout added', change:'Dynamic Island', desc:'Screenshots don\'t include Dynamic Island, apparently behind the image is a pill-shaped cutout at the top of the screen. To make it transparent in the composite, a matching ellipse was punched through the video layer beneath it, so the frame’s existing hole aligns perfectly and the background shows through rather than a solid fill.', lanes:[] },
     { id:5, label:'Step 5 · Prefix clip', title:'Prefix clip merged before the shot', change:'Prefix clip', desc:'The recording opens with a lead-in shot — captured immediately before the main footage. Its last frame is identical to the first frame of the main clip, so the cut is invisible when they’re joined.', lanes:[] },
     { id:6, label:'Step 6 · Transition', title:'Clips joined seamlessly', change:'Transition', desc:'The prefix clip and main shot are merged. The last frame of the prefix is identical to the first frame of the main clip, so the cut is invisible.', lanes:[] },
     { id:7, label:'Step 7 · Trim', title:'Silvertone clip trimmed to 14.1s', change:'Trim', desc:'The silvertone clip is trimmed so it starts at 14.1s — exactly where the Spotify section ends. This makes the transition between the app screen and the real-life footage seamless.', lanes:[] },
@@ -1466,10 +1465,4 @@ Theory is complete. So we begin.
 })();
 </script>
 
-Twelve steps. Some manual, some fiddly, a few satisfying.
-
-The honest observation looking back: several of these steps are ripe for automation. The crop math is deterministic. The frame and Dynamic Island overlay are always the same. The trim points follow from the audio. These aren't creative decisions — they're mechanical ones, and mechanical ones can be scripted.
-
-The bigger ambition is music. Right now the backing track is sourced manually — played through Spotify, stems split by hand, levels set by ear. The goal is to have this happen automatically: given a video, detect the mood or genre, find a matching track, separate the stems, and layer them in at calibrated levels. That's the edit that writes itself.
-
-For now, twelve steps, done by hand, once.
+I don't know what to say after. I don't have the energy to complete this article, so it's time to publish and move on. Maybe later I will come back and tie together the pieces left untied.

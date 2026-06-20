@@ -6,3 +6,6 @@ vendor/
 .bundle/
 Gemfile.lock
 .DS_Store
+
+# private research / anonymized account archive — never publish
+.research/

@@ -8,6 +8,12 @@ layout: base
     {%- if ptitle contains "jotbook page" -%}
     <p class="post-linkedin-origin"><span class="fa-brands fa-linkedin"></span> originally published on linkedin</p>
     {%- endif -%}
+    {%- if page.unfinished -%}
+    <p class="post-unfinished-badge">⊘ unfinished</p>
+    {%- endif -%}
+    {%- if page.coauthored -%}
+    <p class="post-coauthored-badge">◫ co-authored</p>
+    {%- endif -%}
     {%- assign tparts = page.title | split: " — " -%}
     <h1 class="post-title p-name" itemprop="name headline">
       {%- if ptitle contains "jotbook page" -%}{{ tparts[0] | escape }} <span class="jotbook-suffix">{{ tparts[1] | escape }}</span>{%- else -%}{{ page.title | escape }}{%- endif -%}
@@ -16,7 +22,7 @@ layout: base
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       {% assign pdate = page.date | date_to_xmlschema %}
       <time class="dt-published" datetime="{{ pdate }}" itemprop="datePublished">
-        {{ pdate | date: date_format }}
+        {%- if page.display_date -%}{{ page.display_date }}{%- else -%}{{ pdate | date: date_format }}{%- endif -%}
       </time>
       {%- if page.author %}
       <div class="post-authors">

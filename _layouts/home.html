@@ -25,6 +25,8 @@ layout: base
             {%- assign ptitle = post.title | downcase -%}
             {%- assign tparts = post.title | split: " — " -%}
             {%- if ptitle contains "jotbook page" -%}{{ tparts[0] | escape }} <span class="jotbook-suffix"><span class="fa-brands fa-linkedin" style="margin-right: 0.2em; vertical-align: middle;"></span>{{ tparts[1] | escape }}</span>
+            {%- elsif post.unfinished -%}{{ post.title | escape }} <span class="post-unfinished-badge-inline">⊘ unfinished</span>
+            {%- elsif post.coauthored -%}{{ post.title | escape }} <span class="post-coauthored-badge-inline">◫ co-authored</span>
             {%- else -%}{{ post.title | escape }}{%- endif -%}
           </a>
         </h3>
