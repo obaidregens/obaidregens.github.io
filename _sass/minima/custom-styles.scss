@@ -62,6 +62,117 @@ a {
   }
 }
 
+code {
+  color: #c2255c;
+  background-color: rgba(194, 37, 92, 0.07);
+  padding: 1px 1px;
+  font-size: 14px;
+  border: 1px solid #e7e7e7;
+  border-radius: 3px;
+  margin-right: 3px;
+}
+
+pre {
+  color: #c2255c;
+  background-color: rgba(194, 37, 92, 0.07);
+  padding: 6px 3px;
+  border-radius: 4px;
+  border: 1px solid rgba(194, 37, 92, 0.35);
+  border-right-width: 3px;
+  border-bottom-width: 3px;
+  box-shadow: 4px 4px 0 rgba(194, 37, 92, 0.3);
+
+  code {
+    color: #c2255c;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+}
+
+.compare {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  margin: 1.5rem 0 0;
+
+  figure {
+    flex: 1 1 0;
+    min-width: 0;
+    margin: 0;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 6px 6px 0 0;
+  }
+
+  figcaption {
+    background: #000;
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.4rem;
+    border-radius: 0 0 6px 6px;
+  }
+}
+
+.caption-note {
+  color: #999;
+  font-size: 0.8rem;
+}
+
+.caption-link {
+  color: #999 !important;
+  font-size: 0.8rem;
+  text-decoration: none !important;
+
+  &:hover {
+    background-color: transparent !important;
+    color: #666 !important;
+    padding: 0 !important;
+    text-decoration: underline !important;
+    text-decoration-color: #999 !important;
+  }
+}
+
+.frame-link {
+  display: block;
+  text-decoration: none !important;
+
+  &:hover {
+    background-color: transparent !important;
+    padding: 0 !important;
+  }
+}
+
+.dark-frame {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.red-frame {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  padding: 6px;
+  background-color: rgba(194, 37, 92, 0.07);
+  border-radius: 8px;
+  border: 1px solid rgba(194, 37, 92, 0.35);
+  border-right-width: 3px;
+  border-bottom-width: 3px;
+  box-shadow: 4px 4px 0 rgba(194, 37, 92, 0.3);
+}
+
 body, header {
   background-color: #f4f0e8 !important;
   font-family: 'Source Serif 4', serif;
