@@ -21,7 +21,7 @@ Since all this, the only update to the paxel install script I checked has been a
 
 <div style="text-align:center;margin:2.5rem 0;color:#999;">— &nbsp; — &nbsp; —</div>
 
-there are two ways you can learn this. One is to continue with reading the writeup below, and the other, preferable for people like me, is in baby-steps, and by-doing.
+there are 2 ways you can learn this. One is to continue with reading the writeup below, and the other, preferable for people like me, is in baby-steps, and by-doing.
 
 With the exact same ux as the original paxel, I've created a fork hosted at [https://paxel.obaid.wtf](https://paxel.obaid.wtf) that you can use in as a drop-in replacement.
 
