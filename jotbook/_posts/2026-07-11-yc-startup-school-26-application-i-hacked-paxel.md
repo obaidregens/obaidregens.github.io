@@ -3,7 +3,9 @@ layout: post
 title: "I've hacked Paxel as part of my YC Startup School 26' application"
 date: 2026-07-11
 ---
-yes i've hacked paxel. this is a public disclosure in real-time, with a tool anyone in the world can use to make their analysis top 1%, and @YC i've indicated some basic cryptography that is missing and can be used to patch this [me@obaid.wtf, twitter:@wtfobaid]
+yes i've hacked paxel. this is a public disclosure in real-time, and along with this i'm [publishing a tool](https://paxel.obaid.wtf/) (working until YC patches it) anyone in the world can use to show themselves to YC as top 1% of builders in the world
+
+and for YC i've indicated some basic cryptography that is missing and can be used to patch this
 
 <div style="text-align:center;margin:2.5rem 0;color:#999;">— &nbsp; — &nbsp; —</div>
 
@@ -97,4 +99,4 @@ one technicality here that some minor transformations/data correction are applie
 
 comments and discussion will be available on twitter, hackernews, various reddit posts, linkedin.
 
-paxel.obaid.wtf is available until my the fixed credits I set for it end.
+[paxel.obaid.wtf](https://paxel.obaid.wtf) is available until my the fixed credits I set for it end.
