@@ -1,9 +1,11 @@
 ---
 layout: post
-title: "So I hacked Paxel as part of my YC Startup School 26' application"
+title: "So I've hacked Paxel as part of my YC Startup School 26' application"
 date: 2026-07-11
 ---
-i've hacked paxel. this is a public disclosure in real-time. and along with this i'm [publishing a tool](https://paxel.obaid.wtf/) (working until YC patches it) anyone in the world can use to upload to YC's servers that they are top 1% of builders in the world
+i've hacked paxel. this is a public disclosure in real-time.
+
+and along with this i'm [publishing a tool](https://paxel.obaid.wtf/) (working until YC patches it) anyone in the world can use to upload to YC's servers that they are top 1% of builders in the world
 
 and for YC i've indicated some basic cryptography that is missing and can be used to patch this
 
