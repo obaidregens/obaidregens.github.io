@@ -1,0 +1,366 @@
+<!-- boosted-paxel run replay — self-contained, scoped under .pxr (adapted from the claude.ai artifact) -->
+<style>
+  .pxr {
+    --bg: #0b0f14;
+    --panel: #0e141b;
+    --titlebar: #131c26;
+    --edge: #1e2a36;
+    --dim: #6d7d8c;
+    --dimmer: #47535f;
+    --fg: #c6d3df;
+    --green: #56d364;
+    --green-bright: #83f29a;
+    --amber: #e3b341;
+    --cyan: #56b6c2;
+    --magenta: #bd8cff;
+    --red: #f47067;
+    --mono: ui-monospace, "SF Mono", "SFMono-Regular", Menlo, "Cascadia Code", "JetBrains Mono", Consolas, monospace;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+    display: block;
+    color: var(--fg);
+    font-family: var(--sans);
+    margin: 1.75rem 0;
+  }
+
+  .pxr, .pxr * { box-sizing: border-box; }
+
+  .pxr .frame-note {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+    font-size: 13px;
+    color: var(--dim);
+  }
+  .pxr .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 5px 11px;
+    border: 1px solid var(--edge);
+    border-radius: 999px;
+    background: #0f1721;
+    color: var(--green);
+    font-family: var(--mono);
+    font-size: 11.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .pxr .badge .dot {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: var(--green);
+    box-shadow: 0 0 8px var(--green);
+  }
+  .pxr .frame-note b { color: var(--fg); font-weight: 600; }
+
+  .pxr .term {
+    border: 1px solid var(--edge);
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--panel);
+  }
+  .pxr .titlebar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 11px 15px;
+    background: linear-gradient(var(--titlebar), #0f171f);
+    border-bottom: 1px solid var(--edge);
+  }
+  .pxr .lights { display: flex; gap: 8px; }
+  .pxr .lights i { width: 12px; height: 12px; border-radius: 50%; display: block; }
+  .pxr .lights i:nth-child(1) { background: #ec6a5e; }
+  .pxr .lights i:nth-child(2) { background: #f4bf50; }
+  .pxr .lights i:nth-child(3) { background: #61c454; }
+  .pxr .tt {
+    font-family: var(--mono);
+    font-size: 12.5px;
+    color: var(--dim);
+    letter-spacing: 0.02em;
+  }
+  .pxr .tt b { color: var(--fg); font-weight: 500; }
+
+  .pxr .toggle {
+    margin-left: auto;
+    display: inline-flex;
+    border: 1px solid var(--edge);
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: var(--mono);
+    font-size: 11px;
+  }
+  .pxr .toggle button {
+    appearance: none;
+    border: 0;
+    background: transparent;
+    color: var(--dim);
+    padding: 5px 10px;
+    cursor: pointer;
+    letter-spacing: 0.03em;
+    transition: background 0.15s, color 0.15s;
+  }
+  .pxr .toggle button + button { border-left: 1px solid var(--edge); }
+  .pxr .toggle button[aria-pressed="true"] { color: var(--bg); font-weight: 600; }
+  .pxr .toggle button.ok[aria-pressed="true"]  { background: var(--green); }
+  .pxr .toggle button.bad[aria-pressed="true"] { background: var(--red); }
+  .pxr .toggle button:focus-visible { outline: 2px solid var(--cyan); outline-offset: -2px; }
+
+  .pxr .screen {
+    font-family: var(--mono);
+    font-size: 13px;
+    line-height: 1.62;
+    padding: 20px 20px 26px;
+    white-space: pre-wrap;
+    word-break: break-word;
+    overflow-x: auto;
+    max-height: 72vh;
+    overflow-y: auto;
+    overflow-anchor: none;
+    tab-size: 2;
+  }
+  .pxr .screen::-webkit-scrollbar { width: 10px; height: 10px; }
+  .pxr .screen::-webkit-scrollbar-thumb { background: #1c2732; border-radius: 8px; }
+
+  .pxr .ln { display: block; }
+  .pxr .ln.hidden { display: none; }
+  .pxr .dim { color: var(--dim); }
+  .pxr .dimmer { color: var(--dimmer); }
+  .pxr .green { color: var(--green); }
+  .pxr .amber { color: var(--amber); }
+  .pxr .cyan { color: var(--cyan); }
+  .pxr .mag { color: var(--magenta); }
+  .pxr .red { color: var(--red); }
+  .pxr .fg { color: var(--fg); }
+  .pxr .prompt { color: var(--green-bright); }
+  .pxr .rule { color: var(--dimmer); }
+
+  .pxr .row { display: block; }
+  .pxr .axis { color: var(--dim); }
+  .pxr .arrow { color: var(--dimmer); }
+  .pxr .up { color: var(--green-bright); font-weight: 600; }
+  .pxr .star { color: var(--amber); }
+
+  .pxr .cursor {
+    display: inline-block;
+    width: 8px; height: 15px;
+    background: var(--green-bright);
+    vertical-align: -2px;
+    margin-left: 2px;
+    animation: pxrblink 1.05s steps(1) infinite;
+  }
+  @keyframes pxrblink { 50% { opacity: 0; } }
+
+  .pxr .caption {
+    margin: 20px 2px 0;
+    font-size: 12.5px;
+    line-height: 1.6;
+    color: var(--dimmer);
+  }
+  .pxr .caption a { color: var(--cyan); text-decoration: none; }
+  .pxr .caption a:hover { text-decoration: underline; }
+  .pxr .caption i { color: var(--dim); font-style: italic; }
+
+  @media (prefers-reduced-motion: reduce) { .pxr .cursor { animation: none; } }
+  @media (max-width: 560px) {
+    .pxr .toggle { margin: 8px 0 0; width: 100%; }
+    .pxr .toggle button { flex: 1; }
+    .pxr .titlebar { flex-wrap: wrap; }
+  }
+</style>
+
+<div class="pxr">
+  <div class="term">
+    <div class="titlebar">
+      <span class="lights"><i></i><i></i><i></i></span>
+      <span class="tt"><b>obaid.wtf</b> — bash — boosted-paxel</span>
+      <span class="toggle" role="group" aria-label="Which run to show">
+        <button class="ok"  id="pxrBtnOk"  aria-pressed="true">pre-patch ✓</button>
+        <button class="bad" id="pxrBtnBad" aria-pressed="false">post-patch ✗</button>
+      </span>
+    </div>
+    <div class="screen" id="pxrScreen" tabindex="0" aria-label="Terminal output"></div>
+  </div>
+
+  <p class="caption" id="pxrCaption"></p>
+</div>
+
+<script>
+(function () {
+  // Real numbers from the captured session. HEAD is identical in both runs;
+  // only the upload tail differs (pre-patch success vs post-patch rejection).
+  const HEAD = [
+    ['prompt', '$ curl -fsSL paxel.obaid.wtf/install.sh | bash'],
+    ['progress', ''],
+    ['fg',     '[boosted-paxel] payload assembled (5227 bytes stripped TXT, 4 nonces, 2 episodes)'],
+    ['cyan',   '[boosted-paxel] boosting via anthropic (boosted-paxel-proxy.obaid50432.workers.dev, model: hosted-gateway)...'],
+    ['mag',    '[boosted-paxel] rewrite successful — boost applied (original -> boosted):'],
+    ['blank',  ''],
+    ['ep',     '  Episode: Investigated Paxel repo-selection path bug and eva'],
+    ['thead',  ''],
+    ['score',  { axis: 'execution_leverage',  a: '5.5', b: '7.5' }],
+    ['score',  { axis: 'steering',            a: '7.5', b: '9.5' }],
+    ['score',  { axis: 'engineering_quality', a: '6.5', b: '8.5' }],
+    ['score',  { axis: 'product_thinking',    a: '6.0', b: '8.0' }],
+    ['score',  { axis: 'planning',            a: '7.5', b: '9.5' }],
+    ['notes',  { o: '## Goal The...', b: '## Goal Drove...' }],
+    ['blank',  ''],
+    ['ep',     '  Episode: Guided audio section detection into a clickable mo'],
+    ['thead',  ''],
+    ['score',  { axis: 'steering',            a: '7.5', b: '9.5' }],
+    ['score',  { axis: 'product_thinking',    a: '7.0', b: '9.0' }],
+    ['score',  { axis: 'planning',            a: '6.0', b: '7.5' }],
+    ['notes',  { o: '## Goal The...', b: '## Goal Led...' }],
+    ['blank',  ''],
+  ];
+
+  const TAIL_OK = [
+    ['green',  '[10:51:21.414] ✓ [Step 17/17] Uploading results: upload complete — server verified 4/4 nonces, 2 episodes saved (48s)'],
+    ['dim',    '[10:51:21.418]   server: { "valid": true, "verification": { "matched": "4/4" }, "score_verification": "pending" }'],
+    ['rule',   '[10:51:21.422] ════════════════════════════════════════════════════════════'],
+    ['green',  '[10:51:21.422] ✓ PIPELINE COMPLETE (1m 28s)'],
+    ['dim',    '[10:51:21.423]   Results: /rails/tmp/client_results_32uqtygw.json'],
+    ['rule',   '[10:51:21.424] ════════════════════════════════════════════════════════════'],
+    ['blank',  ''],
+    ['green',  '✓ Analysis finished and uploaded. Your boosted report is live.'],
+    ['blank',  ''],
+    ['dim',    '═══ Multi-repo analysis complete ═══'],
+    ['green',  '  ✓ music-colorization'],
+    ['blank',  ''],
+    ['fg',     '1/1 repos analyzed successfully.'],
+    ['blank',  ''],
+    ['cyan',   'Results: https://paxel.ycombinator.com/reports'],
+  ];
+
+  const TAIL_BAD = [
+    ['amber',  "[10:51:21.414] ⚠ [Step 17/17] Uploading results: upload failed: Upload rejected: some scores don't match what Paxel generated during analysis, so they appear to have been changed before upload. We only accept unmodified results, so nothing was saved. Re-run the standard upload without altering the output and we'll process it. (48s)"],
+    ['rule',   '[10:51:21.422] ════════════════════════════════════════════════════════════'],
+    ['fg',     '[10:51:21.422] ✓ PIPELINE COMPLETE (1m 28s)'],
+    ['dim',    '[10:51:21.423]   Results: /rails/tmp/client_results_32uqtygw.json'],
+    ['rule',   '[10:51:21.424] ════════════════════════════════════════════════════════════'],
+    ['blank',  ''],
+    ['fg',     "What's next:"],
+    ['dim',    '    Debug this container error with Gordon → docker ai "help me fix this container error"'],
+    ['blank',  ''],
+    ['amber',  "⚠  Analysis finished, but the upload to the server didn't go through and couldn't be queued for an automatic retry."],
+    ['amber',  "   Re-run to try the upload again. Your report won't appear at https://paxel.ycombinator.com/reports until it uploads."],
+    ['blank',  ''],
+    ['dim',    '═══ Multi-repo analysis complete ═══'],
+    ['green',  '  ✓ music-colorization'],
+    ['blank',  ''],
+    ['fg',     '1/1 repos analyzed successfully.'],
+    ['blank',  ''],
+    ['cyan',   'Results: https://paxel.ycombinator.com/reports'],
+  ];
+
+  const CAP_OK = '';
+  const CAP_BAD = 'Post-patch, the nonce HMAC now binds a digest of the scores. Editing them after the LLM call breaks verification, so the upload is rejected — <b style="color:var(--fg)">nothing is saved</b>. This is the fix that shipped 2026-07-11.';
+
+  const root    = document.currentScript ? document.currentScript.previousElementSibling : null;
+  const scope   = document.getElementById('pxrScreen').closest('.pxr');
+  const screen  = document.getElementById('pxrScreen');
+  const caption = document.getElementById('pxrCaption');
+  const btnOk   = document.getElementById('pxrBtnOk');
+  const btnBad  = document.getElementById('pxrBtnBad');
+  const reduce  = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+  function scoreRow(s) {
+    const axis = s.axis.padEnd(26, ' ');
+    return `<span class="row">    <span class="axis">${axis}</span>`
+         + `<span class="dim">${s.a}</span> <span class="arrow">-&gt;</span> `
+         + `<span class="up">${s.b}</span>    <span class="star">*</span></span>`;
+  }
+  function theadRow() {
+    return `<span class="dim">    ${'AXIS'.padEnd(26, ' ')}ORIG    BOOST</span>`;
+  }
+  function notesRow(n) {
+    return `<span class="dimmer">    notes: </span>`
+         + `<span class="dim">"${esc(n.o)}"</span>`
+         + `<span class="dimmer"> -&gt; </span>`
+         + `<span class="up">"${esc(n.b)}"</span>`;
+  }
+
+  // In-place progress bar frame — fills to the exact 98% snapshot from the logs.
+  function barFrame(pct) {
+    if (pct >= 98) return '███████████████████████▋ 98%  00:39 elapsed · ~00:00 left';
+    const W = 24, cells = pct / 100 * W, full = Math.floor(cells);
+    const EI = [' ', '▏', '▎', '▍', '▌', '▋', '▊', '▉'];
+    let bar = '█'.repeat(full);
+    if (full < W) { const e = Math.round((cells - full) * 8); if (e > 0) bar += EI[e]; }
+    bar = bar.padEnd(W, ' ');
+    const el = 39 * (pct / 98), lf = Math.max(0, 39 - el);
+    const f = (s) => String(Math.floor(s / 60)).padStart(2, '0') + ':' + String(Math.round(s % 60)).padStart(2, '0');
+    return `${bar} ${Math.round(pct)}%  ${f(el)} elapsed · ~${f(lf)} left`;
+  }
+
+  function render(model, animate) {
+    screen.innerHTML = '';
+    const lines = HEAD.concat(model === 'ok' ? TAIL_OK : TAIL_BAD);
+    const nodes = lines.map(([cls, val]) => {
+      const el = document.createElement('span');
+      el.className = 'ln ' + (cls === 'blank' ? 'dim' : cls === 'progress' ? 'dim' : cls === 'score' || cls === 'thead' || cls === 'notes' ? 'fg' : cls);
+      if (cls === 'score')         el.innerHTML = scoreRow(val);
+      else if (cls === 'thead')    el.innerHTML = theadRow();
+      else if (cls === 'notes')    el.innerHTML = notesRow(val);
+      else if (cls === 'ep')       el.innerHTML = `<span class="mag" style="font-weight:600">${esc(val)}</span>`;
+      else if (cls === 'progress') el.textContent = barFrame(animate ? 0 : 98);
+      else if (cls === 'blank')    el.textContent = ' ';
+      else el.textContent = val;
+      if (animate) el.classList.add('hidden');
+      screen.appendChild(el);
+      return { el, cls };
+    });
+    const cur = document.createElement('span');
+    cur.className = 'cursor';
+    screen.appendChild(cur);
+
+    caption.innerHTML = model === 'ok' ? CAP_OK : CAP_BAD;
+    screen.scrollTop = 0; // keep pinned to top so the scores stay visible
+
+    if (!animate) return;
+    let i = 0;
+    (function step() {
+      if (i >= nodes.length) { screen.scrollTop = 0; return; }
+      const n = nodes[i];
+      n.el.classList.remove('hidden');
+      screen.scrollTop = 0;
+
+      if (n.cls === 'progress') {
+        let pct = 0;
+        const iv = setInterval(() => {
+          pct += Math.max(3.2, (98 - pct) * 0.16);
+          if (pct >= 98) {
+            n.el.textContent = barFrame(98);
+            clearInterval(iv);
+            i++;
+            setTimeout(step, 150);
+          } else {
+            n.el.textContent = barFrame(pct);
+          }
+        }, 45);
+        return;
+      }
+
+      const delay = /score|thead/.test(n.cls) ? 52 : /blank/.test(n.cls) ? 28 : 76;
+      i++;
+      setTimeout(step, delay);
+    })();
+  }
+
+  function select(model) {
+    const ok = model === 'ok';
+    btnOk.setAttribute('aria-pressed', String(ok));
+    btnBad.setAttribute('aria-pressed', String(!ok));
+    render(model, false);
+  }
+
+  btnOk.addEventListener('click', () => select('ok'));
+  btnBad.addEventListener('click', () => select('bad'));
+
+  render('ok', !reduce);
+})();
+</script>

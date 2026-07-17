@@ -2,12 +2,17 @@
 layout: post
 title: "So I've hacked Paxel as part of my YC Startup School 26' application"
 date: 2026-07-11
+hidden: true
 ---
+__Update:__ <i>I've since rewritten this into a cleaner, complete writeup post-patch with a reply from YC too! — <a href="/jotbook/2026/07/18/how-i-got-into-yc-by-hacking-it.html">How I got into YC by hacking it</a>.</i>
+
+<hr style="border:none;border-top:3px dotted #c2255c;margin-top:4px;" />
+
 i've hacked paxel. this is a public disclosure in real-time.
 
 and along with this i'm [publishing a tool](https://paxel.obaid.wtf/) (working until YC patches it) anyone in the world can use to upload to YC's servers that they are top 1% of builders in the world
 
-and for YC i've indicated some basic cryptography that is missing and can be used to patch this
+and for YC i've indicated some basic cryptography that was missing and can be used to patch this
 
 <div style="text-align:center;margin:2.5rem 0;color:#999;">— &nbsp; — &nbsp; —</div>
 
