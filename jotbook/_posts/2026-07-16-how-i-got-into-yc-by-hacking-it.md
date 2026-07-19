@@ -29,6 +29,8 @@ I should run a script, a very easy-to-use cURL one-liner that installed somethin
 
 But I wanted to know exactly *how* it did that, and when my curiosity starts creeping into obsessive territory it's basically a toss-up that either ends in a legendary crash-out or doing something great. thankfully, in this case it was the latter.
 
+I also can't lie: I really wanted (or needed) to hack it. I knew I was starting from a disadvantage when filling out my application (no formal, ivy league education), but I knew this would be a fast-track, surefire way into confirming my acceptance. I'm not delulu, I knew it would be insane if I was able to do it, but why not go all in?
+
 Based on Paxel's own site, **1.2 million+ coders** have so far uploaded their reports to YC. And seeing those numbers it's honestly shocking I was the first person in the world to figure and break all of this.
 
 <div style="text-align:center;margin:2.5rem 0;color:#999;">— &nbsp; — &nbsp; —</div>
