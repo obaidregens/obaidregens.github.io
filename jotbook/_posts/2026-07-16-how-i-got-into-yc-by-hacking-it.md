@@ -3,7 +3,7 @@ layout: post
 title: "How I got into YC by hacking it"
 date: 2026-07-18
 ---
-**tldr:** Y Combinator was quietly scoring 100k+ founders around the world through Paxel, I broke and uncovered it (possible easter egg) + found a vulnerability that let anyone forge and push any score to their ranking database, courtesy of an unvalidated hmac
+**tldr:** I uncovered Y Combinator was scoring 100k+ founders around the world through Paxel, I broke it (possible easter egg) + found a vulnerability that let anyone forge and push any score to their ranking database, courtesy of an unvalidated hmac
 
 **Latest update:** YC admirably, didn't mind. In just a couple hours after first-public-disclosure Jared Friedman himself replied, announced the patch, and invited me to attend the Startup School in SF this summer!
 I'd also disclosed it in private through email 12 days earlier to no response. But publicly at least the process works.
@@ -27,15 +27,15 @@ I should run a script, a very easy-to-use cURL one-liner that installed somethin
 
 [Paxel's main site](https://paxel.ycombinator.com/) tells me the main feature is I get to "visualize" my work and get assigned fun attributes like "Which archetype are you?" and "What's your biggest crashout?" That sounded fun.
 
-But I wanted to know exactly *how* it did that, and when my curiosity starts creeping into obsessive territory it's a toss-up between whether it will end with a crash-out or discovering something great. In this case it was the latter.
+But I wanted to know exactly *how* it did that, and when my curiosity starts creeping into obsessive territory it's basically a toss-up that either ends in a legendary crash-out or doing something great. thankfully, in this case it was the latter.
 
-Based on Paxel's own site, **1.2 million+ coders** have so far uploaded their reports to YC. And seeing those numbers it's honestly shocking I was the first person to figure and break all of this.
+Based on Paxel's own site, **1.2 million+ coders** have so far uploaded their reports to YC. And seeing those numbers it's honestly shocking I was the first person in the world to figure and break all of this.
 
 <div style="text-align:center;margin:2.5rem 0;color:#999;">— &nbsp; — &nbsp; —</div>
 
-*As a side note* before I get into it, I think the relative achievement of a "hack" in the world has diminished manyfold since agent-capable LLMs have arrived. That of course, pars with reality because of how much easier LLMs have made doing those. But I do think that ease is somewhat overestimated, both because of the many strange blindspots they have as well as the lack of a certain "hacking" or combative approach to intelligence. Whether that's because of safety-neutering or simply the way they're trained is a discussion for another time.
+> *As a side note* before I get into it, I think the relative achievement of a "hack" in the world has diminished manyfold since agent-capable LLMs have arrived. That of course, pars with reality because of how much easier LLMs have made doing those. But I do think that ease is somewhat overestimated, both because of the many strange blindspots they have as well as the lack of a certain "hacking" or combative approach to intelligence. Whether that's because of safety-neutering or simply the way they're trained is a discussion for another time.
 
-So although what they're world-changing at is helping you go through the same material in 10x, and sometimes 50x less time (research, investigation), it is often a struggle to communicate with LLMs and keep your own mind sharp and independent when LLMs insist everything hackable is not — with near-perfectly plausible logic.
+> So although what they're world-changing at is helping you go through the same material in 10x, and sometimes 50x less time (research, investigation), it is often a struggle to communicate with LLMs and keep your own mind sharp and independent when LLMs insist everything hackable is not — with near-perfectly plausible logic.
 
 <div style="text-align:center;margin:2.5rem 0;color:#999;">— &nbsp; — &nbsp; —</div>
 
