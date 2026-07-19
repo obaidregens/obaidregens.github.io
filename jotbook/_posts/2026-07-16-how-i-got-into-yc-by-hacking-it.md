@@ -2,6 +2,11 @@
 layout: post
 title: "How I got into YC by hacking it"
 date: 2026-07-18
+image:
+  path: /assets/yc-post-og.png
+  width: 1200
+  height: 630
+  alt: "Tweet from Jared Friedman (@snowmaker): Impressive hacking! Sorry for all the hopefuls out there, but we have patched the bug :). Obaid - thanks for reporting the issue. Look forward to seeing you at Startup School in SF in two weeks!"
 ---
 **tldr:** I uncovered Y Combinator was scoring 100k+ founders around the world through Paxel, I broke it (possible easter egg) + found a vulnerability that let anyone forge and push any score to their ranking database, courtesy of an unvalidated hmac
 
