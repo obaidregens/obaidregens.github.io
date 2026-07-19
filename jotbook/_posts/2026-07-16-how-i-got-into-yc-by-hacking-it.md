@@ -3,9 +3,9 @@ layout: post
 title: "How I got into YC by hacking it"
 date: 2026-07-18
 ---
-**tldr:** Y Combinator was quietly scoring 100k+ founders around the world through Paxel, I uncovered it (possible easter egg) + found a vulnerability left open that let me forge any score, courtesy of an unvalidated hmac
+**tldr:** Y Combinator was quietly scoring 100k+ founders around the world through Paxel, I broke and uncovered it (possible easter egg) + found a vulnerability that let anyone forge and push any score to their ranking database, courtesy of an unvalidated hmac
 
-**Latest update:** YC admirably, didn't mind, and instead appreciated it. Jared himself replied, acknowledged the hack, and invited me to attend the Startup School in SF this summer!
+**Latest update:** YC admirably, didn't mind. In just a couple hours after first-public-disclosure Jared Friedman himself replied, announced the patch, and invited me to attend the Startup School in SF this summer!
 I'd also disclosed it in private through email 12 days earlier to no response. But publicly at least the process works.
 
 <style>
@@ -21,21 +21,21 @@ this is a re-write of an [earlier draft](/jotbook/2026/07/11/yc-startup-school-2
 
 <div style="text-align:center;margin:2.5rem 0;color:#999;">— &nbsp; — &nbsp; —</div>
 
-It all started early June, when I found the application form for Startup School 26' (referred by Dhanush, shoutout: Audora S26: incredible stuff coming!!). I found that this year, YC wanted me to use something called *Paxel* on my computer as part of the application.
+It all started early June, when I found the application form for Startup School 26' (referred by Dhanush: shoutout Audora S26, incredible stuff coming!!). I found that this year, YC wanted me to use something called *Paxel* on my computer as part of the application.
 
-I should run a script, a very easy-to-use cURL one-liner that installed something on my computer, scanned every line of code I've ever written with a coding agent and uploaded a report to YC's servers.
+I should run a script, a very easy-to-use cURL one-liner that installed something on my computer and analyzed every line of code I've written with a coding agent, compile a report, and upload it to YC's servers.
 
-Paxel's main site tells me the main feature is I get to "visualize" my work and get assigned fun attributes like "Which archetype are you?" and "What's your biggest crashout?" That sounded fun.
+[Paxel's main site](https://paxel.ycombinator.com/) tells me the main feature is I get to "visualize" my work and get assigned fun attributes like "Which archetype are you?" and "What's your biggest crashout?" That sounded fun.
 
-But sometimes, my curiosity starts creeping into obsessive territory. And there are plenty of times where that doesn't end up well for me. But this, was not one of those cases. So even though the tool was from YC, I needed to know *exactly* what it did first.
+But I wanted to know exactly *how* it did that, and when my curiosity starts creeping into obsessive territory it's a toss-up between whether it will end with a crash-out or discovering something great. In this case it was the latter.
 
-Based on Paxel's own site, 1.2 million+ coders have so far uploaded their reports to YC. And seeing those numbers it's honestly shocking I'm the first person to discover and break all of this.
+Based on Paxel's own site, **1.2 million+ coders** have so far uploaded their reports to YC. And seeing those numbers it's honestly shocking I was the first person to figure and break all of this.
 
 <div style="text-align:center;margin:2.5rem 0;color:#999;">— &nbsp; — &nbsp; —</div>
 
 *As a side note* before I get into it, I think the relative achievement of a "hack" in the world has diminished manyfold since agent-capable LLMs have arrived. That of course, pars with reality because of how much easier LLMs have made doing those. But I do think that ease is somewhat overestimated, both because of the many strange blindspots they have as well as the lack of a certain "hacking" or combative approach to intelligence. Whether that's because of safety-neutering or simply the way they're trained is a discussion for another time.
 
-So although what they're world-changing at is helping you go through the same material in 10x, and sometimes 50x less time, it is often a struggle to communicate with LLMs and keep your own mind sharp and independent when LLMs insist everything hackable is not — with near-perfectly plausible logic.
+So although what they're world-changing at is helping you go through the same material in 10x, and sometimes 50x less time (research, investigation), it is often a struggle to communicate with LLMs and keep your own mind sharp and independent when LLMs insist everything hackable is not — with near-perfectly plausible logic.
 
 <div style="text-align:center;margin:2.5rem 0;color:#999;">— &nbsp; — &nbsp; —</div>
 
@@ -60,7 +60,7 @@ execution_leverage | steering | engineering_quality | product_thinking | plannin
 
 **These are the core 5 axes** the LLM grades you on and assigns a score between 1-10 with free-text notes.
 
-And this, is also where I found the most gaping vulnerability. See, this program is a very good example of a decentralized app (not everything has be to ran and consolidated on a proprietary server).
+And this, is also where I found the most gaping vulnerability. See, this program is a very good example of a distributed/decentralized app (not everything has be to ran and consolidated on a proprietary server).
 
 But the thing about decentralized apps is they rely heavily on some very basic functions of cryptography. And this pipeline lacked a very, very important one.
 
@@ -101,16 +101,16 @@ two functions of basic cryptography were missing.
 
 <div style="text-align:center;margin:-0.6rem 0 2rem;"><span class="caption-note">blue+green fields need to be signed in the hash. green fields sealed and encrypted as well</span></div>
 
-We could categorize all the fields accepted by /v1/results into 3 categories (two being important, one other), as visualized above.
+We could categorize all the fields accepted by /v1/results into 3 categories (two being important, one covering all others), as visualized above.
 
-**1) fields that are passed** near-verbatim from LLM ─▶ /v1/results (green+blue-highlighted in the graphic above), these should have all been rolled and hashed together into the nonce as an hmac. Nonces were already validated, and this would make sure each nonce was actually tied to the LLM payload.
+**1) fields that are passed** near-verbatim from LLM ─▶ /v1/results (green+blue-highlighted in the graphic above), these should have all been rolled and hashed together into the nonce as an hmac. Nonces were already validated, and this would make sure each nonce was actually tied to the LLM's responses.
 
 `nonce = hmac(request_id)`
 ─▶ `nonce = hmac(request_id + scores.steering + scores.product_thinking + ... + title)`
 
 and this is actually the patch YC did deliver and announce, pretty much exactly as I suggested in the [original draft](/jotbook/2026/07/11/yc-startup-school-26-application-i-hacked-paxel.html).
 
-**2) fields that are** (1) passed near-verbatim from the LLM ─▶ /v1/results AND (2) also never used within the client. A subset of the fields above (green-highlighted in the diagram), these should be encrypted with a key (symmetric or asymmetric) only the servers possess so the client can't see details like the 5-axes scoring, episode title, and notes.
+**2) that are** (1) passed near-verbatim from the LLM ─▶ /v1/results AND (2) also never used within the client. A subset of the fields above (green-highlighted in the diagram), these should be encrypted with any AEAD cipher (or asymmetric pub/priv keys) only the servers possess and share so the client can't see details like the 5-axes scoring, episode title, and notes.
 
 This one is optional and is essentially obscurity, but if it had been done from the start, I could have never known what to sniff, what to change, and it would have covered the most serious of impacts from the first vulnerability —
 
@@ -120,4 +120,4 @@ It's possible that this entire "vulnerability" was a secret easter egg to find o
 
 Now, since Jared's reply this has obviously been patched but my tool is still helpful in showing you your raw scores! Feel free to [check it out](https://paxel.obaid.wtf/).
 
-If you'll be in SF next week around the Startup School dates feel free to reach out on LinkedIn or Twitter. If you give me a tip for places or events where I will find my next co-founder to make something world-changing with — we'll be friends.
+if you'll also be in SF next week (21 jul - 6th aug) around the Startup School dates feel free to reach on Linkedin or Twitter with a tip for places, events, or people  where i can find my next co-founder to build something timeline-changing with — and we can connect.
