@@ -22,7 +22,3 @@ data/thread.json
 
 # superseded by data/startup-school-2026-events.json
 /startup-school-2026-events.md
-
-# only the ycweek build script is tracked; the rest are local scaffolding
-scripts/*
-!scripts/build-ycweek.ts
