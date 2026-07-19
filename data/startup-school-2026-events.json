@@ -9,7 +9,7 @@
     "rule": "YC allows signup for only ONE official after-party per day.",
     "lastUpdated": "2026-07-19",
     "sources": [
-      "events.ycombinator.com/startup-school-2026 (logged-in attendee page)",
+      "events.ycombinator.com/startup-school-2026",
       "startupschoolafter.party"
     ],
     "vibes": {
@@ -19,10 +19,9 @@
       "party": "Drinks, music, DJs, late night"
     },
     "sourceKeys": {
-      "yc-official": "events.ycombinator.com/startup-school-2026 (logged-in attendee page)",
+      "yc-official": "events.ycombinator.com/startup-school-2026",
       "afterparty-site": "startupschoolafter.party",
-      "linkedin": "Host announcement post on LinkedIn (verified manually)",
-      "discord": "YC Startup School 2026 Discord (#meetups)",
+      "linkedin": "Host announcement post on LinkedIn",
       "host-site": "Confirmed on the host organisation's own website"
     }
   },
@@ -1344,7 +1343,7 @@
         "networking"
       ],
       "access": "open",
-      "description": "An AI infrastructure meetup for engineers, researchers and builders working on GPUs, training and inference. Not a Startup School event, but recommended in the Startup School Discord as the thing to do the night before things kick off.",
+      "description": "An AI infrastructure meetup for engineers, researchers and builders working on GPUs, training and inference. Not a Startup School event, but a strong option the night before things kick off.",
       "image": null,
       "url": "https://luma.com/rxsn0u0h",
       "links": [
@@ -1352,15 +1351,47 @@
           "url": "https://luma.com/rxsn0u0h",
           "type": "luma",
           "foundOn": [
-            "discord"
+            "host-site"
           ]
         }
       ],
       "foundOn": [
-        "discord"
+        "host-site"
       ],
-      "note": "Not Startup School branded — its page never mentions YC. Surfaced in the SUS Discord #meetups channel in reply to someone asking what to do in SF before Startup School.",
-      "tagline": "Not a Startup School event — the Discord just rates it."
+      "note": "Not Startup School branded — its page never mentions YC.",
+      "tagline": "Not a Startup School event, but worth the trip."
+    },
+    {
+      "id": "healthday",
+      "title": "YC Health Day — Terra API, Nucleus, HYBRD & Hundred",
+      "host": "Terra API (YC21) x HYBRD (YC24) x Nucleus Genomics x Hundred Health",
+      "official": false,
+      "day": "Friday",
+      "date": "2026-07-24",
+      "start": "10:30",
+      "end": "14:00",
+      "venue": "Bay Padel Dogpatch, 1070 Maryland St",
+      "vibe": [
+        "chill",
+        "networking"
+      ],
+      "access": "open",
+      "description": "A padel tournament with a professional coach and prizes, a HYBRD training session, then sauna, cold plunge and lunch. Hosted by Terra API (YC21), with founders from HYBRD, Nucleus Genomics, Lotus AI and Hundred Health pulling up.",
+      "url": "https://partiful.com/e/4YEzGn5bZB7vnp1fSrWx",
+      "image": "https://partiful.imgix.net/external/user/z7qL0lPXdualcSw6eUKmw83jgJu2/5WWGZdhOFnUkesDAAfhsD?w=1000&h=1000&fit=clip",
+      "links": [
+        {
+          "url": "https://partiful.com/e/4YEzGn5bZB7vnp1fSrWx",
+          "type": "partiful",
+          "foundOn": [
+            "host-site"
+          ]
+        }
+      ],
+      "foundOn": [
+        "host-site"
+      ],
+      "tagline": "Padel, a workout and a cold plunge before the keynotes start."
     }
   ]
 }
