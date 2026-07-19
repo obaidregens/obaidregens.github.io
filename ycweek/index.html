@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Every event around YC Startup School 2026</title>
+<meta name="description" content="All 40 events happening around YC Startup School 2026 in SF, July 21–27.">
+<meta property="og:title" content="Every event around YC Startup School 2026">
+<meta property="og:description" content="All 40 events around YC Startup School 2026 in SF, including the 17 official afterparties.">
+<meta property="og:url" content="https://obaid.wtf/ycweek">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<script async src="https://analytics.vibecheck-bot.com/js/pa-6zzIV3E5TRGxMKJb4LEAD.js"></script>
+<script>window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)}</script>
+<style>
+:root{
+  --bg:#fff; --ink:#141310; --dim:#8b867c; --rule:#eae7df;
+  --y:#ffc33a; --y-deep:#8a6100;
+  --f:"Instrument Sans",-apple-system,BlinkMacSystemFont,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--f);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+
+header{padding:64px 0 0;display:flex;align-items:flex-start;gap:28px}
+.headtext{flex:1;min-width:0}
+.intro{font-size:19px;line-height:1.45;max-width:44ch}
+
+/* "made by" sticker */
+.xcard{flex-shrink:0;display:block;text-decoration:none;color:inherit;position:relative;
+  background:#fffdf6;border:1px solid var(--rule);border-radius:10px;padding:10px 14px 11px;
+  transform:rotate(-1.6deg);transition:transform .22s cubic-bezier(.2,.8,.3,1),box-shadow .22s;
+  box-shadow:2px 3px 0 rgba(20,19,16,.06)}
+.xcard:hover{transform:rotate(0deg) translateY(-1px);box-shadow:3px 5px 0 var(--y)}
+.xcard::before{content:"made by";position:absolute;top:-8px;left:12px;background:var(--y);
+  font-size:9.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+  padding:2px 7px;border-radius:100px;color:var(--ink)}
+.xrow{display:flex;align-items:center;gap:10px;margin-top:3px}
+.xcard img{width:38px;height:38px;border-radius:50%;flex-shrink:0}
+.xcard .who{line-height:1.25}
+.xcard .nm{font-size:15px;font-weight:600;display:flex;align-items:center;gap:5px}
+.xcard .nm svg{width:10px;height:10px;fill:currentColor;opacity:.5}
+.xcard .hd{font-size:12px;color:var(--dim)}
+.xcard .fl{display:block;margin-top:9px;text-align:center;font-size:11.5px;font-weight:600;
+  background:var(--y);color:var(--ink);border-radius:6px;padding:5px 0;letter-spacing:.02em}
+.intro b{font-weight:600;-webkit-box-decoration-break:clone;box-decoration-break:clone;
+  background-image:linear-gradient(var(--y),var(--y));background-repeat:no-repeat;
+  background-position:0 88%;background-size:100% .45em}
+.meta{margin-top:12px;font-size:13px;color:var(--dim)}
+
+.filters{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);padding:14px 0 12px;border-bottom:1px solid var(--rule);margin-top:28px}
+.frow{display:flex;flex-wrap:wrap;gap:5px;align-items:center}
+.frow+.frow{margin-top:6px}
+button.pill{font-family:var(--f);font-size:12.5px;color:var(--dim);background:transparent;border:1px solid var(--rule);border-radius:100px;padding:5px 12px;cursor:pointer;transition:.15s}
+button.pill:hover{border-color:var(--ink);color:var(--ink)}
+button.pill[aria-pressed="true"]{background:var(--y);border-color:var(--y);color:var(--ink);font-weight:600}
+button.pill[data-vibe]{font-weight:600}
+button.pill[data-vibe]:hover{border-color:currentColor}
+button.pill[data-vibe][aria-pressed="true"]{color:var(--ink)}
+button.pill[data-vibe="tech"][aria-pressed="true"]{background:#d7f5ee;border-color:#2bb597}
+button.pill[data-vibe="chill"][aria-pressed="true"]{background:#e2e9fb;border-color:#6f8ee0}
+button.pill[data-vibe="party"][aria-pressed="true"]{background:#fde3dd;border-color:#e8492a}
+.count{margin-left:auto;font-size:12.5px;color:var(--dim);font-variant-numeric:tabular-nums}
+
+.day{margin-top:44px}
+.dayhead{display:flex;align-items:baseline;gap:10px;margin-bottom:4px}
+.daynum{font-size:34px;font-weight:600;line-height:1;color:var(--y);font-variant-numeric:tabular-nums}
+.dayname{font-size:19px;font-weight:600}
+.daycount{margin-left:auto;font-size:12.5px;color:var(--dim);font-variant-numeric:tabular-nums}
+
+.ev{border-top:1px solid var(--rule)}
+.ev summary{display:grid;grid-template-columns:62px 132px 1fr auto;gap:16px;align-items:center;padding:15px 0;cursor:pointer;list-style:none}
+.ev summary::-webkit-details-marker{display:none}
+/* per-line highlight: background gradient + clone, so wrapped titles
+   underline each line rather than drawing one bar across the whole box */
+.ev summary:hover .name{background-size:100% .38em}
+.time{font-size:12.5px;color:var(--dim);font-variant-numeric:tabular-nums}
+/* 800x420 is the native Luma card size — match it instead of cropping to a square */
+.thumb{width:132px;aspect-ratio:800/420;object-fit:cover;border-radius:4px;background:#f3f1ea;
+  display:block;transition:transform .2s ease,box-shadow .2s ease}
+.ev summary:hover .thumb{transform:scale(1.04);box-shadow:0 3px 12px rgba(20,19,16,.16)}
+.noimg{width:132px;aspect-ratio:800/420;border-radius:4px;background:var(--y);display:flex;
+  align-items:center;justify-content:center;font-size:22px;font-weight:600;color:rgba(0,0,0,.4)}
+/* full-bleed image once a row is expanded */
+.detail .hero{display:block;width:100%;max-width:420px;border-radius:6px;margin-bottom:14px}
+.name{display:inline;font-size:16px;font-weight:500;line-height:1.45;
+  -webkit-box-decoration-break:clone;box-decoration-break:clone;
+  background-image:linear-gradient(var(--y),var(--y));
+  background-repeat:no-repeat;background-position:0 90%;background-size:0 .38em;
+  transition:background-size .18s ease}
+.tagline{display:block;font-size:13.5px;color:#5f5a51;margin-top:3px;line-height:1.35}
+.where{display:block;font-size:12px;color:var(--dim);margin-top:3px;line-height:1.3}
+.where .hostn{color:#6d675d;font-weight:500}
+.where .dim{color:#b0aba0;font-weight:400}
+.where .dot-sep{margin:0 5px;color:#cfcabe}
+.badges{display:flex;gap:6px;align-items:center;flex-shrink:0}
+/* bright = fills/dots, deep = text on white (contrast-safe) */
+.dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.dot.networking{background:var(--y)}
+.dot.tech{background:#2bb597}
+.dot.chill{background:#6f8ee0}
+.dot.party{background:#e8492a}
+.vibes-in{font-size:11.5px;font-weight:600;white-space:nowrap;letter-spacing:.01em}
+.vibes-in .sep{color:#c9c4b8;font-weight:400}
+.v-networking{color:#8a6100}
+.v-tech{color:#12796a}
+.v-chill{color:#4257a8}
+.v-party{color:#bf3418}
+.mini{font-size:10.5px;padding:2px 7px;border-radius:100px;white-space:nowrap;font-weight:500}
+.mini.official{background:var(--y);color:var(--ink)}
+.mini.soldout{background:#f3f1ea;color:#9a9186;text-decoration:line-through}
+.mini.aud{border:1px solid var(--rule);color:var(--dim)}
+
+.detail{padding:0 0 16px 132px;font-size:14px;color:#5f5a51;line-height:1.6}
+.detail .note{margin-top:8px;padding-left:12px;border-left:3px solid var(--y);color:var(--ink);font-size:13.5px}
+.detail .who{margin-top:9px;font-size:12.5px;color:var(--dim)}
+.linkrow{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:13px}
+.detail .go{font-size:13px;font-weight:600;color:var(--ink);text-decoration:none;box-shadow:inset 0 -.4em 0 var(--y)}
+.detail .go:hover{box-shadow:inset 0 -1.1em 0 var(--y)}
+.alsolbl{font-size:11.5px;color:#b8b3a7;margin-left:4px}
+.src{font-size:11.5px;color:var(--dim);text-decoration:none;border:1px solid var(--rule);border-radius:100px;padding:3px 9px;transition:.15s;white-space:nowrap}
+.src:hover{border-color:var(--ink);color:var(--ink)}
+
+/* repeat of the sticker, after the list */
+.endcap{display:flex;justify-content:center;margin-top:64px}
+.endcap .xcard{transform:rotate(1.4deg);min-width:210px;text-align:left}
+.endcap .xcard:hover{transform:rotate(0deg) translateY(-1px)}
+.endcap .xcard::before{content:"made by";left:auto;right:12px}
+
+.empty{padding:56px 0;text-align:center;color:var(--dim);font-size:13.5px}
+footer{margin-top:64px;padding:22px 0 56px;border-top:3px solid var(--y);font-size:12.5px;color:var(--dim);line-height:1.85}
+footer a{color:var(--y-deep)}
+
+@media(max-width:640px){
+  header{padding:40px 0 0;flex-direction:column-reverse;align-items:flex-start;gap:18px}
+  .xcard{padding:5px 12px 5px 5px}
+  .xcard img{width:30px;height:30px}
+  .intro{font-size:17px}
+  .ev summary{grid-template-columns:104px 1fr;gap:12px;align-items:start}
+  .time{grid-column:1;grid-row:1;padding-top:2px}
+  .thumb,.noimg{grid-column:1;grid-row:2;width:104px}
+  .ev summary > span:nth-of-type(2){grid-column:2;grid-row:1/span 2}
+  .badges{grid-column:2;justify-content:flex-start;margin-top:4px}
+  .detail{padding-left:0}
+  .detail .hero{max-width:100%}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="headtext">
+    <p class="intro">Every event around <b>YC Startup School 2026</b>. San Francisco, July 21–27.</p>
+    <p class="meta">40 events · 17 official · tap any for details</p>
+  </div>
+  <a class="xcard" href="https://x.com/wtfobaid" target="_blank" rel="noopener" aria-label="made by obaid — follow @wtfobaid on X">
+    <span class="xrow">
+      <img src="/assets/ycweek/wtfobaid.jpg" alt="" width="38" height="38" loading="lazy">
+      <span class="who">
+        <span class="nm">obaid <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 1.2h3.7l-8 9.1 9.4 12.5h-7.4l-5.8-7.6-6.6 7.6H.5l8.6-9.8L0 1.2h7.6l5.2 6.9 6.1-6.9Zm-1.3 19.4h2L6.5 3.3H4.4l13.2 17.3Z"/></svg></span>
+        <span class="hd">@wtfobaid</span>
+      </span>
+    </span>
+    <span class="fl">follow for updates</span>
+  </a>
+</header>
+
+<div class="filters">
+  <div class="frow">
+    <button class="pill" data-day="all" aria-pressed="true">all days</button>
+    <button class="pill" data-day="2026-07-21" aria-pressed="false">Tue 21</button>
+    <button class="pill" data-day="2026-07-22" aria-pressed="false">Wed 22</button>
+    <button class="pill" data-day="2026-07-23" aria-pressed="false">Thu 23</button>
+    <button class="pill" data-day="2026-07-24" aria-pressed="false">Fri 24</button>
+    <button class="pill" data-day="2026-07-25" aria-pressed="false">Sat 25</button>
+    <button class="pill" data-day="2026-07-26" aria-pressed="false">Sun 26</button>
+    <button class="pill" data-day="2026-07-27" aria-pressed="false">Mon 27</button>
+    <span class="count" id="count"></span>
+  </div>
+  <div class="frow">
+    <button class="pill" data-vibe="all" aria-pressed="true">all vibes</button>
+    <button class="pill v-networking" data-vibe="networking" aria-pressed="false">networking</button>
+    <button class="pill v-tech" data-vibe="tech" aria-pressed="false">tech</button>
+    <button class="pill v-chill" data-vibe="chill" aria-pressed="false">chill</button>
+    <button class="pill v-party" data-vibe="party" aria-pressed="false">party</button>
+    <button class="pill" data-only="official" aria-pressed="false">official only</button>
+  </div>
+</div>
+
+<main id="list"></main>
+
+<div class="endcap">
+  <a class="xcard" href="https://x.com/wtfobaid" target="_blank" rel="noopener" aria-label="made by obaid — follow @wtfobaid on X">
+    <span class="xrow">
+      <img src="/assets/ycweek/wtfobaid.jpg" alt="" width="38" height="38" loading="lazy">
+      <span class="who">
+        <span class="nm">obaid <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 1.2h3.7l-8 9.1 9.4 12.5h-7.4l-5.8-7.6-6.6 7.6H.5l8.6-9.8L0 1.2h7.6l5.2 6.9 6.1-6.9Zm-1.3 19.4h2L6.5 3.3H4.4l13.2 17.3Z"/></svg></span>
+        <span class="hd">@wtfobaid</span>
+      </span>
+    </span>
+    <span class="fl">follow me for more</span>
+  </a>
+</div>
+
+<footer>
+  <div>Updated 2026-07-19 · times PT · not affiliated with YC · confirm with the host</div>
+  <div style="margin-top:10px">missing something? <a href="https://x.com/wtfobaid">dm</a> or <a href="mailto:me@obaid.wtf?subject=YC%20Week%20%E2%80%94%20missing%20event">email me</a></div>
+</footer>
+
+</div>
+
+<script>
+const EVENTS = [{"id":"cocktail","t":"Founders & Investors Cocktail Hours","h":"Alime x Bond AI","d":"2026-07-23","s":"15:00","e":"18:00","v":"San Francisco, CA (private location, revealed on approval)","vibe":["networking"],"a":"open","o":false,"desc":"A pre-gathering ahead of YC Startup School 2026 for ambitious technical builders, founders, and investors arriving in San Francisco.","url":"https://luma.com/axd56nxv","img":"/assets/startup-school-2026/02-cocktail.png","note":null,"aud":null,"tag":"First thing on the calendar all week. Address revealed on approval.","links":[{"u":"https://luma.com/axd56nxv","k":"luma"}]},{"id":"gokart","t":"Photon GoKart Rally @ YC Startup School","h":"Photon x Julie Chen x Daniel Tian x Ryan Zhu x Patrick Ruan","d":"2026-07-24","s":"10:00","e":"17:00","v":"Fisherman's Wharf, 505 Beach St","vibe":["chill","networking"],"a":"open","o":false,"desc":"A 40-GoCar convoy through San Francisco with photo stops at city landmarks and a finish-line hangout with drinks and merch. Pitched as the antidote to rooftop-and-nametag events.","url":"https://luma.com/ueokvzdw","img":"/assets/startup-school-2026/04-gokart.png","note":null,"aud":null,"tag":"A 40-car convoy past the landmarks, finishing with drinks and merch.","links":[{"u":"https://luma.com/ueokvzdw","k":"luma"}]},{"id":"hackathon","t":"YC Startup School Hackathon","h":"The Hackathon Company of California x Mason Arditi","d":"2026-07-24","s":"10:00","e":"22:00","v":"San Francisco (revealed on approval)","vibe":["tech"],"a":"open","o":false,"desc":"One-day hackathon for technical students, billed as the highest-signal hackathon of Startup School week. Sponsors include Cursor, Linq, Terac (ZF 2025), and Dynamic.","url":"https://luma.com/dpp4ulna","img":"/assets/startup-school-2026/05-hackathon.png","note":null,"aud":null,"tag":"Cursor and Dynamic sponsoring. Built for student engineers.","links":[{"u":"https://luma.com/dpp4ulna","k":"luma"}]},{"id":"picnic","t":"2nd Annual YCombinator Startup School Picnic","h":"Ethan Yip x Unicorner x friends","d":"2026-07-24","s":"14:00","e":"15:30","v":"Golden Gate Park","vibe":["chill"],"a":"open","o":false,"desc":"Casual afternoon picnic with food and merch. Register on Luma to get food and swag.","url":"https://luma.com/6vko8q90","img":"/assets/startup-school-2026/06-picnic.png","note":null,"aud":null,"tag":"Register on Luma or you don't get the food and merch.","links":[{"u":"https://luma.com/6vko8q90","k":"luma"}]},{"id":"emergence","t":"Emergence Capital YC Startup School Mixer","h":"Emergence Capital x George Kunthara","d":"2026-07-24","s":"15:00","e":"18:00","v":"Pier 5, Embarcadero","vibe":["networking"],"a":"open","o":false,"desc":"Mixer at the Emergence Capital office before Startup School officially begins, with food, drinks, and investors from the firm's AI ecosystem.","url":"https://luma.com/2ev1tu8a","img":"/assets/startup-school-2026/07-emergence.png","note":null,"aud":null,"tag":"Their AI portfolio companies in the room, before anything official starts.","links":[{"u":"https://luma.com/2ev1tu8a","k":"luma"}]},{"id":"betafund","t":"YC Startup School Founder & Investor Mixer","h":"Beta Fund x Rednote Venture x Llama Venture","d":"2026-07-24","s":"18:00","e":"21:00","v":"Downtown SF penthouse (revealed on approval)","vibe":["networking"],"a":"open","o":false,"desc":"Intimate rooftop mixer the night Startup School kicks off, bringing together arriving founders and the investors backing them. Drinks and light bites above the fog.","url":"https://luma.com/beta-ugt5","img":"/assets/startup-school-2026/09-betafund.png","note":null,"aud":null,"tag":"They don't tell you the address until you're approved.","links":[{"u":"https://luma.com/beta-ugt5","k":"luma"}]},{"id":"compiled","t":"c0mpiled-11: Startup School Hackathon!","h":"c0mpiled x Transpose Platform x YC alumni","d":"2026-07-24","s":"18:00","e":"23:00","v":"Transpose Platform, 27 South Park Suite 100","vibe":["tech"],"a":"waitlist","o":false,"desc":"Evening build sprint with dinner, drinks, cash prizes, and YC alumni judges. Tracks inspired by YC's Summer 2026 requests for startups.","url":"https://luma.com/compiled-cp9o","img":"/assets/startup-school-2026/10-compiled.png","note":null,"aud":null,"tag":"Cash prizes, YC alumni judging, tracks pulled from YC's Summer RFS.","links":[{"u":"https://luma.com/compiled-cp9o","k":"luma"}]},{"id":"yacht","t":"Ship 2 Prod | YC AI SUS Black-Tie Yacht Gala","h":"Resonance x GMI Cloud x Ship 2 Prod","d":"2026-07-24","s":"19:00","e":"23:00","v":"Pier 40, Mission Bay (private yacht)","vibe":["party","networking"],"a":"open","o":false,"desc":"Curated invitation-only black-tie gala on a private yacht, for AI founders, engineers, researchers, and investors. Product demos and lightning pitches.","url":"https://luma.com/ojidqyj8","img":"/assets/startup-school-2026/11-yacht.png","note":null,"aud":null,"tag":"Product demos and lightning pitches, on the water.","links":[{"u":"https://luma.com/ojidqyj8","k":"luma"}]},{"id":"stripe","t":"Stripe presents: Made in San Francisco","h":"Stripe (S09)","d":"2026-07-25","s":"18:00","e":"21:00","v":"DrawBridge Presents, Embarcadero","vibe":["party"],"a":"sold-out","o":true,"desc":"After Day 1, Stripe invites Startup School attendees to unwind over food, drinks, and San Francisco stories.","url":"https://luma.com/xggm2di5","img":"/assets/startup-school-2026/12-stripe.png","note":null,"aud":null,"tag":"Day 1's biggest name — and it went in days.","links":[{"u":"https://luma.com/xggm2di5","k":"luma"}]},{"id":"dmodel","t":"d_model @ Startup School 2026","h":"d_model (S24)","d":"2026-07-25","s":"18:00","e":"20:00","v":"Spark Social SF, Mission Bay","vibe":["chill"],"a":"sold-out","o":true,"desc":"Evening at Spark Social SF with drinks, snacks, the d_model team, and a raffle for swag and gift cards. Bring a badge or confirmation email.","url":"https://luma.com/jz0h1t7q","img":"/assets/startup-school-2026/13-dmodel.png","note":null,"aud":null,"tag":"Badge or confirmation email at the door. Raffle for swag.","links":[{"u":"https://luma.com/jz0h1t7q","k":"luma"}]},{"id":"terra","t":"YC Health x AI Fireside: Vinod Khosla and Terra API","h":"Terra (W21)","d":"2026-07-25","s":"18:00","e":"21:00","v":"Studio by Tishman Speyer, 365 Toni Stone Xing, Mission Rock","vibe":["tech","networking"],"a":"open","o":true,"desc":"Fireside with Vinod Khosla on where AI takes healthcare, work, and human potential, followed by audience Q&A and dinner with the speakers. Exclusively for YC Startup School attendees.","url":"https://partiful.com/e/YU4mWYWpui1IVPAomO1c","img":"/assets/startup-school-2026/14-terra.jpg","note":"Partiful metadata reports 10:00 AM PDT, conflicting with the 6-9 PM listed elsewhere. Verify before attending.","aud":null,"tag":"Ask Khosla anything, then eat dinner with the speakers.","links":[{"u":"https://partiful.com/e/YU4mWYWpui1IVPAomO1c","k":"partiful"}]},{"id":"archil","t":"File Systems, Sandboxes, and the Irish Bank: YC @ Archil","h":"Archil (F24)","d":"2026-07-25","s":"18:00","e":"22:00","v":"The Irish Bank, near 445 Bush St, Union Square","vibe":["tech","party"],"a":"waitlist","o":true,"desc":"Drinks, music, and conversation about file systems and agent sandboxes, with Archil credits for attendees. RELOCATED from the original venue 50 feet down the street to the Irish Bank to fit more people.","url":"https://luma.com/chqmxhyg","img":"/assets/startup-school-2026/15-archil.png","note":"Renamed and relocated. Previously listed as 'File Systems, Sandboxes, and Sushi' at 445 Bush St.","aud":null,"tag":"Moved venue to fit more people. Free Archil credits for attendees.","links":[{"u":"https://luma.com/chqmxhyg","k":"luma"}]},{"id":"moss","t":"YC AI Startup School Afterparty","h":"Moss (F25), Supabase (S20), Modal, Render","d":"2026-07-25","s":"18:00","e":"22:00","v":"San Francisco (revealed on approval)","vibe":["networking","party"],"a":"open","o":true,"desc":"Food, drinks, giveaways, and a room of founders, engineers, researchers, and operators building the next wave of AI.","url":"https://luma.com/m4ez9liu","img":"/assets/startup-school-2026/16-moss.png","note":"Render is a co-host per the Luma page; earlier listings omitted them.","aud":null,"tag":"Four infra companies co-hosting — Supabase, Modal and Render included.","links":[{"u":"https://luma.com/m4ez9liu","k":"luma"}]},{"id":"respan","t":"YC Startup School After Party - Respan","h":"Respan (W24), MongoDB, Composio","d":"2026-07-25","s":"18:00","e":"22:00","v":"Mission Rock Resort, Mission Bay","vibe":["party"],"a":"open","o":true,"desc":"Waterfront afterparty with music, food, and founder energy. No panels, no pitches. Exclusive to Startup School 2026 attendees.","url":"https://luma.com/2p9zbnzn","img":"/assets/startup-school-2026/17-respan.png","note":null,"aud":null,"tag":"No panels, no pitches. Attendees only.","links":[{"u":"https://luma.com/2p9zbnzn","k":"luma"}]},{"id":"deusex","t":"Deus Ex Machina - YC Startup School Afterparty","h":"Dedalus Labs (S25), Koyal (F25), Rho","d":"2026-07-25","s":"19:00","e":"21:00","v":"Secret SF speakeasy (address not published)","vibe":["party"],"a":"open","o":true,"desc":"A secret speakeasy, entry granted only by the right password. Live generative visuals and personalized touches. One night only, for Startup School participants and select guests. Location and password shared with invited guests a few days ahead.","url":"https://luma.com/p7q8z7zl","img":"/assets/startup-school-2026/23-deusex.png","note":"Hosts are opening a few spots to the public, but only via LinkedIn: comment 'PREMIERE' on Catherine Di's or Stephanie Gao's post, or DM Mehul Agarwal for an invite. Not mentioned anywhere on the Luma page.","aud":null,"tag":"Password at the door, and they won't publish the address.","links":[{"u":"https://luma.com/p7q8z7zl","k":"luma"},{"u":"https://www.linkedin.com/posts/mehul-agarwal-a274a0287_were-hosting-the-official-y-combinator-startup-activity-7483222994480263168-F2aN","k":"linkedin"},{"u":"https://www.linkedin.com/posts/cathydi_were-taking-over-the-best-speakeasy-in-sf-share-7482973840445423616-582_/","k":"linkedin"},{"u":"https://www.linkedin.com/posts/stephaniesgao_im-co-hosting-an-official-yc-sus-afterparty-share-7483204839657865216-20wc/","k":"linkedin"}]},{"id":"corgi","t":"Overnight Batch w/ Corgi & Merge","h":"Corgi (S24), Merge","d":"2026-07-25","s":null,"e":null,"v":"Corgi HQ","vibe":["tech"],"a":"open","o":true,"desc":"Corgi HQ turns into an overnight hackathon for one night. Ten hours to build something you'd feel good demoing to a YC partner, judged by YC founders. Merge provides customer data connectors, agent tooling, and LLM routing.","url":"https://partiful.com/e/igxGqp6c00c2ESX44CpG","img":"/assets/startup-school-2026/25-corgi.jpg","note":null,"aud":null,"tag":"Ten hours, overnight, and YC founders judge what you ship.","links":[{"u":"https://partiful.com/e/igxGqp6c00c2ESX44CpG","k":"partiful"}]},{"id":"posthog","t":"PostHog After Party @ Startup School '26 Day 1","h":"PostHog (W20)","d":"2026-07-25","s":"18:00","e":"23:00","v":"San Francisco","vibe":["party"],"a":"open","o":true,"desc":"PostHog throws a party for Day 1. Free to attend, all ages welcome, bring your Startup School badge to get in.","url":"https://luma.com/posthog-sus26","img":"/assets/startup-school-2026/18-posthog.png","note":null,"aud":null,"tag":"Free, all ages, no cap. Just bring your badge.","links":[{"u":"https://luma.com/posthog-sus26","k":"luma"}]},{"id":"agentmail","t":"YC Startup School: AgentMail's After Party","h":"AgentMail (S25)","d":"2026-07-25","s":null,"e":null,"v":"San Francisco","vibe":["party"],"a":"open","o":true,"desc":"After a day of learning how to pitch your wedge and defend your TAM, AgentMail hosts a night of pure fun.","url":"https://partiful.com/e/aGVSDQ7ym3eCaaeVrLwf","img":"/assets/startup-school-2026/26-agentmail.jpg","note":null,"aud":null,"tag":"No agenda whatsoever. That's the entire pitch.","links":[{"u":"https://partiful.com/e/aGVSDQ7ym3eCaaeVrLwf","k":"partiful"}]},{"id":"legalos","t":"LegalOS YC Startup School After Party","h":"LegalOS (W26)","d":"2026-07-25","s":"18:00","e":"22:00","v":"Harmonic Brewing Thrive City, 7 Warriors Wy Suite 206","vibe":["networking"],"a":"open","o":true,"desc":"LegalOS brings together Startup School founders, builders, and friends before Startup School wraps.","url":"https://luma.com/47w3zljn","img":"/assets/startup-school-2026/19-legalos.png","note":null,"aud":null,"tag":"A brewery, not an office. Runs to 10.","links":[{"u":"https://luma.com/47w3zljn","k":"luma"}]},{"id":"greptile","t":"YC Afterhours @Sohn with Greptile","h":"Greptile (W24)","d":"2026-07-25","s":"21:00","e":"00:00","v":"SOHN, 2535 3rd St","vibe":["chill"],"a":"open","o":true,"desc":"Afterhours hangout at SOHN coffee shop. Hang out or cowork after the dinnertime events wind down, with banana oat milk lattes. The late-night, low-key option.","url":"https://luma.com/greptile-sltd","img":"/assets/startup-school-2026/24-greptile.png","note":null,"aud":null,"tag":"Starts at 9pm, when everything else ends. Coffee, not cocktails.","links":[{"u":"https://luma.com/greptile-sltd","k":"luma"}]},{"id":"presidio","t":"Party in the Presidio","h":"Adaptional (S25)","d":"2026-07-25","s":"18:00","e":"21:30","v":"Presidio of San Francisco","vibe":["party"],"a":"open","o":true,"desc":"Cap off Startup School with food, drinks, and Presidio views. Hosted by Adaptional (AI agents for insurance claims). Party with 2x YC founders.","url":"https://luma.com/ispbsl3o","img":"/assets/startup-school-2026/20-presidio.png","note":null,"aud":null,"tag":"Hosted by two-time YC founders, with park views.","links":[{"u":"https://luma.com/ispbsl3o","k":"luma"}]},{"id":"canadian","t":"Canadian YC Founders Showcase @ Startup School","h":"Forward Deployed Canadian x YC founders","d":"2026-07-25","s":"18:00","e":"21:00","v":"San Francisco (revealed on approval)","vibe":["networking"],"a":"open","o":false,"desc":"Food, drinks, and presentations from fast-growing Canadian YC startups sharing what they're building and the founding roles they're hiring for.","url":"https://luma.com/8sf0hjs0","img":"/assets/startup-school-2026/21-canadian.png","note":null,"aud":null,"tag":"They're hiring, and they'll tell you exactly for what.","links":[{"u":"https://luma.com/8sf0hjs0","k":"luma"}]},{"id":"hxyc","t":"H x YC Summer School Afterparty","h":"Cerenovus x Jonathan Waldorf x Massimo Distassi","d":"2026-07-25","s":"18:00","e":"22:00","v":"397 Mangels Ave, Sunnyside","vibe":["chill"],"a":"open","o":false,"desc":"Casual Saturday afterparty in a Sunnyside home. Pull up and close out the evening. Minimal listing: 'Welcome friends! Pull up.'","url":"https://luma.com/ngoyztxr","img":"/assets/startup-school-2026/22-hxyc.png","note":null,"aud":null,"tag":"Someone's house. The entire listing is two words long.","links":[{"u":"https://luma.com/ngoyztxr","k":"luma"}]},{"id":"farmhouse1","t":"YC Startup School Afterparty I","h":"FarmHouse (Stanford hacker house)","d":"2026-07-25","s":null,"e":null,"v":"FarmHouse, Bay Area","vibe":["chill"],"a":"tba","o":false,"desc":"A packed house mixer for founders and friends passing through San Francisco. FarmHouse is a Stanford hacker house where founders build together over the summer.","url":"https://www.thefarm.haus/","img":"/assets/startup-school-2026/42-farmhouse1.png","note":"Listed on FarmHouse's own site under a calendar headed \"Compiling the lineup — Tentative\". No time, no RSVP page, and their og:image 404s. Real, but the least confirmed entry here — check thefarm.haus before relying on it.","aud":null,"tag":"A Stanford hacker house. No RSVP page and no times posted.","links":[{"u":"https://www.thefarm.haus/","k":"website"}]},{"id":"fondo","t":"YC Startup School Afterparty @ Fondo","h":"Fondo (W18)","d":"2026-07-26","s":"18:00","e":"22:00","v":"Union Square (revealed on approval)","vibe":["networking","chill"],"a":"open","o":true,"desc":"Food and drinks covered, relaxed Sunday night with new Startup School friends. Space limited. Startup School badge required at the door.","url":"https://luma.com/fondo_yc_startup_school_afterparty","img":"/assets/startup-school-2026/28-fondo.png","note":"YC's page groups this under Day 1 (alum-hosted), but the Luma page states Sunday Jul 26. Sunday is correct.","aud":null,"tag":"Badge required at the door. Food and drinks on them.","links":[{"u":"https://luma.com/fondo_yc_startup_school_afterparty","k":"luma"}]},{"id":"aws","t":"The AWS YC Startup School Afterparty","h":"AWS + Amazon","d":"2026-07-26","s":"18:30","e":"22:00","v":"Exploratorium, Pier 15 Embarcadero at Green St, San Francisco, CA 94111","vibe":["party","tech"],"a":"open","o":true,"desc":"Afterparty at the Exploratorium, SF's waterfront museum of science and perception. Get up close with a Zoox autonomous robotaxi, go hands-on with Amazon Kiro (their AI coding tool) live, and watch founder stories on a 40-foot media wall. Pick up an Explorer's Quest card at the door, collect stickers across the museum, complete it to enter the raffle — winners announced live at 9 PM. Dinner stations, craft mocktails, recruiters on-site.","url":"https://awsycstartupschoolafterparty.splashthat.com/","img":"/assets/startup-school-2026/31-aws.png","note":"Exclusive to confirmed Startup School attendees. Bring ID. Register with the same email used for YC Startup School. Agenda: 6:30 PM doors + Explorer's Quest card, 7:00 PM dinner and activations, 9:00 PM raffle winners.","aud":null,"tag":"A Zoox robotaxi indoors, a sticker quest, and a 9pm raffle.","links":[{"u":"https://awsycstartupschoolafterparty.splashthat.com/","k":"website"}]},{"id":"microsoft","t":"Microsoft YC AI Startup School After Party","h":"Microsoft for Startups","d":"2026-07-26","s":"18:00","e":"22:00","v":"San Francisco, CA — exact venue shared upon acceptance","vibe":["networking","party"],"a":"open","o":true,"desc":"Billed as the biggest post-Startup School gathering of the weekend. Microsoft for Startups hosts hundreds of founders, builders, students, and AI fanatics. Food, games, and conversations — plus how to unlock the YC Student Starter Pack offer. Tagline: 'Your next co-founder, investor, or big opportunity could be in this room.'","url":"https://aka.ms/YCAIStartupSchool/Reception","img":"/assets/startup-school-2026/29-microsoft.png","note":"Listed as 26 July 2026 18:00 PDT, duration 4 hours. Venue withheld until registration is accepted. Must register with the same email address used for Startup School.","aud":null,"tag":"Hundreds expected. Venue stays secret until you're accepted.","links":[{"u":"https://aka.ms/YCAIStartupSchool/Reception","k":"website"},{"u":"https://microsoftforstartups.eventbuilder.com/events/11f1376c3b274120be33071c025a25a9?ref=YC","k":"website"}]},{"id":"deepmind","t":"Google DeepMind YC Startup School After Party","h":"Google DeepMind + Google Cloud","d":"2026-07-26","s":"18:00","e":"22:00","v":"The Pearl, San Francisco","vibe":["party","tech"],"a":"open","o":true,"desc":"Exclusive afterparty with AI leaders from Google DeepMind and Google Cloud, technical experts, and fellow founders. Hands-on product demos, interactive games, and playful vibes. Food, drinks, and music throughout the night.","url":"https://rsvp.withgoogle.com/events/gdm-yc-sus-afterparty-2026","img":"/assets/startup-school-2026/30-deepmind.webp","note":"Exclusive to confirmed Startup School attendees; register with the same email used for SUS registration. Invite is non-transferable and guests are not permitted — space is extremely limited. Page branding says 'Google Cloud YC After Party' while YC lists it as Google DeepMind; it is co-hosted by both.","aud":null,"tag":"Non-transferable, no guests. Register with your Startup School email.","links":[{"u":"https://rsvp.withgoogle.com/events/gdm-yc-sus-afterparty-2026","k":"website"},{"u":"https://rsvp.withgoogle.com/events/gdm-yc-sus-afterparty-2026/forms/registration","k":"website"}]},{"id":"farmhouse2","t":"YC Startup School Afterparty II","h":"FarmHouse (Stanford hacker house)","d":"2026-07-26","s":null,"e":null,"v":"FarmHouse, Bay Area","vibe":["chill"],"a":"tba","o":false,"desc":"The quieter second night: a smaller, focused gathering for active builders after the final day of Startup School.","url":"https://www.thefarm.haus/","img":"/assets/startup-school-2026/43-farmhouse2.png","note":"Listed on FarmHouse's own site under a calendar headed \"Compiling the lineup — Tentative\". No time, no RSVP page, and their og:image 404s. Real, but the least confirmed entry here — check thefarm.haus before relying on it.","aud":null,"tag":"Smaller than night one, aimed at people still building.","links":[{"u":"https://www.thefarm.haus/","k":"website"}]},{"id":"rooftop","t":"Founder Rooftop Gala","h":"Vivian Cai x Plain","d":"2026-07-27","s":"18:00","e":"22:00","v":"San Francisco (revealed on approval)","vibe":["party","networking"],"a":"open","o":false,"desc":"Dinner, drinks, founder networking, and a rooftop afterparty with Afrobeats, jazz house, and an open-format DJ set.","url":"https://luma.com/z9teb942","img":"/assets/startup-school-2026/33-rooftop.png","note":"Self-described as 'Day 1 Afterparty' but the Luma page dates it Monday Jul 27, two days after Day 1. Host's own labelling error.","aud":null,"tag":"Two days after everything ends. Open-format DJ till late.","links":[{"u":"https://luma.com/z9teb942","k":"luma"}]},{"id":"batchelor","t":"The BATCHelor — YC Dating Show","h":"Hema Dassani x Ditto x CRSHMARKET","d":"2026-07-23","s":null,"e":null,"v":"Ditto office, San Francisco","vibe":["chill","networking"],"a":"open","o":false,"desc":"The first Y Combinator dating show. 200 in the audience, 8 picked to date on stage: blind dates, pop-the-balloon, and a steal card that lets you take someone's date mid-round. CRSHMARKET runs live betting on every date, so the room sets odds while you flirt. Hosted by Evan Rama, behind one of the biggest college dating show formats. Framed as a nerve test, not just romance: put yourself out there, think on your feet, get rejected in public. The hosts call it 'networking with benefits'.","url":"https://ditto.ai/batchelor","img":"/assets/startup-school-2026/24-batchelor.jpg","note":"No time published — the post only says '07.23 · Ditto Office'. Two entry paths, both via the LinkedIn post: comment or DM 'SINGLE' for the contestant application link, 'MINGLE' to attend as audience. The ditto.ai/batchelor page is a casting call with audience/participant buttons and no further detail. Listed on neither YC's page nor startupschoolafter.party.","aud":null,"tag":"Eight date on stage, 200 watch, and the room bets live on it.","links":[{"u":"https://ditto.ai/batchelor","k":"website"},{"u":"https://www.linkedin.com/feed/update/urn:li:activity:7483253075814780929/","k":"linkedin"}]},{"id":"foundess","t":"Women in AI Dinner — Foundess x Uncork","h":"Uncork Capital x Foundess x Rho (Pear Chotbunwong)","d":"2026-07-24","s":"17:00","e":null,"v":"San Francisco — venue not published","vibe":["networking"],"a":"open","o":false,"desc":"A dinner putting women in AI around one table the night before Startup School. Pitched at women who ship code at an AI startup or lab (founding eng / early SWE), do research at a frontier or neolab, or are building their own thing at pre-seed or seed. Confirmed guests span Inflection AI, Cardboard, Scale AI, Vyra, Truli, Elara Health AI, Creatorgen, sixtytwo.ai, and SimXlabs.","url":"https://www.linkedin.com/feed/update/urn:li:activity:7482498102956949505/","img":"/assets/startup-school-2026/03-foundess.jpg","note":"Women-only. No RSVP link — entry is comment-gated on the LinkedIn post: comment your name, where you build, and what you're shipping, then tag someone and repost (reposts surface your comment). Hosts say very few spots left. Venue and end time unpublished. Listed on neither YC's page nor startupschoolafter.party.","aud":"women only","tag":"Guests from Inflection, Scale and Cardboard. Comment on the post to get in.","links":[{"u":"https://www.linkedin.com/feed/update/urn:li:activity:7482498102956949505/","k":"linkedin"}]},{"id":"ycreject","t":"YC Reject Pitch Night","h":"Sanscritic @ Workato HQ","d":"2026-07-21","s":"17:00","e":"20:30","v":"Workato HQ (two blocks from YC)","vibe":["networking","tech"],"a":"open","o":false,"desc":"Rejected by YC? Good — now come prove them wrong. Founders, investors, operators and startup supporters, with pitches from people who didn't get in.","url":"https://luma.com/yc-reject-pitch-night","img":"/assets/startup-school-2026/34-ycreject.jpg","note":null,"aud":null,"tag":"Rejected by YC? That's the entry requirement.","links":[{"u":"https://luma.com/yc-reject-pitch-night","k":"luma"}]},{"id":"ycpoker","t":"Tony & Thibaut's Game Night — YC Startup School edition","h":"Tony & Thibaut","d":"2026-07-21","s":"19:00","e":"00:00","v":"San Francisco, CA","vibe":["chill","networking"],"a":"open","o":false,"desc":"Make friends, not contacts. Built as a reaction to networking events — no quick conversations and LinkedIn swaps, just games and a room you actually stay in.","url":"https://luma.com/sfpokeryc","img":"/assets/startup-school-2026/35-ycpoker.jpg","note":null,"aud":null,"tag":"Games instead of nametag swaps. Runs to midnight.","links":[{"u":"https://luma.com/sfpokeryc","k":"luma"}]},{"id":"designsocial","t":"Pre-YC SUS Founder Design Social","h":"Lovart x Entrepreneurs First","d":"2026-07-22","s":"18:00","e":"20:00","v":"San Francisco, CA","vibe":["networking","tech"],"a":"open","o":false,"desc":"For founders and early builders shipping without a designer. An evening on getting strong visuals out of a team that doesn't have a design hire.","url":"https://luma.com/8zbp6goy","img":"/assets/startup-school-2026/36-designsocial.jpg","note":null,"aud":null,"tag":"For founders shipping without a designer on the team.","links":[{"u":"https://luma.com/8zbp6goy","k":"luma"}]},{"id":"painting","t":"YC Female Founder: Painting & Wine Night","h":"YC female founders","d":"2026-07-23","s":"18:00","e":"20:00","v":"Corgi Cafe, 9 Claude Ln","vibe":["chill"],"a":"open","o":false,"desc":"YC female founders painting, drinking wine and working through charcuterie boards. No agenda, no pressure.","url":"https://luma.com/xhj3qxhb","img":"/assets/startup-school-2026/37-painting.jpg","note":null,"aud":"women only","tag":"Painting, wine and charcuterie. Genuinely no agenda.","links":[{"u":"https://luma.com/xhj3qxhb","k":"luma"}]},{"id":"breakin","t":"Startup School Week: How to Break Into Startups","h":"680 Folsom","d":"2026-07-24","s":"16:00","e":"18:00","v":"680 Folsom St","vibe":["networking","tech"],"a":"open","o":false,"desc":"Aimed at summer interns and students finishing college who want to skip the corporate ladder and get into startups instead.","url":"https://luma.com/pxijn023","img":"/assets/startup-school-2026/38-breakin.jpg","note":null,"aud":null,"tag":"Aimed at interns and students, not founders.","links":[{"u":"https://luma.com/pxijn023","k":"luma"}]},{"id":"efgamenight","t":"YC SUS Game Night @ EF","h":"Entrepreneurs First","d":"2026-07-24","s":"16:00","e":"18:00","v":"Entrepreneurs First, San Francisco","vibe":["chill"],"a":"open","o":false,"desc":"An evening of niche board games where players compete in unfamiliar circumstances — deliberately designed so you meet people through the game rather than around it.","url":"https://luma.com/0pl3rlxm","img":"/assets/startup-school-2026/39-efgamenight.jpg","note":null,"aud":null,"tag":"Niche board games, picked so nobody has an advantage.","links":[{"u":"https://luma.com/0pl3rlxm","k":"luma"}]},{"id":"compiled13","t":"c0mpiled-13: Startup School Hackathon II","h":"c0mpiled x Transpose Platform","d":"2026-07-25","s":"18:00","e":"23:00","v":"Transpose Platform, 27 South Park Suite 100","vibe":["tech"],"a":"open","o":false,"desc":"The second c0mpiled hackathon of the week, running Saturday night opposite the official afterparties. Dinner, drinks and snacks provided.","url":"https://luma.com/olys436o","img":"/assets/startup-school-2026/40-compiled13.jpg","note":null,"aud":null,"tag":"A second hackathon, running opposite Saturday's afterparties.","links":[{"u":"https://luma.com/olys436o","k":"luma"}]},{"id":"dstack","t":"AI Infra Builders Meetup — dstack, Crusoe & SGLang","h":"dstack x Crusoe x SGLang","d":"2026-07-23","s":"17:30","e":"21:30","v":"San Francisco, CA","vibe":["tech","networking"],"a":"open","o":false,"desc":"An AI infrastructure meetup for engineers, researchers and builders working on GPUs, training and inference. Not a Startup School event, but recommended in the Startup School Discord as the thing to do the night before things kick off.","url":"https://luma.com/rxsn0u0h","img":"/assets/startup-school-2026/41-dstack.jpg","note":"Not Startup School branded — its page never mentions YC. Surfaced in the SUS Discord #meetups channel in reply to someone asking what to do in SF before Startup School.","aud":null,"tag":"Not a Startup School event — the Discord just rates it.","links":[{"u":"https://luma.com/rxsn0u0h","k":"luma"}]}];
+const DAYS = [{"date":"2026-07-21","label":"Tuesday","num":"21"},{"date":"2026-07-22","label":"Wednesday","num":"22"},{"date":"2026-07-23","label":"Thursday","num":"23"},{"date":"2026-07-24","label":"Friday","num":"24"},{"date":"2026-07-25","label":"Saturday","num":"25"},{"date":"2026-07-26","label":"Sunday","num":"26"},{"date":"2026-07-27","label":"Monday","num":"27"}];
+const state = { day: "all", vibe: "all", official: false };
+
+const fmt = t => {
+  if (!t) return "TBA";
+  const [h, m] = t.split(":").map(Number);
+  const ap = h >= 12 ? "pm" : "am", hr = h % 12 === 0 ? 12 : h % 12;
+  return m ? hr + ":" + String(m).padStart(2, "0") + ap : hr + ap;
+};
+
+// Multi-host strings get collapsed: "Moss (F25), Supabase (S20), Modal, Render"
+// becomes "Moss (F25) +3". Full list still shows when the row is expanded.
+function hostShort(h) {
+  if (!h) return "";
+  const parts = h.split(/\s+x\s+|,\s*/i).map(s => s.trim()).filter(Boolean);
+  if (parts.length <= 1) return h;
+  return parts[0] + ' <span class="dim">+' + (parts.length - 1) + "</span>";
+}
+
+// Label a source link: LinkedIn posts resolve to the poster's handle,
+// everything else to its platform or host.
+function srcLabel(l) {
+  if (l.k === "luma") return "Luma";
+  if (l.k === "partiful") return "Partiful";
+  if (l.k === "linkedin") {
+    const m = l.u.match(/\/posts\/([^_\/]+)_/);
+    // profile slugs carry a trailing id: "mehul-agarwal-a274a0287"
+    return m ? "@" + m[1].replace(/-[a-z0-9]{7,}$/i, "") : "LinkedIn";
+  }
+  try { return new URL(l.u).hostname.replace(/^www\./, ""); } catch { return "link"; }
+}
+
+// Every link except the primary one already used by the RSVP button.
+function extraSources(e) {
+  const rest = (e.links || []).filter(l => l.u !== e.url);
+  if (!rest.length) return "";
+  return '<span class="alsolbl">also on</span>' + rest.map(l =>
+    '<a class="src" href="' + l.u + '" target="_blank" rel="noopener">' + srcLabel(l) + '</a>'
+  ).join("");
+}
+
+const matches = e =>
+  (state.day === "all" || e.d === state.day) &&
+  (state.vibe === "all" || e.vibe.includes(state.vibe)) &&
+  (!state.official || e.o);
+
+function render() {
+  const list = document.getElementById("list");
+  const shown = EVENTS.filter(matches);
+  document.getElementById("count").textContent = shown.length + " of " + EVENTS.length;
+  if (!shown.length) { list.innerHTML = '<div class="empty">nothing matches that.</div>'; return; }
+
+  let html = "";
+  for (const d of DAYS) {
+    const evs = shown.filter(e => e.d === d.date)
+      .sort((a, b) => (a.s || "99:99").localeCompare(b.s || "99:99"));
+    if (!evs.length) continue;
+    html += '<section class="day"><div class="dayhead"><span class="daynum">' + d.num +
+      '</span><span class="dayname">' + d.label + '</span><span class="daycount">' + evs.length + '</span></div>';
+    for (const e of evs) {
+      const dots = '<span class="vibes-in">' +
+        e.vibe.map(v => '<span class="v-' + v + '">' + v + '</span>').join('<span class="sep">+</span>') +
+        '</span>';
+      const mini =
+        (e.o ? '<span class="mini official">official</span>' : "") +
+        (e.a === "sold-out" ? '<span class="mini soldout">sold out</span>' : "") +
+        (e.aud ? '<span class="mini aud">' + e.aud + '</span>' : "");
+      const thumb = e.img
+        ? '<img class="thumb" src="' + e.img + '" alt="" loading="lazy">'
+        : '<div class="noimg">' + e.t.replace(/^(The|YC)\s+/i, "").charAt(0).toUpperCase() + '</div>';
+      html += '<details class="ev"><summary>' +
+        '<span class="time">' + (e.s ? fmt(e.s) : "TBA") + '</span>' + thumb +
+        '<span><span class="name">' + e.t + '</span>' +
+        (e.tag ? '<span class="tagline">' + e.tag + '</span>' : "") +
+        '<span class="where"><span class="hostn">' + hostShort(e.h) + '</span>' +
+        '<span class="dot-sep">·</span>' + e.v.split(/,| — /)[0] + '</span></span>' +
+        '<span class="badges">' + mini + dots + '</span></summary>' +
+        '<div class="detail">' +
+        (e.img ? '<img class="hero" src="' + e.img + '" alt="" loading="lazy">' : "") + e.desc +
+        (e.note ? '<div class="note">' + e.note + '</div>' : "") +
+        '<div class="who">' + e.h + ' · ' + (e.s ? fmt(e.s) + (e.e ? "–" + fmt(e.e) : "") : "time TBA") + '</div>' +
+        '<div class="linkrow"><a class="go" href="' + e.url + '" target="_blank" rel="noopener">RSVP →</a>' +
+        extraSources(e) + '</div></div></details>';
+    }
+    html += "</section>";
+  }
+  list.innerHTML = html;
+}
+
+document.querySelectorAll("button.pill").forEach(b => {
+  b.addEventListener("click", () => {
+    if (b.dataset.day) {
+      state.day = b.dataset.day;
+      document.querySelectorAll("[data-day]").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+    } else if (b.dataset.vibe) {
+      state.vibe = b.dataset.vibe;
+      document.querySelectorAll("[data-vibe]").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+    } else {
+      state.official = !state.official;
+      b.setAttribute("aria-pressed", String(state.official));
+    }
+    render();
+  });
+});
+render();
+</script>
+</body>
+</html>

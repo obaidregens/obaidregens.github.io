@@ -1,0 +1,1366 @@
+{
+  "meta": {
+    "event": "YC Startup School 2026",
+    "dates": "July 25-26, 2026",
+    "venue": "Chase Center, San Francisco (rideshare to 16th & 4th St)",
+    "day1": "Sat Jul 25, 7:30 AM - 5:30 PM",
+    "day2": "Sun Jul 26, 10:30 AM - 6:00 PM",
+    "entry": "Valid ID + QR code (emailed 1-2 days prior). No luggage on-site.",
+    "rule": "YC allows signup for only ONE official after-party per day.",
+    "lastUpdated": "2026-07-19",
+    "sources": [
+      "events.ycombinator.com/startup-school-2026 (logged-in attendee page)",
+      "startupschoolafter.party"
+    ],
+    "vibes": {
+      "networking": "Mixers, founder/investor meetups, showcases",
+      "tech": "Hackathons, firesides, technical talks",
+      "chill": "Low-key hangs, coworking, picnics, sports/activities",
+      "party": "Drinks, music, DJs, late night"
+    },
+    "sourceKeys": {
+      "yc-official": "events.ycombinator.com/startup-school-2026 (logged-in attendee page)",
+      "afterparty-site": "startupschoolafter.party",
+      "linkedin": "Host announcement post on LinkedIn (verified manually)",
+      "discord": "YC Startup School 2026 Discord (#meetups)",
+      "host-site": "Confirmed on the host organisation's own website"
+    }
+  },
+  "events": [
+    {
+      "id": "cocktail",
+      "title": "Founders & Investors Cocktail Hours",
+      "host": "Alime x Bond AI",
+      "official": false,
+      "day": "Thursday",
+      "date": "2026-07-23",
+      "start": "15:00",
+      "end": "18:00",
+      "venue": "San Francisco, CA (private location, revealed on approval)",
+      "vibe": [
+        "networking"
+      ],
+      "access": "open",
+      "description": "A pre-gathering ahead of YC Startup School 2026 for ambitious technical builders, founders, and investors arriving in San Francisco.",
+      "url": "https://luma.com/axd56nxv",
+      "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/ns/e2035218-8d28-4028-a1d2-7870fe8cd491.png",
+      "links": [
+        {
+          "url": "https://luma.com/axd56nxv",
+          "type": "luma",
+          "foundOn": [
+            "afterparty-site"
+          ]
+        }
+      ],
+      "foundOn": [
+        "afterparty-site"
+      ],
+      "tagline": "First thing on the calendar all week. Address revealed on approval."
+    },
+    {
+      "id": "gokart",
+      "title": "Photon GoKart Rally @ YC Startup School",
+      "host": "Photon x Julie Chen x Daniel Tian x Ryan Zhu x Patrick Ruan",
+      "official": false,
+      "day": "Friday",
+      "date": "2026-07-24",
+      "start": "10:00",
+      "end": "17:00",
+      "venue": "Fisherman's Wharf, 505 Beach St",
+      "vibe": [
+        "chill",
+        "networking"
+      ],
+      "access": "open",
+      "description": "A 40-GoCar convoy through San Francisco with photo stops at city landmarks and a finish-line hangout with drinks and merch. Pitched as the antidote to rooftop-and-nametag events.",
+      "url": "https://luma.com/ueokvzdw",
+      "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/62/d949066c-eca0-4ad7-abde-eb298b645aae.png",
+      "links": [
+        {
+          "url": "https://luma.com/ueokvzdw",
+          "type": "luma",
+          "foundOn": [
+            "afterparty-site"
+          ]
+        }
+      ],
+      "foundOn": [
+        "afterparty-site"
+      ],
+      "tagline": "A 40-car convoy past the landmarks, finishing with drinks and merch."
+    },
+    {
+      "id": "hackathon",
+      "title": "YC Startup School Hackathon",
+      "host": "The Hackathon Company of California x Mason Arditi",
+      "official": false,
+      "day": "Friday",
+      "date": "2026-07-24",
+      "start": "10:00",
+      "end": "22:00",
+      "venue": "San Francisco (revealed on approval)",
+      "vibe": [
+        "tech"
+      ],
+      "access": "open",
+      "description": "One-day hackathon for technical students, billed as the highest-signal hackathon of Startup School week. Sponsors include Cursor, Linq, Terac (ZF 2025), and Dynamic.",
+      "url": "https://luma.com/dpp4ulna",
+      "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/2m/4feeee40-0a6c-44d7-ba58-dd386a477846.png",
+      "links": [
+        {
+          "url": "https://luma.com/dpp4ulna",
+          "type": "luma",
+          "foundOn": [
+            "afterparty-site"
+          ]
+        }
+      ],
+      "foundOn": [
+        "afterparty-site"
+      ],
+      "tagline": "Cursor and Dynamic sponsoring. Built for student engineers."
+    },
+    {
+      "id": "picnic",
+      "title": "2nd Annual YCombinator Startup School Picnic",
+      "host": "Ethan Yip x Unicorner x friends",
+      "official": false,
+      "day": "Friday",
+      "date": "2026-07-24",
+      "start": "14:00",
+      "end": "15:30",
+      "venue": "Golden Gate Park",
+      "vibe": [
+        "chill"
+      ],
+      "access": "open",
+      "description": "Casual afternoon picnic with food and merch. Register on Luma to get food and swag.",
+      "url": "https://luma.com/6vko8q90",
+      "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/6t/ab8cb40a-dc3b-4e58-afab-25e0349ba0cd.png",
+      "links": [
+        {
+          "url": "https://luma.com/6vko8q90",
+          "type": "luma",
+          "foundOn": [
+            "afterparty-site"
+          ]
+        }
+      ],
+      "foundOn": [
+        "afterparty-site"
+      ],
+      "tagline": "Register on Luma or you don't get the food and merch."
+    },
+    {
+      "id": "emergence",
+      "title": "Emergence Capital YC Startup School Mixer",
+      "host": "Emergence Capital x George Kunthara",
+      "official": false,
+      "day": "Friday",
+      "date": "2026-07-24",
+      "start": "15:00",
+      "end": "18:00",
+      "venue": "Pier 5, Embarcadero",
+      "vibe": [
+        "networking"
+      ],
+      "access": "open",
+      "description": "Mixer at the Emergence Capital office before Startup School officially begins, with food, drinks, and investors from the firm's AI ecosystem.",
+      "url": "https://luma.com/2ev1tu8a",
+      "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/6t/941fe522-7a02-4d50-b54a-ed07b16bd8d9.png",
+      "links": [
+        {
+          "url": "https://luma.com/2ev1tu8a",
+          "type": "luma",
+          "foundOn": [
+            "afterparty-site"
+          ]
+        }
+      ],
+      "foundOn": [
+        "afterparty-site"
+      ],
+      "tagline": "Their AI portfolio companies in the room, before anything official starts."
+    },
+    {
+      "id": "betafund",
+      "title": "YC Startup School Founder & Investor Mixer",
+      "host": "Beta Fund x Rednote Venture x Llama Venture",
+      "official": false,
+      "day": "Friday",
+      "date": "2026-07-24",
+      "start": "18:00",
+      "end": "21:00",
+      "venue": "Downtown SF penthouse (revealed on approval)",
+      "vibe": [
+        "networking"
+      ],
+      "access": "open",
+      "description": "Intimate rooftop mixer the night Startup School kicks off, bringing together arriving founders and the investors backing them. Drinks and light bites above the fog.",
+      "url": "https://luma.com/beta-ugt5",
+      "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/do/933cdef9-04a9-4284-92e3-fe8bf1e7c7d3.png",
+      "links": [
+        {
+          "url": "https://luma.com/beta-ugt5",
+          "type": "luma",
+          "foundOn": [
+            "afterparty-site"
+          ]
+        }
+      ],
+      "foundOn": [
+        "afterparty-site"
+      ],
+      "tagline": "They don't tell you the address until you're approved."
+    },
+    {
+      "id": "compiled",
+      "title": "c0mpiled-11: Startup School Hackathon!",
+      "host": "c0mpiled x Transpose Platform x YC alumni",
+      "official": false,
+      "day": "Friday",
+      "date": "2026-07-24",
+      "start": "18:00",
+      "end": "23:00",
+      "venue": "Transpose Platform, 27 South Park Suite 100",
+      "vibe": [
+        "tech"
+      ],
+      "access": "waitlist",
+      "description": "Evening build sprint with dinner, drinks, cash prizes, and YC alumni judges. Tracks inspired by YC's Summer 2026 requests for startups.",
+      "url": "https://luma.com/compiled-cp9o",
+      "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/x0/2e5320f2-14aa-4af4-adea-cc33495ab2d5.png",
+      "links": [
+        {
+          "url": "https://luma.com/compiled-cp9o",
+          "type": "luma",
+          "foundOn": [
+            "afterparty-site"
+          ]
+        }
+      ],
+      "foundOn": [
+        "afterparty-site"
+      ],
+      "tagline": "Cash prizes, YC alumni judging, tracks pulled from YC's Summer RFS."
+    },
+    {
+      "id": "yacht",
+      "title": "Ship 2 Prod | YC AI SUS Black-Tie Yacht Gala",
+      "host": "Resonance x GMI Cloud x Ship 2 Prod",
+      "official": false,
+      "day": "Friday",
+      "date": "2026-07-24",
+      "start": "19:00",
+      "end": "23:00",
+      "venue": "Pier 40, Mission Bay (private yacht)",
+      "vibe": [
+        "party",
+        "networking"
+      ],
+      "access": "open",
+      "description": "Curated invitation-only black-tie gala on a private yacht, for AI founders, engineers, researchers, and investors. Product demos and lightning pitches.",
+      "url": "https://luma.com/ojidqyj8",
+      "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/pj/3ea939e1-dd4a-4b26-8e74-c04f91de9c09.png",
+      "links": [
+        {
+          "url": "https://luma.com/ojidqyj8",
+          "type": "luma",
+          "foundOn": [
+            "afterparty-site"
+          ]
+        }
+      ],
+      "foundOn": [
+        "afterparty-site"
+      ],
+      "tagline": "Product demos and lightning pitches, on the water."
+    },
+    {
+      "id": "stripe",
+      "title": "Stripe presents: Made in San Francisco",
+      "host": "Stripe (S09)",
+      "official": true,
+      "day": "Saturday",
+      "date": "2026-07-25",
+      "start": "18:00",
+      "end": "21:00",
+      "venue": "DrawBridge Presents, Embarcadero",
+      "vibe": [
+        "party"
+      ],
+      "access": "sold-out",
+      "description": "After Day 1, Stripe invites Startup School attendees to unwind over food, drinks, and San Francisco stories.",
+      "url": "https://luma.com/xggm2di5",
+      "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/kn/9588b2ce-8c7a-4ec1-89a2-500c098c4935.png",
+      "links": [
+        {
+          "url": "https://luma.com/xggm2di5",
+          "type": "luma",
+          "foundOn": [
+            "afterparty-site",
+            "yc-official"
+          ]
+        }
+      ],
+      "foundOn": [
+        "afterparty-site",
+        "yc-official"
+      ],
+      "tagline": "Day 1's biggest name — and it went in days."
+    },
+    {
+      "id": "dmodel",
+      "title": "d_model @ Startup School 2026",
+      "host": "d_model (S24)",
+      "official": true,
+      "day": "Saturday",
+      "date": "2026-07-25",
+      "start": "18:00",
+      "end": "20:00",
+      "venue": "Spark Social SF, Mission Bay",
+      "vibe": [
+        "chill"
+      ],
+      "access": "sold-out",
+      "description": "Evening at Spark Social SF with drinks, snacks, the d_model team, and a raffle for swag and gift cards. Bring a badge or confirmation email.",
+      "url": "https://luma.com/jz0h1t7q",
+      "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/3n/25b033b7-92e7-4b8b-bf29-be847e668f31.png",
+      "links": [
+        {
+          "url": "https://luma.com/jz0h1t7q",
+          "type": "luma",
+          "foundOn": [
+            "afterparty-site",
+            "yc-official"
+          ]
+        }
+      ],
+      "foundOn": [
+        "afterparty-site",
+        "yc-official"
+      ],
+      "tagline": "Badge or confirmation email at the door. Raffle for swag."
+    },
+    {
+      "id": "terra",
+      "title": "YC Health x AI Fireside: Vinod Khosla and Terra API",
+      "host": "Terra (W21)",
+      "official": true,
+      "day": "Saturday",
+      "date": "2026-07-25",
+      "start": "18:00",
+      "end": "21:00",
+      "timeUncertain": true,
+      "venue": "Studio by Tishman Speyer, 365 Toni Stone Xing, Mission Rock",
+      "vibe": [
+        "tech",
+        "networking"
+      ],
+      "access": "open",
+      "description": "Fireside with Vinod Khosla on where AI takes healthcare, work, and human potential, followed by audience Q&A and dinner with the speakers. Exclusively for YC Startup School attendees.",
+      "url": "https://partiful.com/e/YU4mWYWpui1IVPAomO1c",
+      "image": "https://partiful.imgix.net/external/user/z7qL0lPXdualcSw6eUKmw83jgJu2/1ARBgKB60Gd1k4nrBmwJe?w=1000&h=1000&fit=clip",
+      "note": "Partiful metadata reports 10:00 AM PDT, conflicting with the 6-9 PM listed elsewhere. Verify before attending.",
+      "links": [
+        {
+          "url": "https://partiful.com/e/YU4mWYWpui1IVPAomO1c",
+          "type": "partiful",
+          "foundOn": [
+            "afterparty-site",
+            "yc-official"
+          ]
+        }
+      ],
+      "foundOn": [
+        "afterparty-site",
+        "yc-official"
+      ],
+      "tagline": "Ask Khosla anything, then eat dinner with the speakers."
+    },
+    {
+      "id": "archil",
+      "title": "File Systems, Sandboxes, and the Irish Bank: YC @ Archil",
+      "host": "Archil (F24)",
+      "official": true,
+      "day": "Saturday",
+      "date": "2026-07-25",
+      "start": "18:00",
+      "end": "22:00",
+      "venue": "The Irish Bank, near 445 Bush St, Union Square",
+      "vibe": [
+        "tech",
+        "party"
+      ],
+      "access": "waitlist",
+      "description": "Drinks, music, and conversation about file systems and agent sandboxes, with Archil credits for attendees. RELOCATED from the original venue 50 feet down the street to the Irish Bank to fit more people.",
+      "url": "https://luma.com/chqmxhyg",
+      "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/8c/fc181ae5-ba63-4bf6-8641-4824968a741d.png",
+      "note": "Renamed and relocated. Previously listed as 'File Systems, Sandboxes, and Sushi' at 445 Bush St.",
+      "links": [
+        {
+          "url": "https://luma.com/chqmxhyg",
+          "type": "luma",
+          "foundOn": [
+            "afterparty-site",
+            "yc-official"
+          ]
+        }
+      ],
+      "foundOn": [
+        "afterparty-site",
+        "yc-official"
+      ],
+      "tagline": "Moved venue to fit more people. Free Archil credits for attendees."
+    },
+    {
+      "id": "moss",
+      "title": "YC AI Startup School Afterparty",
+      "host": "Moss (F25), Supabase (S20), Modal, Render",
+      "official": true,
+      "day": "Saturday",
+      "date": "2026-07-25",
+      "start": "18:00",
+      "end": "22:00",
+      "venue": "San Francisco (revealed on approval)",
+      "vibe": [
+        "networking",
+        "party"
+      ],
+      "access": "open",
+      "description": "Food, drinks, giveaways, and a room of founders, engineers, researchers, and operators building the next wave of AI.",
+      "url": "https://luma.com/m4ez9liu",
+      "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/uh/4c386844-9a73-454e-8840-9fc85d64b5a2.png",
+      "note": "Render is a co-host per the Luma page; earlier listings omitted them.",
+      "links": [
+        {
+          "url": "https://luma.com/m4ez9liu",
+          "type": "luma",
+          "foundOn": [
+            "afterparty-site",
+            "yc-official"
+          ]
+        }
+      ],
+      "foundOn": [
+        "afterparty-site",
+        "yc-official"
+      ],
+      "tagline": "Four infra companies co-hosting — Supabase, Modal and Render included."
+    },
+    {
+      "id": "respan",
+      "title": "YC Startup School After Party - Respan",
+      "host": "Respan (W24), MongoDB, Composio",
+      "official": true,
+      "day": "Saturday",
+      "date": "2026-07-25",
+      "start": "18:00",
+      "end": "22:00",
+      "venue": "Mission Rock Resort, Mission Bay",
+      "vibe": [
+        "party"
+      ],
+      "access": "open",
+      "description": "Waterfront afterparty with music, food, and founder energy. No panels, no pitches. Exclusive to Startup School 2026 attendees.",
+      "url": "https://luma.com/2p9zbnzn",
+      "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/6m/e662d2f6-1c5e-48e0-b9e5-87f04113d5e4.png",
+      "links": [
+        {
+          "url": "https://luma.com/2p9zbnzn",
+          "type": "luma",
+          "foundOn": [
+            "afterparty-site",
+            "yc-official"
+          ]
+        }
+      ],
+      "foundOn": [
+        "afterparty-site",
+        "yc-official"
+      ],
+      "tagline": "No panels, no pitches. Attendees only."
+    },
+    {
+      "id": "deusex",
+      "title": "Deus Ex Machina - YC Startup School Afterparty",
+      "host": "Dedalus Labs (S25), Koyal (F25), Rho",
+      "official": true,
+      "day": "Saturday",
+      "date": "2026-07-25",
+      "start": "19:00",
+      "end": "21:00",
+      "venue": "Secret SF speakeasy (address not published)",
+      "vibe": [
+        "party"
+      ],
+      "access": "open",
+      "description": "A secret speakeasy, entry granted only by the right password. Live generative visuals and personalized touches. One night only, for Startup School participants and select guests. Location and password shared with invited guests a few days ahead.",
+      "note": "Hosts are opening a few spots to the public, but only via LinkedIn: comment 'PREMIERE' on Catherine Di's or Stephanie Gao's post, or DM Mehul Agarwal for an invite. Not mentioned anywhere on the Luma page.",
+      "url": "https://luma.com/p7q8z7zl",
+      "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/pq/059c52d8-fb0f-4a31-8e0f-39a4c46dad43.png",
+      "links": [
+        {
+          "url": "https://luma.com/p7q8z7zl",
+          "type": "luma",
+          "foundOn": [
+            "yc-official"
+          ]
+        },
+        {
+          "url": "https://www.linkedin.com/posts/mehul-agarwal-a274a0287_were-hosting-the-official-y-combinator-startup-activity-7483222994480263168-F2aN",
+          "type": "linkedin",
+          "foundOn": [
+            "afterparty-site"
+          ]
+        },
+        {
+          "url": "https://www.linkedin.com/posts/cathydi_were-taking-over-the-best-speakeasy-in-sf-share-7482973840445423616-582_/",
+          "type": "linkedin",
+          "foundOn": [
+            "linkedin"
+          ]
+        },
+        {
+          "url": "https://www.linkedin.com/posts/stephaniesgao_im-co-hosting-an-official-yc-sus-afterparty-share-7483204839657865216-20wc/",
+          "type": "linkedin",
+          "foundOn": [
+            "linkedin"
+          ]
+        }
+      ],
+      "foundOn": [
+        "afterparty-site",
+        "linkedin",
+        "yc-official"
+      ],
+      "tagline": "Password at the door, and they won't publish the address."
+    },
+    {
+      "id": "corgi",
+      "title": "Overnight Batch w/ Corgi & Merge",
+      "host": "Corgi (S24), Merge",
+      "official": true,
+      "day": "Saturday",
+      "date": "2026-07-25",
+      "start": null,
+      "end": null,
+      "venue": "Corgi HQ",
+      "vibe": [
+        "tech"
+      ],
+      "access": "open",
+      "description": "Corgi HQ turns into an overnight hackathon for one night. Ten hours to build something you'd feel good demoing to a YC partner, judged by YC founders. Merge provides customer data connectors, agent tooling, and LLM routing.",
+      "url": "https://partiful.com/e/igxGqp6c00c2ESX44CpG",
+      "image": "https://partiful.imgix.net/external/user/OviZQoZ7ETMWYyvr4TPeC8wE01v2/ebqQEQ73mbzQeCIEz5plw?w=1000&h=1000&fit=clip",
+      "links": [
+        {
+          "url": "https://partiful.com/e/igxGqp6c00c2ESX44CpG",
+          "type": "partiful",
+          "foundOn": [
+            "yc-official"
+          ]
+        }
+      ],
+      "foundOn": [
+        "yc-official"
+      ],
+      "tagline": "Ten hours, overnight, and YC founders judge what you ship."
+    },
+    {
+      "id": "posthog",
+      "title": "PostHog After Party @ Startup School '26 Day 1",
+      "host": "PostHog (W20)",
+      "official": true,
+      "day": "Saturday",
+      "date": "2026-07-25",
+      "start": "18:00",
+      "end": "23:00",
+      "venue": "San Francisco",
+      "vibe": [
+        "party"
+      ],
+      "access": "open",
+      "description": "PostHog throws a party for Day 1. Free to attend, all ages welcome, bring your Startup School badge to get in.",
+      "url": "https://luma.com/posthog-sus26",
+      "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/kf/b8587bef-bc5e-48f5-9a30-055cf812e7de.png",
+      "links": [
+        {
+          "url": "https://luma.com/posthog-sus26",
+          "type": "luma",
+          "foundOn": [
+            "yc-official"
+          ]
+        }
+      ],
+      "foundOn": [
+        "yc-official"
+      ],
+      "tagline": "Free, all ages, no cap. Just bring your badge."
+    },
+    {
+      "id": "agentmail",
+      "title": "YC Startup School: AgentMail's After Party",
+      "host": "AgentMail (S25)",
+      "official": true,
+      "day": "Saturday",
+      "date": "2026-07-25",
+      "start": null,
+      "end": null,
+      "venue": "San Francisco",
+      "vibe": [
+        "party"
+      ],
+      "access": "open",
+      "description": "After a day of learning how to pitch your wedge and defend your TAM, AgentMail hosts a night of pure fun.",
+      "url": "https://partiful.com/e/aGVSDQ7ym3eCaaeVrLwf",
+      "image": "https://partiful.imgix.net/external/user/ydbGcVhbBPR6v8LRJbQtHZayQMu1/G6Yj9lu8Th7vBTOHkZGUe?w=1000&h=1000&fit=clip",
+      "links": [
+        {
+          "url": "https://partiful.com/e/aGVSDQ7ym3eCaaeVrLwf",
+          "type": "partiful",
+          "foundOn": [
+            "yc-official"
+          ]
+        }
+      ],
+      "foundOn": [
+        "yc-official"
+      ],
+      "tagline": "No agenda whatsoever. That's the entire pitch."
+    },
+    {
+      "id": "legalos",
+      "title": "LegalOS YC Startup School After Party",
+      "host": "LegalOS (W26)",
+      "official": true,
+      "day": "Saturday",
+      "date": "2026-07-25",
+      "start": "18:00",
+      "end": "22:00",
+      "venue": "Harmonic Brewing Thrive City, 7 Warriors Wy Suite 206",
+      "vibe": [
+        "networking"
+      ],
+      "access": "open",
+      "description": "LegalOS brings together Startup School founders, builders, and friends before Startup School wraps.",
+      "url": "https://luma.com/47w3zljn",
+      "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/rj/0c513032-b7b8-46f2-b9fc-701e05039535.png",
+      "links": [
+        {
+          "url": "https://luma.com/47w3zljn",
+          "type": "luma",
+          "foundOn": [
+            "yc-official"
+          ]
+        }
+      ],
+      "foundOn": [
+        "yc-official"
+      ],
+      "tagline": "A brewery, not an office. Runs to 10."
+    },
+    {
+      "id": "greptile",
+      "title": "YC Afterhours @Sohn with Greptile",
+      "host": "Greptile (W24)",
+      "official": true,
+      "day": "Saturday",
+      "date": "2026-07-25",
+      "start": "21:00",
+      "end": "00:00",
+      "venue": "SOHN, 2535 3rd St",
+      "vibe": [
+        "chill"
+      ],
+      "access": "open",
+      "description": "Afterhours hangout at SOHN coffee shop. Hang out or cowork after the dinnertime events wind down, with banana oat milk lattes. The late-night, low-key option.",
+      "url": "https://luma.com/greptile-sltd",
+      "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/d7/793afa3e-a9ff-49e7-bd2b-4219e2a57340.png",
+      "links": [
+        {
+          "url": "https://luma.com/greptile-sltd",
+          "type": "luma",
+          "foundOn": [
+            "yc-official"
+          ]
+        }
+      ],
+      "foundOn": [
+        "yc-official"
+      ],
+      "tagline": "Starts at 9pm, when everything else ends. Coffee, not cocktails."
+    },
+    {
+      "id": "presidio",
+      "title": "Party in the Presidio",
+      "host": "Adaptional (S25)",
+      "official": true,
+      "day": "Saturday",
+      "date": "2026-07-25",
+      "start": "18:00",
+      "end": "21:30",
+      "venue": "Presidio of San Francisco",
+      "vibe": [
+        "party"
+      ],
+      "access": "open",
+      "description": "Cap off Startup School with food, drinks, and Presidio views. Hosted by Adaptional (AI agents for insurance claims). Party with 2x YC founders.",
+      "url": "https://luma.com/ispbsl3o",
+      "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/cn/48dc5b9a-079a-42d7-806a-b8dfd53b8d60.png",
+      "links": [
+        {
+          "url": "https://luma.com/ispbsl3o",
+          "type": "luma",
+          "foundOn": [
+            "yc-official"
+          ]
+        }
+      ],
+      "foundOn": [
+        "yc-official"
+      ],
+      "tagline": "Hosted by two-time YC founders, with park views."
+    },
+    {
+      "id": "canadian",
+      "title": "Canadian YC Founders Showcase @ Startup School",
+      "host": "Forward Deployed Canadian x YC founders",
+      "official": false,
+      "day": "Saturday",
+      "date": "2026-07-25",
+      "start": "18:00",
+      "end": "21:00",
+      "venue": "San Francisco (revealed on approval)",
+      "vibe": [
+        "networking"
+      ],
+      "access": "open",
+      "description": "Food, drinks, and presentations from fast-growing Canadian YC startups sharing what they're building and the founding roles they're hiring for.",
+      "url": "https://luma.com/8sf0hjs0",
+      "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/45/88708dca-e13e-441a-af04-37ebc49579b7.png",
+      "links": [
+        {
+          "url": "https://luma.com/8sf0hjs0",
+          "type": "luma",
+          "foundOn": [
+            "afterparty-site"
+          ]
+        }
+      ],
+      "foundOn": [
+        "afterparty-site"
+      ],
+      "tagline": "They're hiring, and they'll tell you exactly for what."
+    },
+    {
+      "id": "hxyc",
+      "title": "H x YC Summer School Afterparty",
+      "host": "Cerenovus x Jonathan Waldorf x Massimo Distassi",
+      "official": false,
+      "day": "Saturday",
+      "date": "2026-07-25",
+      "start": "18:00",
+      "end": "22:00",
+      "venue": "397 Mangels Ave, Sunnyside",
+      "vibe": [
+        "chill"
+      ],
+      "access": "open",
+      "description": "Casual Saturday afterparty in a Sunnyside home. Pull up and close out the evening. Minimal listing: 'Welcome friends! Pull up.'",
+      "url": "https://luma.com/ngoyztxr",
+      "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/cw/49e68be3-c6e1-4d3c-8938-2b905d74be3e.png",
+      "links": [
+        {
+          "url": "https://luma.com/ngoyztxr",
+          "type": "luma",
+          "foundOn": [
+            "afterparty-site"
+          ]
+        }
+      ],
+      "foundOn": [
+        "afterparty-site"
+      ],
+      "tagline": "Someone's house. The entire listing is two words long."
+    },
+    {
+      "id": "farmhouse1",
+      "title": "YC Startup School Afterparty I",
+      "host": "FarmHouse (Stanford hacker house)",
+      "official": false,
+      "day": "Saturday",
+      "date": "2026-07-25",
+      "start": null,
+      "end": null,
+      "venue": "FarmHouse, Bay Area",
+      "vibe": [
+        "chill"
+      ],
+      "access": "tba",
+      "description": "A packed house mixer for founders and friends passing through San Francisco. FarmHouse is a Stanford hacker house where founders build together over the summer.",
+      "url": "https://www.thefarm.haus/",
+      "image": "https://farmhaus.vercel.app/opengraph-image?2477c4c71c9d24af",
+      "note": "Listed on FarmHouse's own site under a calendar headed \"Compiling the lineup — Tentative\". No time, no RSVP page, and their og:image 404s. Real, but the least confirmed entry here — check thefarm.haus before relying on it.",
+      "links": [
+        {
+          "url": "https://www.thefarm.haus/",
+          "type": "website",
+          "foundOn": [
+            "afterparty-site",
+            "host-site"
+          ]
+        }
+      ],
+      "foundOn": [
+        "afterparty-site",
+        "host-site"
+      ],
+      "tagline": "A Stanford hacker house. No RSVP page and no times posted."
+    },
+    {
+      "id": "fondo",
+      "title": "YC Startup School Afterparty @ Fondo",
+      "host": "Fondo (W18)",
+      "official": true,
+      "day": "Sunday",
+      "date": "2026-07-26",
+      "start": "18:00",
+      "end": "22:00",
+      "venue": "Union Square (revealed on approval)",
+      "vibe": [
+        "networking",
+        "chill"
+      ],
+      "access": "open",
+      "description": "Food and drinks covered, relaxed Sunday night with new Startup School friends. Space limited. Startup School badge required at the door.",
+      "url": "https://luma.com/fondo_yc_startup_school_afterparty",
+      "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/wr/9deb6f97-1d9d-47ab-a814-c5a1c7990037.png",
+      "note": "YC's page groups this under Day 1 (alum-hosted), but the Luma page states Sunday Jul 26. Sunday is correct.",
+      "links": [
+        {
+          "url": "https://luma.com/fondo_yc_startup_school_afterparty",
+          "type": "luma",
+          "foundOn": [
+            "afterparty-site",
+            "yc-official"
+          ]
+        }
+      ],
+      "foundOn": [
+        "afterparty-site",
+        "yc-official"
+      ],
+      "tagline": "Badge required at the door. Food and drinks on them."
+    },
+    {
+      "id": "aws",
+      "title": "The AWS YC Startup School Afterparty",
+      "host": "AWS + Amazon",
+      "official": true,
+      "day": "Sunday",
+      "date": "2026-07-26",
+      "start": "18:30",
+      "end": "22:00",
+      "venue": "Exploratorium, Pier 15 Embarcadero at Green St, San Francisco, CA 94111",
+      "vibe": [
+        "party",
+        "tech"
+      ],
+      "access": "open",
+      "description": "Afterparty at the Exploratorium, SF's waterfront museum of science and perception. Get up close with a Zoox autonomous robotaxi, go hands-on with Amazon Kiro (their AI coding tool) live, and watch founder stories on a 40-foot media wall. Pick up an Explorer's Quest card at the door, collect stickers across the museum, complete it to enter the raffle — winners announced live at 9 PM. Dinner stations, craft mocktails, recruiters on-site.",
+      "url": "https://awsycstartupschoolafterparty.splashthat.com/",
+      "image": "https://d24wuq6o951i2g.cloudfront.net/img/events/splash/cards/459374115.x3.1be81d2d.png",
+      "links": [
+        {
+          "url": "https://awsycstartupschoolafterparty.splashthat.com/",
+          "type": "website",
+          "foundOn": [
+            "yc-official"
+          ]
+        }
+      ],
+      "foundOn": [
+        "yc-official"
+      ],
+      "note": "Exclusive to confirmed Startup School attendees. Bring ID. Register with the same email used for YC Startup School. Agenda: 6:30 PM doors + Explorer's Quest card, 7:00 PM dinner and activations, 9:00 PM raffle winners.",
+      "tagline": "A Zoox robotaxi indoors, a sticker quest, and a 9pm raffle."
+    },
+    {
+      "id": "microsoft",
+      "title": "Microsoft YC AI Startup School After Party",
+      "host": "Microsoft for Startups",
+      "official": true,
+      "day": "Sunday",
+      "date": "2026-07-26",
+      "start": "18:00",
+      "end": "22:00",
+      "venue": "San Francisco, CA — exact venue shared upon acceptance",
+      "vibe": [
+        "networking",
+        "party"
+      ],
+      "access": "open",
+      "description": "Billed as the biggest post-Startup School gathering of the weekend. Microsoft for Startups hosts hundreds of founders, builders, students, and AI fanatics. Food, games, and conversations — plus how to unlock the YC Student Starter Pack offer. Tagline: 'Your next co-founder, investor, or big opportunity could be in this room.'",
+      "url": "https://aka.ms/YCAIStartupSchool/Reception",
+      "image": "https://microsoftforstartups.eventbuilder.com/events/11f1376c3b274120be33071c025a25a9/uploads/public/b8021aa4d0624047b7b1507320db7755.png",
+      "links": [
+        {
+          "url": "https://aka.ms/YCAIStartupSchool/Reception",
+          "type": "website",
+          "foundOn": [
+            "yc-official"
+          ]
+        },
+        {
+          "url": "https://microsoftforstartups.eventbuilder.com/events/11f1376c3b274120be33071c025a25a9?ref=YC",
+          "type": "website",
+          "foundOn": [
+            "yc-official"
+          ]
+        }
+      ],
+      "foundOn": [
+        "yc-official"
+      ],
+      "note": "Listed as 26 July 2026 18:00 PDT, duration 4 hours. Venue withheld until registration is accepted. Must register with the same email address used for Startup School.",
+      "tagline": "Hundreds expected. Venue stays secret until you're accepted."
+    },
+    {
+      "id": "deepmind",
+      "title": "Google DeepMind YC Startup School After Party",
+      "host": "Google DeepMind + Google Cloud",
+      "official": true,
+      "day": "Sunday",
+      "date": "2026-07-26",
+      "start": "18:00",
+      "end": "22:00",
+      "venue": "The Pearl, San Francisco",
+      "vibe": [
+        "party",
+        "tech"
+      ],
+      "access": "open",
+      "description": "Exclusive afterparty with AI leaders from Google DeepMind and Google Cloud, technical experts, and fellow founders. Hands-on product demos, interactive games, and playful vibes. Food, drinks, and music throughout the night.",
+      "url": "https://rsvp.withgoogle.com/events/gdm-yc-sus-afterparty-2026",
+      "image": null,
+      "links": [
+        {
+          "url": "https://rsvp.withgoogle.com/events/gdm-yc-sus-afterparty-2026",
+          "type": "website",
+          "foundOn": [
+            "yc-official"
+          ]
+        },
+        {
+          "url": "https://rsvp.withgoogle.com/events/gdm-yc-sus-afterparty-2026/forms/registration",
+          "type": "website",
+          "foundOn": [
+            "yc-official"
+          ]
+        }
+      ],
+      "foundOn": [
+        "yc-official"
+      ],
+      "note": "Exclusive to confirmed Startup School attendees; register with the same email used for SUS registration. Invite is non-transferable and guests are not permitted — space is extremely limited. Page branding says 'Google Cloud YC After Party' while YC lists it as Google DeepMind; it is co-hosted by both.",
+      "tagline": "Non-transferable, no guests. Register with your Startup School email."
+    },
+    {
+      "id": "farmhouse2",
+      "title": "YC Startup School Afterparty II",
+      "host": "FarmHouse (Stanford hacker house)",
+      "official": false,
+      "day": "Sunday",
+      "date": "2026-07-26",
+      "start": null,
+      "end": null,
+      "venue": "FarmHouse, Bay Area",
+      "vibe": [
+        "chill"
+      ],
+      "access": "tba",
+      "description": "The quieter second night: a smaller, focused gathering for active builders after the final day of Startup School.",
+      "url": "https://www.thefarm.haus/",
+      "image": "https://farmhaus.vercel.app/opengraph-image?2477c4c71c9d24af",
+      "note": "Listed on FarmHouse's own site under a calendar headed \"Compiling the lineup — Tentative\". No time, no RSVP page, and their og:image 404s. Real, but the least confirmed entry here — check thefarm.haus before relying on it.",
+      "links": [
+        {
+          "url": "https://www.thefarm.haus/",
+          "type": "website",
+          "foundOn": [
+            "afterparty-site",
+            "host-site"
+          ]
+        }
+      ],
+      "foundOn": [
+        "afterparty-site",
+        "host-site"
+      ],
+      "tagline": "Smaller than night one, aimed at people still building."
+    },
+    {
+      "id": "rooftop",
+      "title": "Founder Rooftop Gala",
+      "host": "Vivian Cai x Plain",
+      "official": false,
+      "day": "Monday",
+      "date": "2026-07-27",
+      "start": "18:00",
+      "end": "22:00",
+      "venue": "San Francisco (revealed on approval)",
+      "vibe": [
+        "party",
+        "networking"
+      ],
+      "access": "open",
+      "description": "Dinner, drinks, founder networking, and a rooftop afterparty with Afrobeats, jazz house, and an open-format DJ set.",
+      "url": "https://luma.com/z9teb942",
+      "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/m2/a6222b3f-3e0d-4884-a6c0-a8917153e4e3.png",
+      "note": "Self-described as 'Day 1 Afterparty' but the Luma page dates it Monday Jul 27, two days after Day 1. Host's own labelling error.",
+      "links": [
+        {
+          "url": "https://luma.com/z9teb942",
+          "type": "luma",
+          "foundOn": [
+            "afterparty-site"
+          ]
+        }
+      ],
+      "foundOn": [
+        "afterparty-site"
+      ],
+      "tagline": "Two days after everything ends. Open-format DJ till late."
+    },
+    {
+      "id": "batchelor",
+      "title": "The BATCHelor — YC Dating Show",
+      "host": "Hema Dassani x Ditto x CRSHMARKET",
+      "official": false,
+      "day": "Thursday",
+      "date": "2026-07-23",
+      "start": null,
+      "end": null,
+      "venue": "Ditto office, San Francisco",
+      "vibe": [
+        "chill",
+        "networking"
+      ],
+      "access": "open",
+      "description": "The first Y Combinator dating show. 200 in the audience, 8 picked to date on stage: blind dates, pop-the-balloon, and a steal card that lets you take someone's date mid-round. CRSHMARKET runs live betting on every date, so the room sets odds while you flirt. Hosted by Evan Rama, behind one of the biggest college dating show formats. Framed as a nerve test, not just romance: put yourself out there, think on your feet, get rejected in public. The hosts call it 'networking with benefits'.",
+      "image": null,
+      "url": "https://ditto.ai/batchelor",
+      "links": [
+        {
+          "url": "https://ditto.ai/batchelor",
+          "type": "website",
+          "foundOn": [
+            "linkedin"
+          ]
+        },
+        {
+          "url": "https://www.linkedin.com/feed/update/urn:li:activity:7483253075814780929/",
+          "type": "linkedin",
+          "foundOn": [
+            "linkedin"
+          ]
+        }
+      ],
+      "foundOn": [
+        "linkedin"
+      ],
+      "note": "No time published — the post only says '07.23 · Ditto Office'. Two entry paths, both via the LinkedIn post: comment or DM 'SINGLE' for the contestant application link, 'MINGLE' to attend as audience. The ditto.ai/batchelor page is a casting call with audience/participant buttons and no further detail. Listed on neither YC's page nor startupschoolafter.party.",
+      "tagline": "Eight date on stage, 200 watch, and the room bets live on it."
+    },
+    {
+      "id": "foundess",
+      "title": "Women in AI Dinner — Foundess x Uncork",
+      "host": "Uncork Capital x Foundess x Rho (Pear Chotbunwong)",
+      "official": false,
+      "day": "Friday",
+      "date": "2026-07-24",
+      "start": "17:00",
+      "end": null,
+      "venue": "San Francisco — venue not published",
+      "vibe": [
+        "networking"
+      ],
+      "access": "open",
+      "audience": "women only",
+      "description": "A dinner putting women in AI around one table the night before Startup School. Pitched at women who ship code at an AI startup or lab (founding eng / early SWE), do research at a frontier or neolab, or are building their own thing at pre-seed or seed. Confirmed guests span Inflection AI, Cardboard, Scale AI, Vyra, Truli, Elara Health AI, Creatorgen, sixtytwo.ai, and SimXlabs.",
+      "image": null,
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7482498102956949505/",
+      "links": [
+        {
+          "url": "https://www.linkedin.com/feed/update/urn:li:activity:7482498102956949505/",
+          "type": "linkedin",
+          "foundOn": [
+            "linkedin"
+          ]
+        }
+      ],
+      "foundOn": [
+        "linkedin"
+      ],
+      "note": "Women-only. No RSVP link — entry is comment-gated on the LinkedIn post: comment your name, where you build, and what you're shipping, then tag someone and repost (reposts surface your comment). Hosts say very few spots left. Venue and end time unpublished. Listed on neither YC's page nor startupschoolafter.party.",
+      "tagline": "Guests from Inflection, Scale and Cardboard. Comment on the post to get in."
+    },
+    {
+      "id": "ycreject",
+      "title": "YC Reject Pitch Night",
+      "host": "Sanscritic @ Workato HQ",
+      "official": false,
+      "day": "Tuesday",
+      "date": "2026-07-21",
+      "start": "17:00",
+      "end": "20:30",
+      "venue": "Workato HQ (two blocks from YC)",
+      "vibe": [
+        "networking",
+        "tech"
+      ],
+      "access": "open",
+      "description": "Rejected by YC? Good — now come prove them wrong. Founders, investors, operators and startup supporters, with pitches from people who didn't get in.",
+      "image": null,
+      "url": "https://luma.com/yc-reject-pitch-night",
+      "links": [
+        {
+          "url": "https://luma.com/yc-reject-pitch-night",
+          "type": "luma",
+          "foundOn": [
+            "luma"
+          ]
+        }
+      ],
+      "foundOn": [
+        "luma"
+      ],
+      "tagline": "Rejected by YC? That's the entry requirement."
+    },
+    {
+      "id": "ycpoker",
+      "title": "Tony & Thibaut's Game Night — YC Startup School edition",
+      "host": "Tony & Thibaut",
+      "official": false,
+      "day": "Tuesday",
+      "date": "2026-07-21",
+      "start": "19:00",
+      "end": "00:00",
+      "venue": "San Francisco, CA",
+      "vibe": [
+        "chill",
+        "networking"
+      ],
+      "access": "open",
+      "description": "Make friends, not contacts. Built as a reaction to networking events — no quick conversations and LinkedIn swaps, just games and a room you actually stay in.",
+      "image": null,
+      "url": "https://luma.com/sfpokeryc",
+      "links": [
+        {
+          "url": "https://luma.com/sfpokeryc",
+          "type": "luma",
+          "foundOn": [
+            "luma"
+          ]
+        }
+      ],
+      "foundOn": [
+        "luma"
+      ],
+      "tagline": "Games instead of nametag swaps. Runs to midnight."
+    },
+    {
+      "id": "designsocial",
+      "title": "Pre-YC SUS Founder Design Social",
+      "host": "Lovart x Entrepreneurs First",
+      "official": false,
+      "day": "Wednesday",
+      "date": "2026-07-22",
+      "start": "18:00",
+      "end": "20:00",
+      "venue": "San Francisco, CA",
+      "vibe": [
+        "networking",
+        "tech"
+      ],
+      "access": "open",
+      "description": "For founders and early builders shipping without a designer. An evening on getting strong visuals out of a team that doesn't have a design hire.",
+      "image": null,
+      "url": "https://luma.com/8zbp6goy",
+      "links": [
+        {
+          "url": "https://luma.com/8zbp6goy",
+          "type": "luma",
+          "foundOn": [
+            "luma"
+          ]
+        }
+      ],
+      "foundOn": [
+        "luma"
+      ],
+      "tagline": "For founders shipping without a designer on the team."
+    },
+    {
+      "id": "painting",
+      "title": "YC Female Founder: Painting & Wine Night",
+      "host": "YC female founders",
+      "official": false,
+      "day": "Thursday",
+      "date": "2026-07-23",
+      "start": "18:00",
+      "end": "20:00",
+      "venue": "Corgi Cafe, 9 Claude Ln",
+      "vibe": [
+        "chill"
+      ],
+      "access": "open",
+      "audience": "women only",
+      "description": "YC female founders painting, drinking wine and working through charcuterie boards. No agenda, no pressure.",
+      "image": null,
+      "url": "https://luma.com/xhj3qxhb",
+      "links": [
+        {
+          "url": "https://luma.com/xhj3qxhb",
+          "type": "luma",
+          "foundOn": [
+            "luma"
+          ]
+        }
+      ],
+      "foundOn": [
+        "luma"
+      ],
+      "tagline": "Painting, wine and charcuterie. Genuinely no agenda."
+    },
+    {
+      "id": "breakin",
+      "title": "Startup School Week: How to Break Into Startups",
+      "host": "680 Folsom",
+      "official": false,
+      "day": "Friday",
+      "date": "2026-07-24",
+      "start": "16:00",
+      "end": "18:00",
+      "venue": "680 Folsom St",
+      "vibe": [
+        "networking",
+        "tech"
+      ],
+      "access": "open",
+      "description": "Aimed at summer interns and students finishing college who want to skip the corporate ladder and get into startups instead.",
+      "image": null,
+      "url": "https://luma.com/pxijn023",
+      "links": [
+        {
+          "url": "https://luma.com/pxijn023",
+          "type": "luma",
+          "foundOn": [
+            "luma"
+          ]
+        }
+      ],
+      "foundOn": [
+        "luma"
+      ],
+      "tagline": "Aimed at interns and students, not founders."
+    },
+    {
+      "id": "efgamenight",
+      "title": "YC SUS Game Night @ EF",
+      "host": "Entrepreneurs First",
+      "official": false,
+      "day": "Friday",
+      "date": "2026-07-24",
+      "start": "16:00",
+      "end": "18:00",
+      "venue": "Entrepreneurs First, San Francisco",
+      "vibe": [
+        "chill"
+      ],
+      "access": "open",
+      "description": "An evening of niche board games where players compete in unfamiliar circumstances — deliberately designed so you meet people through the game rather than around it.",
+      "image": null,
+      "url": "https://luma.com/0pl3rlxm",
+      "links": [
+        {
+          "url": "https://luma.com/0pl3rlxm",
+          "type": "luma",
+          "foundOn": [
+            "luma"
+          ]
+        }
+      ],
+      "foundOn": [
+        "luma"
+      ],
+      "tagline": "Niche board games, picked so nobody has an advantage."
+    },
+    {
+      "id": "compiled13",
+      "title": "c0mpiled-13: Startup School Hackathon II",
+      "host": "c0mpiled x Transpose Platform",
+      "official": false,
+      "day": "Saturday",
+      "date": "2026-07-25",
+      "start": "18:00",
+      "end": "23:00",
+      "venue": "Transpose Platform, 27 South Park Suite 100",
+      "vibe": [
+        "tech"
+      ],
+      "access": "open",
+      "description": "The second c0mpiled hackathon of the week, running Saturday night opposite the official afterparties. Dinner, drinks and snacks provided.",
+      "image": null,
+      "url": "https://luma.com/olys436o",
+      "links": [
+        {
+          "url": "https://luma.com/olys436o",
+          "type": "luma",
+          "foundOn": [
+            "luma"
+          ]
+        }
+      ],
+      "foundOn": [
+        "luma"
+      ],
+      "tagline": "A second hackathon, running opposite Saturday's afterparties."
+    },
+    {
+      "id": "dstack",
+      "title": "AI Infra Builders Meetup — dstack, Crusoe & SGLang",
+      "host": "dstack x Crusoe x SGLang",
+      "official": false,
+      "day": "Thursday",
+      "date": "2026-07-23",
+      "start": "17:30",
+      "end": "21:30",
+      "venue": "San Francisco, CA",
+      "vibe": [
+        "tech",
+        "networking"
+      ],
+      "access": "open",
+      "description": "An AI infrastructure meetup for engineers, researchers and builders working on GPUs, training and inference. Not a Startup School event, but recommended in the Startup School Discord as the thing to do the night before things kick off.",
+      "image": null,
+      "url": "https://luma.com/rxsn0u0h",
+      "links": [
+        {
+          "url": "https://luma.com/rxsn0u0h",
+          "type": "luma",
+          "foundOn": [
+            "discord"
+          ]
+        }
+      ],
+      "foundOn": [
+        "discord"
+      ],
+      "note": "Not Startup School branded — its page never mentions YC. Surfaced in the SUS Discord #meetups channel in reply to someone asking what to do in SF before Startup School.",
+      "tagline": "Not a Startup School event — the Discord just rates it."
+    }
+  ]
+}
