@@ -9,15 +9,20 @@ date: 2026-07-18
 I'd also disclosed it in private through email 12 days earlier to no response. But publicly at least the process works.
 
 <style>
-.tweet-shrink { display: flex; align-items: center; justify-content: center; transform: scale(0.85); transform-origin: top center; margin-bottom: -50px; }
-.tweet-shrink .twitter-tweet { margin-top: 0 !important; }
+.tweet-shot { max-width: 440px; margin: 1.5rem auto; }
+.tweet-shot > a { display: block; border-radius: 10px; overflow: hidden; line-height: 0; }
+.tweet-shot > a:hover { display: block !important; padding: 0 !important; background: none !important; }
+.tweet-shot img { width: 100%; border-radius: 10px; display: block; }
+.tweet-shot figcaption { text-align: center; font-size: 0.85rem; color: #999; margin-top: 0.6rem; }
 </style>
-<div class="tweet-shrink">
-<blockquote class="twitter-tweet" data-conversation="none" data-dnt="true"><p lang="en" dir="ltr">Impressive hacking! <br><br>Sorry for all the hopefuls out there, but we have patched the bug :).<br><br>Obaid - thanks for reporting the issue. Look forward to seeing you at Startup School in SF in two weeks!</p>&mdash; Jared Friedman (@snowmaker) <a href="https://x.com/snowmaker/status/2075813151069925440?ref_src=twsrc%5Etfw">July 11, 2026</a></blockquote>
-</div>
-<script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
+<figure class="tweet-shot">
+  <a href="https://x.com/snowmaker/status/2075813151069925440" target="_blank" rel="noopener">
+    <img src="/assets/jared-friedman-tweet.png" alt="Tweet from Jared Friedman (@snowmaker), replying to @wtfobaid: Impressive hacking! Sorry for all the hopefuls out there, but we have patched the bug :). Obaid - thanks for reporting the issue. Look forward to seeing you at Startup School in SF in two weeks! Posted 10:23 AM, Jul 11 2026.">
+  </a>
+  <figcaption><a href="https://x.com/snowmaker/status/2075813151069925440" target="_blank" rel="noopener">Jared Friedman, July 11 2026</a></figcaption>
+</figure>
 
-this is a re-write of an [earlier draft](/jotbook/2026/07/11/yc-startup-school-26-application-i-hacked-paxel.html) where I first made the disclosure public. it was badly written, sleep-deprived and I didn't feel good enough about it to publicize
+this is a re-write of an [earlier draft](/jotbook/2026/07/11/yc-startup-school-26-application-i-hacked-paxel.html){:target="_blank" rel="noopener"} where I first made the disclosure public. it was badly written, sleep-deprived and I didn't feel good enough about it to publicize
 
 <div style="text-align:center;margin:2.5rem 0;color:#999;">— &nbsp; — &nbsp; —</div>
 
@@ -25,7 +30,7 @@ It all started early June, when I found the application form for Startup School 
 
 I should run a script, a very easy-to-use cURL one-liner that installed something on my computer and analyzed every line of code I've written with a coding agent, compile a report, and upload it to YC's servers.
 
-[Paxel's main site](https://paxel.ycombinator.com/) tells me the main feature is I get to "visualize" my work and get assigned fun attributes like "Which archetype are you?" and "What's your biggest crashout?" That sounded fun.
+[Paxel's main site](https://paxel.ycombinator.com/){:target="_blank" rel="noopener"} tells me the main feature is I get to "visualize" my work and get assigned fun attributes like "Which archetype are you?" and "What's your biggest crashout?" That sounded fun.
 
 But I wanted to know exactly *how* it did that, and when my curiosity starts creeping into obsessive territory it's basically a toss-up that either ends in a legendary crash-out or doing something great. thankfully, in this case it was the latter.
 
@@ -89,7 +94,7 @@ Not only accepted, but if I buffed the score or changed notes, the report of the
 
 <div style="text-align:center;margin:.35rem 0 2.5rem;"><span class="caption-note">exact same project, exact same chats.</span></div>
 
-And I took it a step further. With the same one-liner (I love Paxel's UX!!) I made [paxel-boosted](https://paxel.obaid.wtf/), a hack that let anyone in the world upload forged reports the same by launching a mirroring tool. Self-sponsored the boosting proxy because needing to add env is terrible user experience.
+And I took it a step further. With the same one-liner (I love Paxel's UX!!) I made [paxel-boosted](https://paxel.obaid.wtf/){:target="_blank" rel="noopener"}, a hack that let anyone in the world upload forged reports the same by launching a mirroring tool. Self-sponsored the boosting proxy because needing to add env is terrible user experience.
 
 {% include paxel-boosted-terminal.html %}
 
@@ -110,7 +115,7 @@ We could categorize all the fields accepted by /v1/results into 3 categories (tw
 `nonce = hmac(request_id)`
 ─▶ `nonce = hmac(request_id + scores.steering + scores.product_thinking + ... + title)`
 
-and this is actually the patch YC did deliver and announce, pretty much exactly as I suggested in the [original draft](/jotbook/2026/07/11/yc-startup-school-26-application-i-hacked-paxel.html).
+and this is actually the patch YC did deliver and announce, pretty much exactly as I suggested in the [original draft](/jotbook/2026/07/11/yc-startup-school-26-application-i-hacked-paxel.html){:target="_blank" rel="noopener"}.
 
 **2) that are** (1) passed near-verbatim from the LLM ─▶ /v1/results AND (2) also never used within the client. A subset of the fields above (green-highlighted in the diagram), these should be encrypted with any AEAD cipher (or asymmetric pub/priv keys) only the servers possess and share so the client can't see details like the 5-axes scoring, episode title, and notes.
 
@@ -120,6 +125,6 @@ This one is optional and is essentially obscurity, but if it had been done from 
 
 It's possible that this entire "vulnerability" was a secret easter egg to find out who could hack it, or a honeypot that didn't throw a validation error but secretly monitored who discovered and was "hacking" around it, but looking at the way this pipeline and Paxel seems to be written makes me think that's likely not what it was.
 
-Now, since Jared's reply this has obviously been patched but my tool is still helpful in showing you your raw scores! Feel free to [check it out](https://paxel.obaid.wtf/).
+Now, since Jared's reply this has obviously been patched but my tool is still helpful in showing you your raw scores! Feel free to [check it out](https://paxel.obaid.wtf/){:target="_blank" rel="noopener"}.
 
 if you'll also be in SF next week (21 jul - 6th aug) around the Startup School dates feel free to reach on Linkedin or Twitter with a tip for places, events, or people  where i can find my next co-founder to build something timeline-changing with — and we can connect.
