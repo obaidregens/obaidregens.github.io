@@ -48,7 +48,13 @@ const html = `<!doctype html>
 <meta property="og:title" content="Every event around YC Startup School 2026">
 <meta property="og:description" content="All ${events.length} events around YC Startup School 2026 in SF, including the ${events.filter((e: any) => e.official).length} official afterparties.">
 <meta property="og:url" content="https://obaid.wtf/ycweek">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://obaid.wtf/assets/ycweek/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Every event around YC Startup School 2026 — ${events.length} events, July 21–27, San Francisco.">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://obaid.wtf/assets/ycweek/og.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
