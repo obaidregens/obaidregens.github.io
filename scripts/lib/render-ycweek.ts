@@ -231,9 +231,12 @@ footer{margin-top:64px;padding:22px 0 56px;border-top:3px solid var(--y);font-si
 footer a{color:var(--y-deep)}
 
 @media(max-width:640px){
-  header{padding:40px 0 0;flex-direction:column-reverse;align-items:flex-start;gap:18px}
-  .xcard{padding:5px 12px 5px 5px}
-  .xcard img{width:30px;height:30px}
+  /* stay a row: title wraps on the left, follow badge stays top-right */
+  header{padding:40px 0 0;gap:12px}
+  .xcard{padding:5px 11px 6px 5px}
+  .xcard img{width:28px;height:28px}
+  .xcard .nm{font-size:13.5px}
+  .xcard .fl{font-size:10.5px;margin-top:7px}
   .intro{font-size:17px}
   /* scratchy chip stays small on mobile too — no size overrides */
   .ev summary{grid-template-columns:104px 1fr;gap:12px;align-items:start}
