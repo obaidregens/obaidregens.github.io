@@ -37,5 +37,6 @@ exclude:
   # source files for ycweek/index.html — tracked in git, not served
   - data/
   - scripts/
+  - worker/
   # raw event list — superseded by ycweek/index.html, never published
   - startup-school-2026-events.md

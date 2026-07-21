@@ -1,0 +1,26 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ycweek-submit",
+  "main": "submit.ts",
+  "compatibility_date": "2026-07-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": { "enabled": true },
+  "vars": {
+    // "notify" = email obaid only (current). "full" = classify + auto-add.
+    "MODE": "notify",
+    "SUBMIT_TO": "me@obaid.wtf",
+    "SUBMIT_FROM": "YC Week <ycweek@obaid.wtf>",
+    // set to the deployed Worker URL after first deploy so the rebuilt page's
+    // form keeps pointing here:
+    "SUBMIT_ENDPOINT": "https://ycweek-submit.obaid50432.workers.dev",
+    // full-mode only:
+    "GITHUB_REPO": "obaidregens/obaidregens.github.io",
+    "GITHUB_BRANCH": "main",
+    "BEDROCK_MODEL": "us.anthropic.claude-opus-4-6-v1",
+    "BEDROCK_REGION": "us-east-1"
+  }
+  // secrets (wrangler secret put):
+  //   RESEND_API_KEY            (from $RESEND_API_KEY_OBAID)
+  //   AWS_BEARER_TOKEN_BEDROCK  (full mode)
+  //   GITHUB_TOKEN              (full mode)
+}

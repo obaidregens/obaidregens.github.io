@@ -44,6 +44,7 @@ const HOOK: Record<string, string> = {
 };
 
 const DAY: Record<string, string> = {
+  "2026-07-21": "TUE 7/21", "2026-07-22": "WED 7/22",
   "2026-07-23": "THU 7/23", "2026-07-24": "FRI 7/24",
   "2026-07-25": "SAT 7/25 · DAY 1", "2026-07-26": "SUN 7/26 · DAY 2",
   "2026-07-27": "MON 7/27",
@@ -67,9 +68,9 @@ tweets.push({
   n: 1, id: "__intro", image: null,
   text: `Every event happening around YC Startup School 2026.
 
-32 of them. Thu 7/23 → Mon 7/27, all over SF.
+${events.length} of them. Tue 7/21 → Mon 7/27, all over SF.
 
-Hackathons, yacht galas, a secret speakeasy, a dating show, and 17 official YC afterparties.
+Hackathons, yacht galas, a secret speakeasy, a dating show, and ${events.filter((e: any) => e.official).length} official YC afterparties.
 
 Sorted by day, tagged by vibe. 🧵`,
 });
