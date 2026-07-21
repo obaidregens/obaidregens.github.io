@@ -470,13 +470,13 @@ form.addEventListener("submit", async (e) => {
 (function () {
   const chip = document.querySelector(".discord");
   if (!chip) return;
-  const WINDOW = 1500; // all 5 clicks must land within this many ms
+  const NEEDED = 10, WINDOW = 2500; // 10 clicks within this many ms
   let taps = [];
   document.addEventListener("click", () => {
     const now = Date.now();
     taps = taps.filter((t) => now - t < WINDOW);
     taps.push(now);
-    if (taps.length >= 5) {
+    if (taps.length >= NEEDED) {
       taps = [];
       if (!chip.classList.contains("show")) {
         chip.classList.add("show");
