@@ -3,7 +3,7 @@
 //   bun scripts/build-ycweek.ts
 // SUBMIT_ENDPOINT env is baked into the page's submit form.
 
-import { readFileSync, writeFileSync, mkdirSync, readdirSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, readdirSync, rmSync } from "node:fs";
 import { renderYcweek } from "./lib/render-ycweek.ts";
 import { renderEvent } from "./lib/render-event.ts";
 import { prepareEvents } from "./lib/ycweek-shared.ts";
@@ -32,6 +32,11 @@ console.log(`wrote ycweek/index.html — ${data.events.length} events, ${(html.l
 
 // per-event leaf pages: /ycweek/<slug>/index.html (SEO + rich-result assets)
 const events = prepareEvents(data.events, assetFiles);
+
+// purge stale leaf dirs (slugs can change when titles are re-cleaned)
+for (const d of readdirSync("ycweek", { withFileTypes: true }))
+  if (d.isDirectory()) rmSync(`ycweek/${d.name}`, { recursive: true, force: true });
+
 let leafBytes = 0;
 for (const event of events) {
   const leafHtml = renderEvent({ event, allEvents: events });

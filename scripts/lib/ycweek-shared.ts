@@ -30,6 +30,56 @@ export function assignSlugs(events: any[]): void {
 export const leafPath = (e: any) => `/ycweek/${e.slug}/`;
 export const leafUrl = (e: any) => `${SITE}${leafPath(e)}`;
 
+// Hand-cleaned display titles (authored by reading every title), keyed by event
+// id. Anything not listed keeps its original. Shown everywhere: cards, leaf h1,
+// schema name, and slug. Goal: drop redundant "YC Startup School / SUS" noise
+// while keeping each event's identity (host/brand) and never a bare generic word.
+export const CLEAN_TITLES: Record<string, string> = {
+  gokart: "Photon GoKart Rally",
+  picnic: "2nd Annual Startup School Picnic",
+  emergence: "Emergence Capital Mixer",
+  betafund: "Founder & Investor Mixer",
+  compiled: "c0mpiled-11 Hackathon",
+  yacht: "Ship 2 Prod: Black-Tie Yacht Gala",
+  dmodel: "d_model Afterparty",
+  terra: "Fireside: Vinod Khosla × Terra API",
+  archil: "File Systems, Sandboxes & the Irish Bank @ Archil",
+  moss: "Moss Afterparty",
+  respan: "Respan After Party",
+  deusex: "Deus Ex Machina",
+  posthog: "PostHog After Party",
+  agentmail: "AgentMail After Party",
+  legalos: "LegalOS After Party",
+  greptile: "Greptile Afterhours @ Sōhn",
+  canadian: "Canadian YC Founders Showcase",
+  hxyc: "H × YC Afterparty",
+  farmhouse1: "FarmHouse Afterparty I",
+  fondo: "Fondo Afterparty",
+  aws: "AWS After Party",
+  microsoft: "Microsoft After Party",
+  deepmind: "Google DeepMind After Party",
+  farmhouse2: "FarmHouse Afterparty II",
+  ycpoker: "Tony & Thibaut's Game Night",
+  designsocial: "Pre-YC Founder Design Social",
+  painting: "Female Founder Painting & Wine Night",
+  breakin: "How to Break Into Startups",
+  efgamenight: "EF Game Night",
+  compiled13: "c0mpiled-13 Hackathon II",
+  helium: "Helium × Coval × Phonely Afterparty",
+  mintlify: "Mintlify After Party",
+  hotpot: "Founder Hot Pot Afterparty",
+  anythingbutnames: "Anything But Names: a Sonder × Lemma Afterparty",
+  tavus: "Tavus After Party",
+  infralayer: "Infra Layer After-Party",
+  kickoff: "Kickoff by V1, SX, PittCSC & BuildIllinois",
+  agentctos: "Agent CTOs Fireside Chat",
+  proxworks: "prox works",
+  retell: "Retell After Party",
+  afterhours: "After Hours — YC After-After Party",
+  roboflow: "Roboflow After Party",
+  waferpoker: "Chips & Chips: Wafer Poker Night",
+};
+
 export const IMG_DIR = "assets/startup-school-2026";
 
 // resolve each event's image + assign slugs — one derivation shared by the hub
@@ -44,8 +94,10 @@ export function prepareEvents(rawEvents: any[], assetFiles: string[]): any[] {
     ...e,
     // prefer a locally-committed asset; fall back to a remote og:image URL
     img: imgByID.get(e.id) ? `/${IMG_DIR}/${imgByID.get(e.id)}` : (e.image || null),
+    rawTitle: e.title,                       // keep the original for category detection
+    title: CLEAN_TITLES[e.id] ?? e.title,    // hand-cleaned title shown everywhere
   }));
-  assignSlugs(events);
+  assignSlugs(events);          // slugs derive from the cleaned title
   return events;
 }
 

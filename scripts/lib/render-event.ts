@@ -26,6 +26,29 @@ function fmtTime(t: string | null): string {
   return m ? `${h12}:${String(m).padStart(2, "0")} ${ap}` : `${h12} ${ap}`;
 }
 
+const MONTH_LONG = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const ordinal = (n: number) => n + (["th", "st", "nd", "rd"][(n % 100 - 20) % 10] || ["th", "st", "nd", "rd"][n % 100] || "th");
+// "24th July"
+function shortWhen(date: string): string {
+  const d = new Date(date + "T12:00:00-07:00");
+  return `${ordinal(d.getDate())} ${MONTH_LONG[d.getMonth()]}`;
+}
+// event category for the title tag — specific type wins, else "Afterparty"
+function ycCategory(raw: string, vibe: string[] = [], official = false): string {
+  const t = raw.toLowerCase();
+  if (/hackathon/.test(t)) return "Hackathon";
+  if (/poker|game night/.test(t)) return "Game Night";
+  if (/mixer/.test(t)) return "Mixer";
+  if (/dinner/.test(t)) return "Dinner";
+  if (/gala/.test(t)) return "Gala";
+  if (/fireside/.test(t)) return "Fireside";
+  if (/picnic/.test(t)) return "Picnic";
+  if (/brunch/.test(t)) return "Brunch";
+  if (/pitch/.test(t)) return "Pitch Night";
+  return "Afterparty";
+}
+const normKey = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, "");
+
 function srcLabel(l: any): string {
   const u = l.u || "";
   if (/luma\.com/.test(u)) return "Luma";
@@ -43,7 +66,11 @@ export function renderEvent({ event: e, allEvents }: { event: any; allEvents: an
   const desc = String(e.description || `${e.title} — an event around YC Startup School 2026 in San Francisco.`)
     .replace(/\s+/g, " ")
     .slice(0, 155);
-  const pageTitle = `${e.title} — YC Startup School 2026 · ${day.replace(/,.*$/, "")}, SF`;
+  // readable title: "Photon GoKart Rally — 24th July @ YC SuS Afterparty"
+  // (drop the category word if the cleaned name already contains it)
+  const cat = ycCategory(e.rawTitle || e.title, e.vibe, e.official);
+  const catOut = normKey(e.title).includes(normKey(cat)) ? "" : ` ${cat}`;
+  const pageTitle = `${e.title} — ${shortWhen(e.date)} @ YC SuS${catOut}`;
 
   // same-day siblings for internal linking (excluding self)
   const related = allEvents
