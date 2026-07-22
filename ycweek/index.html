@@ -56,7 +56,7 @@ header{padding:64px 0 0;display:flex;align-items:flex-start;gap:28px}
   background-position:0 88%;background-size:100% .45em}
 .meta{margin-top:12px;font-size:13px;color:var(--dim)}
 
-/* discord join — small, scratchy, hand-drawn. hidden until the easter egg fires */
+/* discord join — small, scratchy, hand-drawn. hidden until first scroll reveals it */
 .discord{display:none;align-items:center;gap:10px;margin-top:20px;text-decoration:none;color:var(--ink);
   background:transparent;border:1.5px solid var(--ink);
   border-radius:14px 7px 15px 6px/7px 14px 6px 15px;padding:6px 12px 7px;
@@ -426,25 +426,12 @@ form.addEventListener("submit", async (e) => {
   } finally { btn.disabled = false; }
 });
 
-// ---- easter egg: 5 fast clicks anywhere reveals the discord chip ----
+// ---- reveal the discord chip on load (hidden by default, pops in) ----
 (function () {
   const chip = document.querySelector(".discord");
   if (!chip) return;
-  const NEEDED = 10, WINDOW = 2500; // 10 clicks within this many ms
-  let taps = [];
-  document.addEventListener("click", () => {
-    const now = Date.now();
-    taps = taps.filter((t) => now - t < WINDOW);
-    taps.push(now);
-    if (taps.length >= NEEDED) {
-      taps = [];
-      if (!chip.classList.contains("show")) {
-        chip.classList.add("show");
-        chip.scrollIntoView({ behavior: "smooth", block: "center" });
-        if (window.plausible) plausible("discord-easter-egg");
-      }
-    }
-  });
+  requestAnimationFrame(() => chip.classList.add("show"));
+  if (window.plausible) plausible("discord-reveal");
 })();
 </script>
 </body>
