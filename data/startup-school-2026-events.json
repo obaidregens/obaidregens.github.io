@@ -7,7 +7,7 @@
     "day2": "Sun Jul 26, 10:30 AM - 6:00 PM",
     "entry": "Valid ID + QR code (emailed 1-2 days prior). No luggage on-site.",
     "rule": "YC allows signup for only ONE official after-party per day.",
-    "lastUpdated": "2026-07-21",
+    "lastUpdated": "2026-07-22",
     "sources": [
       "events.ycombinator.com/startup-school-2026",
       "startupschoolafter.party"
@@ -393,7 +393,7 @@
         "tech",
         "party"
       ],
-      "access": "waitlist",
+      "access": "sold-out",
       "description": "Drinks, music, and conversation about file systems and agent sandboxes, with Archil credits for attendees. RELOCATED from the original venue 50 feet down the street to the Irish Bank to fit more people.",
       "url": "https://luma.com/chqmxhyg",
       "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/8c/fc181ae5-ba63-4bf6-8641-4824968a741d.png",
@@ -428,7 +428,7 @@
         "networking",
         "party"
       ],
-      "access": "open",
+      "access": "sold-out",
       "description": "Food, drinks, giveaways, and a room of founders, engineers, researchers, and operators building the next wave of AI.",
       "url": "https://luma.com/m4ez9liu",
       "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/uh/4c386844-9a73-454e-8840-9fc85d64b5a2.png",
@@ -462,7 +462,7 @@
       "vibe": [
         "party"
       ],
-      "access": "open",
+      "access": "sold-out",
       "description": "Waterfront afterparty with music, food, and founder energy. No panels, no pitches. Exclusive to Startup School 2026 attendees.",
       "url": "https://luma.com/2p9zbnzn",
       "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/6m/e662d2f6-1c5e-48e0-b9e5-87f04113d5e4.png",
@@ -495,7 +495,7 @@
       "vibe": [
         "party"
       ],
-      "access": "open",
+      "access": "sold-out",
       "description": "A secret speakeasy, entry granted only by the right password. Live generative visuals and personalized touches. One night only, for Startup School participants and select guests. Location and password shared with invited guests a few days ahead.",
       "note": "Hosts are opening a few spots to the public, but only via LinkedIn: comment 'PREMIERE' on Catherine Di's or Stephanie Gao's post, or DM Mehul Agarwal for an invite. Not mentioned anywhere on the Luma page.",
       "url": "https://luma.com/p7q8z7zl",
@@ -581,7 +581,7 @@
       "vibe": [
         "party"
       ],
-      "access": "open",
+      "access": "sold-out",
       "description": "PostHog throws a party for Day 1. Free to attend, all ages welcome, bring your Startup School badge to get in.",
       "url": "https://luma.com/posthog-sus26",
       "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/kf/b8587bef-bc5e-48f5-9a30-055cf812e7de.png",
@@ -612,7 +612,7 @@
       "vibe": [
         "party"
       ],
-      "access": "open",
+      "access": "sold-out",
       "description": "After a day of learning how to pitch your wedge and defend your TAM, AgentMail hosts a night of pure fun.",
       "url": "https://partiful.com/e/aGVSDQ7ym3eCaaeVrLwf",
       "image": "https://partiful.imgix.net/external/user/ydbGcVhbBPR6v8LRJbQtHZayQMu1/G6Yj9lu8Th7vBTOHkZGUe?w=1000&h=1000&fit=clip",
@@ -643,7 +643,7 @@
       "vibe": [
         "networking"
       ],
-      "access": "open",
+      "access": "sold-out",
       "description": "LegalOS brings together Startup School founders, builders, and friends before Startup School wraps.",
       "url": "https://luma.com/47w3zljn",
       "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/rj/0c513032-b7b8-46f2-b9fc-701e05039535.png",
@@ -674,7 +674,7 @@
       "vibe": [
         "chill"
       ],
-      "access": "open",
+      "access": "sold-out",
       "description": "Afterhours hangout at SOHN coffee shop. Hang out or cowork after the dinnertime events wind down, with banana oat milk lattes. The late-night, low-key option.",
       "url": "https://luma.com/greptile-sltd",
       "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/d7/793afa3e-a9ff-49e7-bd2b-4219e2a57340.png",
@@ -705,7 +705,7 @@
       "vibe": [
         "party"
       ],
-      "access": "open",
+      "access": "sold-out",
       "description": "Cap off Startup School with food, drinks, and Presidio views. Hosted by Adaptional (AI agents for insurance claims). Party with 2x YC founders.",
       "url": "https://luma.com/ispbsl3o",
       "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/cn/48dc5b9a-079a-42d7-806a-b8dfd53b8d60.png",
@@ -833,7 +833,7 @@
         "networking",
         "chill"
       ],
-      "access": "open",
+      "access": "sold-out",
       "description": "Food and drinks covered, relaxed Sunday night with new Startup School friends. Space limited. Startup School badge required at the door.",
       "url": "https://luma.com/fondo_yc_startup_school_afterparty",
       "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/wr/9deb6f97-1d9d-47ab-a814-c5a1c7990037.png",
@@ -901,7 +901,7 @@
         "networking",
         "party"
       ],
-      "access": "open",
+      "access": "sold-out",
       "description": "Billed as the biggest post-Startup School gathering of the weekend. Microsoft for Startups hosts hundreds of founders, builders, students, and AI fanatics. Food, games, and conversations — plus how to unlock the YC Student Starter Pack offer. Tagline: 'Your next co-founder, investor, or big opportunity could be in this room.'",
       "url": "https://aka.ms/YCAIStartupSchool/Reception",
       "image": "https://microsoftforstartups.eventbuilder.com/events/11f1376c3b274120be33071c025a25a9/uploads/public/b8021aa4d0624047b7b1507320db7755.png",
@@ -941,7 +941,7 @@
         "party",
         "tech"
       ],
-      "access": "open",
+      "access": "sold-out",
       "description": "Exclusive afterparty with AI leaders from Google DeepMind and Google Cloud, technical experts, and fellow founders. Hands-on product demos, interactive games, and playful vibes. Food, drinks, and music throughout the night.",
       "url": "https://rsvp.withgoogle.com/events/gdm-yc-sus-afterparty-2026",
       "image": null,
@@ -1447,7 +1447,7 @@
         "chill",
         "networking"
       ],
-      "access": "open",
+      "access": "sold-out",
       "description": "A low-key hangout with the Mintlify team after Day 1, heavy on founder-to-founder advice. For Startup School 2026 attendees only.",
       "image": null,
       "url": "https://luma.com/mintlify-mpse",
@@ -1751,6 +1751,100 @@
       ],
       "note": "Location isn't published — an AI voice agent calls approved guests 48h before with the address.",
       "tagline": "The waitlist calls you — literally. An AI agent phones the address."
+    },
+    {
+      "id": "afterhours",
+      "title": "After Hours | YC After After Party",
+      "host": "Adam Towner",
+      "official": false,
+      "day": "Sunday",
+      "date": "2026-07-26",
+      "start": "22:00",
+      "end": "01:00",
+      "venue": "Alchemist Bar & Lounge, 679 3rd St, San Francisco",
+      "vibe": [
+        "party"
+      ],
+      "access": "open",
+      "description": "The late-night close to Startup School weekend at Alchemist Bar & Lounge — a 10 PM-to-1 AM party for the crowd that keeps going after every other afterparty winds down.",
+      "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/u7/8c1db0b8-f155-479e-b902-ed1377a947b0.png",
+      "url": "https://luma.com/ay19k90e",
+      "links": [
+        {
+          "url": "https://luma.com/ay19k90e",
+          "type": "luma",
+          "foundOn": [
+            "submission",
+            "afterparty-site"
+          ]
+        }
+      ],
+      "foundOn": [
+        "submission",
+        "afterparty-site"
+      ],
+      "note": "Runs 10 PM–1 AM (into Monday). Submitted via the site's own form and also listed on startupschoolafter.party."
+    },
+    {
+      "id": "roboflow",
+      "title": "YC Startup School After Party with Roboflow",
+      "host": "Roboflow (S20)",
+      "official": true,
+      "day": "Saturday",
+      "date": "2026-07-25",
+      "start": "18:00",
+      "end": "20:30",
+      "venue": "San Francisco (revealed on approval)",
+      "vibe": [
+        "party"
+      ],
+      "access": "open",
+      "description": "After YC's AI Startup School wraps on Day 1, Roboflow hosts an afterparty for the people building AI in San Francisco — founders, engineers, and researchers shipping computer vision and beyond.",
+      "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/dd/186ca1af-ca3b-498e-987e-f97e31637b2e.png",
+      "url": "https://luma.com/bzdn8lr2",
+      "links": [
+        {
+          "url": "https://luma.com/bzdn8lr2",
+          "type": "luma",
+          "foundOn": [
+            "yc-official"
+          ]
+        }
+      ],
+      "foundOn": [
+        "yc-official"
+      ]
+    },
+    {
+      "id": "waferpoker",
+      "title": "Chips & Chips: Wafer x YC Startup School Poker Night",
+      "host": "Wafer (S25)",
+      "official": true,
+      "day": "Saturday",
+      "date": "2026-07-25",
+      "start": "18:00",
+      "end": "22:00",
+      "venue": "San Francisco (revealed on approval)",
+      "vibe": [
+        "chill",
+        "networking"
+      ],
+      "access": "open",
+      "description": "Skip the crowded mixer — Wafer runs a Day 1 poker night for Startup School builders. Chips and chips: play cards, talk shop, and meet founders over the table instead of shouting over music.",
+      "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/da/5c5ce33c-3498-4925-a531-728d22079d9e.png",
+      "url": "https://luma.com/wafer-s6dv",
+      "links": [
+        {
+          "url": "https://luma.com/wafer-s6dv",
+          "type": "luma",
+          "foundOn": [
+            "yc-official"
+          ]
+        }
+      ],
+      "foundOn": [
+        "yc-official"
+      ]
     }
   ]
 }

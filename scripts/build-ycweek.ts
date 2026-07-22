@@ -5,6 +5,8 @@
 
 import { readFileSync, writeFileSync, mkdirSync, readdirSync } from "node:fs";
 import { renderYcweek } from "./lib/render-ycweek.ts";
+import { renderEvent } from "./lib/render-event.ts";
+import { prepareEvents } from "./lib/ycweek-shared.ts";
 
 const data = JSON.parse(readFileSync("data/startup-school-2026-events.json", "utf8"));
 const assetFiles = readdirSync("assets/startup-school-2026");
@@ -27,3 +29,14 @@ const html = renderYcweek({
 mkdirSync("ycweek", { recursive: true });
 writeFileSync("ycweek/index.html", html);
 console.log(`wrote ycweek/index.html — ${data.events.length} events, ${(html.length / 1024).toFixed(1)} KB`);
+
+// per-event leaf pages: /ycweek/<slug>/index.html (SEO + rich-result assets)
+const events = prepareEvents(data.events, assetFiles);
+let leafBytes = 0;
+for (const event of events) {
+  const leafHtml = renderEvent({ event, allEvents: events });
+  mkdirSync(`ycweek/${event.slug}`, { recursive: true });
+  writeFileSync(`ycweek/${event.slug}/index.html`, leafHtml);
+  leafBytes += leafHtml.length;
+}
+console.log(`wrote ${events.length} leaf pages — avg ${(leafBytes / events.length / 1024).toFixed(1)} KB`);

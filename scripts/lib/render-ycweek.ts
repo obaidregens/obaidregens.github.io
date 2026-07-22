@@ -2,6 +2,8 @@
 // the submit Worker so both emit byte-identical HTML. No fs/network in here;
 // the caller supplies the asset list, Discord count, and submit endpoint.
 
+import { SITE, prepareEvents, leafPath, eventSchema, escapeJsonLd } from "./ycweek-shared.ts";
+
 export type RenderOpts = {
   data: any;                 // parsed events JSON
   assetFiles: string[];      // filenames in assets/startup-school-2026
@@ -9,7 +11,6 @@ export type RenderOpts = {
   submitEndpoint?: string;   // POST target for the submit form
 };
 
-const IMG_DIR = "assets/startup-school-2026";
 const DAYS = [
   { date: "2026-07-21", label: "Tuesday", num: "21" },
   { date: "2026-07-22", label: "Wednesday", num: "22" },
@@ -21,18 +22,8 @@ const DAYS = [
 ];
 
 export function renderYcweek({ data, assetFiles, discordMembers = 250, submitEndpoint = "" }: RenderOpts): string {
-  const imgByID = new Map<string, string>();
-  for (const f of assetFiles) {
-    const m = f.match(/^\d+-(.+)\.(png|jpe?g|webp)$/);
-    if (m) imgByID.set(m[1], f);
-  }
-
-  const events = data.events.map((e: any) => ({
-    ...e,
-    // prefer a locally-committed asset; fall back to a remote og:image URL
-    // (submitted events carry `image` but no local file)
-    img: imgByID.get(e.id) ? `/${IMG_DIR}/${imgByID.get(e.id)}` : (e.image || null),
-  }));
+  // resolve images + assign keyword-rich slugs (shared with the leaf pages)
+  const events = prepareEvents(data.events, assetFiles);
 
   const DISCORD_INVITE = "https://discord.gg/ycstartupschool2026";
   const membersLabel = `${Math.floor(discordMembers / 10) * 10}+ attendees`;
@@ -40,19 +31,38 @@ export function renderYcweek({ data, assetFiles, discordMembers = 250, submitEnd
   const payload = JSON.stringify(
     events.map((e: any) => ({
       id: e.id, t: e.title, h: e.host, d: e.date, s: e.start, e: e.end,
-      v: e.venue, vibe: e.vibe, a: e.access, o: e.official,
+      v: e.venue, vibe: e.vibe, a: e.access, o: e.official, slug: e.slug,
       desc: e.description, url: e.url, img: e.img, note: e.note ?? null,
       aud: e.audience ?? null, tag: e.tagline ?? null,
       links: (e.links ?? []).map((l: any) => ({ u: l.url, k: l.type })),
     }))
   ).replace(/</g, "\\u003c");
 
+  // ---- structured data: ItemList of Event objects (shared with the leaf pages) ----
+  const eventListJson = escapeJsonLd({
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Events around YC Startup School 2026",
+    description: `All ${events.length} events happening around YC Startup School 2026 in San Francisco, July 21–27.`,
+    itemListElement: events.map((e: any, i: number) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      item: eventSchema(e),
+    })),
+  });
+
+  // static, crawlable index of every leaf page (cards render client-side, so
+  // this guarantees search engines discover all leaf URLs without running JS)
+  const leafIndex = events
+    .map((e: any) => `<a href="${leafPath(e)}">${e.title.replace(/&/g, "&amp;").replace(/</g, "&lt;")}</a>`)
+    .join("");
+
   const html = `<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Every event around YC Startup School 2026</title>
+<title>YC Startup School 2026 Events & Afterparties in SF · obaid</title>
 <meta name="description" content="All ${events.length} events happening around YC Startup School 2026 in SF, July 21–27.">
 <meta property="og:title" content="Every event around YC Startup School 2026">
 <meta property="og:description" content="All ${events.length} events around YC Startup School 2026 in SF, including the ${events.filter((e: any) => e.official).length} official afterparties.">
@@ -64,6 +74,7 @@ export function renderYcweek({ data, assetFiles, discordMembers = 250, submitEnd
 <meta property="og:image:alt" content="Every event around YC Startup School 2026 — ${events.length} events, July 21–27, San Francisco.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://obaid.wtf/assets/ycweek/og.png">
+<script type="application/ld+json">${eventListJson}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -197,6 +208,15 @@ button.pill[data-vibe="party"][aria-pressed="true"]{background:#fde3dd;border-co
 .alsolbl{font-size:11.5px;color:#b8b3a7;margin-left:4px}
 .src{font-size:11.5px;color:var(--dim);text-decoration:none;border:1px solid var(--rule);border-radius:100px;padding:3px 9px;transition:.15s;white-space:nowrap}
 .src:hover{border-color:var(--ink);color:var(--ink)}
+.more{font-size:11.5px;color:var(--dim);text-decoration:none;border-bottom:1px solid var(--rule);white-space:nowrap}
+.more:hover{color:var(--ink);border-color:var(--ink)}
+.share{font:inherit;font-size:13px;line-height:1;color:var(--dim);background:none;border:1px solid var(--rule);border-radius:100px;padding:3px 8px;cursor:pointer;transition:.15s}
+.share:hover{border-color:var(--ink);color:var(--ink)}
+/* static crawlable index of every leaf page — visually quiet, for search engines + no-JS */
+.leafindex{margin:56px 0 0;border-top:1px solid var(--rule);padding-top:20px}
+.leafindex h2{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--dim);font-weight:600;margin-bottom:10px}
+.leafindex a{font-size:12.5px;color:var(--dim);text-decoration:none;margin:0 14px 6px 0;display:inline-block}
+.leafindex a:hover{color:var(--y-deep)}
 
 /* repeat of the sticker, after the list */
 .endcap{display:flex;justify-content:center;margin-top:64px}
@@ -295,6 +315,11 @@ footer a{color:var(--y-deep)}
 </div>
 
 <main id="list"></main>
+
+<nav class="leafindex" aria-label="All events">
+  <h2>All ${events.length} events</h2>
+  ${leafIndex}
+</nav>
 
 <section class="submit">
   <div class="sub-h">event not here?</div>
@@ -410,6 +435,8 @@ function render() {
         (e.note ? '<div class="note">' + e.note + '</div>' : "") +
         '<div class="who">' + e.h + ' · ' + (e.s ? fmt(e.s) + (e.e ? "–" + fmt(e.e) : "") : "time TBA") + '</div>' +
         '<div class="linkrow"><a class="go" href="' + e.url + '" target="_blank" rel="noopener">RSVP →</a>' +
+        '<a class="more" href="/ycweek/' + e.slug + '/">More details</a>' +
+        '<button class="share" type="button" data-slug="' + e.slug + '" data-title="' + e.t.replace(/"/g, "&quot;") + '" aria-label="Share this event">⤴</button>' +
         extraSources(e) + '</div></div></details>';
     }
     html += "</section>";
@@ -433,6 +460,23 @@ document.querySelectorAll("button.pill").forEach(b => {
   });
 });
 render();
+
+// ---- share a specific event (Web Share API → leaf page, clipboard fallback) ----
+document.getElementById("list").addEventListener("click", (ev) => {
+  const b = ev.target.closest(".share");
+  if (!b) return;
+  ev.preventDefault();
+  const url = location.origin + "/ycweek/" + b.dataset.slug + "/";
+  const title = b.dataset.title + " — YC Startup School 2026";
+  if (navigator.share) {
+    navigator.share({ title, url }).catch(() => {});
+  } else if (navigator.clipboard) {
+    navigator.clipboard.writeText(url).then(() => {
+      const prev = b.textContent; b.textContent = "✓"; setTimeout(() => (b.textContent = prev), 1200);
+    }).catch(() => {});
+  }
+  if (window.plausible) plausible("event-share");
+});
 
 // ---- submit an event ----
 const SUBMIT_ENDPOINT = ${JSON.stringify(submitEndpoint)};

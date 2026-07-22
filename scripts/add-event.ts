@@ -262,6 +262,56 @@ const MANUAL = [
     note:
       "No time published — the post only says '07.23 · Ditto Office'. Two entry paths, both via the LinkedIn post: comment or DM 'SINGLE' for the contestant application link, 'MINGLE' to attend as audience. The ditto.ai/batchelor page is a casting call with audience/participant buttons and no further detail. Listed on neither YC's page nor startupschoolafter.party.",
   },
+  // --- found via YC Week submission form + startupschoolafter.party ---
+  {
+    id: "afterhours",
+    title: "After Hours | YC After After Party",
+    host: "Adam Towner",
+    official: false,
+    day: "Sunday",
+    date: "2026-07-26",
+    start: "22:00",
+    end: "01:00",
+    venue: "Alchemist Bar & Lounge, 679 3rd St, San Francisco",
+    vibe: ["party"],
+    access: "open",
+    description:
+      "The late-night close to Startup School weekend at Alchemist Bar & Lounge — a 10 PM-to-1 AM party for the crowd that keeps going after every other afterparty winds down.",
+    image: "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/u7/8c1db0b8-f155-479e-b902-ed1377a947b0.png",
+    url: "https://luma.com/ay19k90e",
+    links: [{ url: "https://luma.com/ay19k90e", type: "luma", foundOn: ["submission", "afterparty-site"] }],
+    foundOn: ["submission", "afterparty-site"],
+    note: "Runs 10 PM–1 AM (into Monday). Submitted via the site's own form and also listed on startupschoolafter.party.",
+  },
+  // --- found on YC's official attendee After Parties list (Day 1) ---
+  {
+    id: "roboflow",
+    title: "YC Startup School After Party with Roboflow",
+    host: "Roboflow (S20)", official: true, day: "Saturday",
+    date: "2026-07-25", start: "18:00", end: "20:30",
+    venue: "San Francisco (revealed on approval)",
+    vibe: ["party"], access: "open",
+    description:
+      "After YC's AI Startup School wraps on Day 1, Roboflow hosts an afterparty for the people building AI in San Francisco — founders, engineers, and researchers shipping computer vision and beyond.",
+    image: "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/dd/186ca1af-ca3b-498e-987e-f97e31637b2e.png",
+    url: "https://luma.com/bzdn8lr2",
+    links: [{ url: "https://luma.com/bzdn8lr2", type: "luma", foundOn: ["yc-official"] }],
+    foundOn: ["yc-official"],
+  },
+  {
+    id: "waferpoker",
+    title: "Chips & Chips: Wafer x YC Startup School Poker Night",
+    host: "Wafer (S25)", official: true, day: "Saturday",
+    date: "2026-07-25", start: "18:00", end: "22:00",
+    venue: "San Francisco (revealed on approval)",
+    vibe: ["chill", "networking"], access: "open",
+    description:
+      "Skip the crowded mixer — Wafer runs a Day 1 poker night for Startup School builders. Chips and chips: play cards, talk shop, and meet founders over the table instead of shouting over music.",
+    image: "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/da/5c5ce33c-3498-4925-a531-728d22079d9e.png",
+    url: "https://luma.com/wafer-s6dv",
+    links: [{ url: "https://luma.com/wafer-s6dv", type: "luma", foundOn: ["yc-official"] }],
+    foundOn: ["yc-official"],
+  },
 ];
 
 let added = 0, updated = 0;
