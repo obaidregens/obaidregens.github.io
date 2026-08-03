@@ -4,7 +4,9 @@ title: "announcing pivotal ☀️"
 date: 2026-08-02
 ---
 
-☀️ **a new universal-workspace model for agent harnesses** <a href="https://github.com/obaidregens/pivotal" target="_blank" rel="noopener" style="float:right;color:#999;text-decoration:none"><code>[Github]</code></a>
+**a new universal-workspace model for agent harnesses** <a href="https://github.com/obaidregens/pivotal" target="_blank" rel="noopener" style="float:right;color:#999;text-decoration:none"><code>[Github]</code></a>
+
+*thesis:*
 
 I use Claude Code for everything for now: user research, converting files, compiling code/tools, debugging problems with my computer, and after getting access to doordash's CLI, searching for and regularly ordering groceries.
 
@@ -22,4 +24,4 @@ That's where pivotal came from. And like everything I create, extreme focus was 
 
 ---
 
-*grateful to YC Startup School and Boris Cherny for the credits and subscription to make this possible. I don't have to worry about which dream to prioritize now, I can build them all and then unify them as one.*
+*grateful to YC Startup School and Boris Cherny for the credits and subscription to make this possible. I don't have to worry about which dream to prioritize now, I can build them all, market and tell the world about them, and eventually unify them as one.*
