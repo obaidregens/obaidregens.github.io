@@ -6,8 +6,9 @@ date: 2026-08-02
 
 ☀️ **a new universal-workspace model for agent harnesses** <a href="https://github.com/obaidregens/pivotal" target="_blank" rel="noopener" style="float:right;color:#999;text-decoration:none"><code>[Github]</code></a>
 
-
-_no jargon explanation:_ this tool will categorize everything you do on claude code into topics so you can resume work easier and efficiently combine context of the same work across chats. doesn't interfere with claude code.
+_no jargon explanation:_
+\
+this tool will categorize everything you do on claude code into topics so you can resume work easier and efficiently combine context of the same work across chats. doesn't interfere with claude code.
 
 quick install for non-readers:
 ```sh
@@ -15,13 +16,13 @@ curl -fsSL https://pivotal.obaid.wtf/install.sh | bash
 ```
 
 **Before:**
-
+\
 -> you compressed images into a hyper-niche jpeg2000 format with claude code before. need to compress another.
 
 -> can't remember which directory claude launched in so need to look through every single directory's /resume.
 
 **Now:**
-
+\
 -> Recall and select work you've done across any codebase
 - "did research on user me@obaid.wtf"
 - "compressed images to jpeg2000"
@@ -29,19 +30,9 @@ curl -fsSL https://pivotal.obaid.wtf/install.sh | bash
 
 -> as a plus, automatically combines context across all chats dealing with the topic so when you resume it's fully batteries-charged
 
-<img style="max-width:100%;height:auto;width:auto" alt="the pivotal topic selector" src="https://github.com/user-attachments/assets/5a01a994-85bf-4600-b738-e5201f817648" />
-
-----
-
-_thesis: claude code is being used for a lot more than coding now. I do everything from learning and research to connecting mcps and handling my mail._
-
-_and the assumed model of project directories and chat sessions with fresh contexts has become limiting enough for me that I've almost considered breaking claude code to roll my own harness. almost._
-
-_but thus far, I'm choosing to keep and extend it as much as possible until I run into a wall._
+<img style="max-width:100%;height:auto;width:auto" alt="pivotal demo" src="https://github.com/user-attachments/assets/5a01a994-85bf-4600-b738-e5201f817648" />
 
 ---
-
-**`pivotal`** is a new take on the agentic harness model, it views everything you do as a universal workspace, intelligently categorizing it into topics instead of being isolated across workspaces, and empowers claude code to think that way as well.
 
 i've worked extremely carefully myself to make the UX as delightful and simple as I always do, and the `install.sh` experience is part of it
 
@@ -74,10 +65,10 @@ select any topic to open a new chat condensing discoveries from the topic across
 
 the `install.sh` and permanent help badge after should be pretty self-explanatory hand-holding! but if you go off a wrong path or something is not extremely explanatory just dm me on twitter @wtfobaid or text @ +1 940-745-8318 with a link to the repo and what you went through.
 
+but if you still want the full deets, the LLM-written half of the [repo README](https://github.com/obaidregens/pivotal#explained-by-my-llm) goes all the way down.
+
 **why not openclaw?**
 
 the first time I used it, it ate an absurd amount of tokens and then proceeded to accidentally wipe my entire work for the day. i think claude code's context isolation is better, although the lack of fluidity between work is something I've tried to strike a balance with in pivotal.
 
 feel free to hammer me with all the detailed reasoning for why pivotal is reinventing the openclaw wheel, i might not reply but I will read all of it earnestly and think about it deeply.
-
-but if you still want the full deets, the LLM-written half of the [repo README](https://github.com/obaidregens/pivotal#explained-by-my-llm) goes all the way down.
