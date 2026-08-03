@@ -72,3 +72,10 @@ but if you still want the full deets, the LLM-written half of the [repo README](
 the first time I used it, it ate an absurd amount of tokens and then proceeded to accidentally wipe my entire work for the day. i think claude code's context isolation is better, although the lack of fluidity between work is something I've tried to strike a balance with in pivotal.
 
 feel free to hammer me with all the detailed reasoning for why pivotal is reinventing the openclaw wheel, i might not reply but I will read all of it earnestly and think about it deeply.
+
+## thesis
+claude code is being used for a lot more than coding now. I do everything from learning and research to compressing/converting files, connecting mcps and handling my mail.
+
+so the assumed model of claude code that handles project directories and chat sessions with fresh contexts has become limiting enough for me that I've almost considered breaking claude code to roll my own harness. almost.
+
+but thus far, I'm choosing to keep and extend it as much as possible until I run into the wall
