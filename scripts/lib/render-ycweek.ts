@@ -66,8 +66,9 @@ export function renderYcweek({ data, assetFiles, discordMembers = 250, submitEnd
 <meta name="description" content="All ${events.length} events happening around YC Startup School 2026 in SF, July 21–27.">
 <meta property="og:title" content="Every event around YC Startup School 2026">
 <meta property="og:description" content="All ${events.length} events around YC Startup School 2026 in SF, including the ${events.filter((e: any) => e.official).length} official afterparties.">
-<meta property="og:url" content="https://obaid.wtf/ycweek">
+<meta property="og:url" content="https://obaid.wtf/ycweek/">
 <meta property="og:type" content="website">
+<link rel="canonical" href="https://obaid.wtf/ycweek/">
 <meta property="og:image" content="https://obaid.wtf/assets/ycweek/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -92,7 +93,8 @@ body{background:var(--bg);color:var(--ink);font-family:var(--f);font-size:16px;l
 
 header{padding:64px 0 0;display:flex;align-items:flex-start;gap:28px}
 .headtext{flex:1;min-width:0}
-.intro{font-size:19px;line-height:1.45;max-width:44ch}
+.intro{font-size:19px;line-height:1.45;max-width:44ch;font-weight:400}
+.intro b{font-weight:600}
 
 /* "made by" sticker */
 .xcard{flex-shrink:0;display:block;text-decoration:none;color:inherit;position:relative;
@@ -274,7 +276,7 @@ footer a{color:var(--y-deep)}
 
 <header>
   <div class="headtext">
-    <p class="intro">Every event around <b>YC Startup School 2026</b>. San Francisco, July 21–27.</p>
+    <h1 class="intro">Every event around <b>YC Startup School 2026</b>. San Francisco, July 21–27.</h1>
     <p class="meta">${events.length} events · ${events.filter((e: any) => e.official).length} official · tap any for details</p>
   </div>
   <a class="xcard" href="https://x.com/wtfobaid" target="_blank" rel="noopener" aria-label="made by obaid — follow @wtfobaid on X">

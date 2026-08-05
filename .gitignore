@@ -22,3 +22,13 @@ data/thread.json
 
 # superseded by data/startup-school-2026-events.json
 /startup-school-2026-events.md
+
+# schedule-compare: attendee email lists (raw PII) + worker secrets. never commit.
+# repo is public; the hashed allowlist is a membership oracle, so it is bundled
+# into the worker at deploy from this local file but never committed.
+data/attendees*
+**/attendees*.csv
+**/attendees*.json
+worker/schedule/allowlist.json
+*ss26-secrets*
+worker/schedule/.dev.vars

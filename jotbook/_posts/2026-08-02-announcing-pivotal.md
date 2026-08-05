@@ -8,9 +8,13 @@ date: 2026-08-02
 
 *thesis:*
 
-I use Claude Code for everything for now: user research, converting files, compiling code/tools, debugging problems with my computer, and after getting access to doordash's CLI, searching for and regularly ordering groceries.
+There are two theses, one that this tool is needed simply because there is no way to search what through what you've worked on with claude code. Good enough.
 
-And I've felt this is where Claude Code's own model of work, divided into directories and chat sessions, is falling apart. What project directory does converting a file fall into? and do I exit, create a new Workspace dir, and restart `claude` for each? And how do I remember and uniquely reference *that conversion type's* context among the 100 other "mini-projects" I've seemingly started?
+The other thesis, is a larger vision. What this tool isn't yet but what I see it as a first-step towards.
+
+I use Claude Code for everything now: user research, converting files, compiling code/tools, debugging problems with my computer, and after getting access to doordash's CLI, searching for and ordering groceries.
+
+This is where I've felt Claude Code's own model of work, divided into directories and chat sessions, falls apart. What project directory does converting a file fall into? and do I exit, create a new Workspace dir, and restart `claude` for each? And how do I remember and uniquely reference *that conversion type's* context among the 100 other "mini-projects" I've seemingly started?
 
 This is my specific problem, but the limitations this work model has likely branches in many trees and affects various types of people.
 
