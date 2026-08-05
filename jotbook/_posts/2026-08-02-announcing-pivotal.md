@@ -28,9 +28,10 @@ That's where pivotal came from. And like everything I create, extreme focus was 
 
 ---
 
-*grateful to YC Startup School and Boris Cherny for the credits and subscription to make this possible. I don't have to worry about which dream to prioritize now, I can build them all, market and tell the world about them, and eventually unify them as one.*
+*grateful to YC Startup School and Boris Cherny for the credits and subscription to make this possible. don't have to worry about which dream to prioritize now, it's a lot more possible to create everything I wanted to do, market it, and eventually unify it all as one.*
 
-<video controls playsinline style="max-width:100%;border-radius:11px;margin:1rem 0;">
+<video controls playsinline style="max-width:100%;border-radius:11px;margin:1rem 0 0.25rem;">
   <source src="/assets/pivotal-0802-av1.mp4" type="video/mp4; codecs=av01.0.08M.08">
   <source src="/assets/pivotal-0802.mp4" type="video/mp4">
 </video>
+<a href="/assets/pivotal-0802.mp4" target="_blank" rel="noopener" style="display:block;text-align:right;color:#999;text-decoration:none;font-size:0.85em;margin-bottom:1rem;"><code>[open video]</code></a>
