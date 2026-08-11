@@ -176,7 +176,47 @@ O&D matrix (or the de-identified microdata). Precedent exists for fulfillment.
 
 ## Q4b — Portal/DTX documents and Business Plan appendices
 
-(to be completed)
+**Status: answered — no per-train data newer than 2019 exists in project
+filings; a few useful peak-hour anchors do.**
+
+Per-train load tables:
+- The only genuine per-train tables in any filing are Caltrain's own Annual
+  Passenger Count Key Findings reports (already known; e.g. 2019:
+  caltrain.com/media/1359/download — Tables 11–12 "Fullest Trains" give train
+  number, departure time, max-load station, max load, seats, % capacity; e.g.
+  NB 217 at 989 riders = 130% of 760 seats leaving Hillsdale).
+- SPUR Caltrain Corridor Vision Plan, Appendix A (Feb 2017,
+  spur.org/…/Appendix_A_Existing_Conditions_and_Methodology.pdf) has an AM-peak
+  northbound **per-train load chart** (~2015–16 data, chart images only) plus
+  period-level capacity use (AM peak NB 6,570 riders / 9,100 seats = 72%;
+  PM peak 8,816 / 9,750 = 90%).
+
+Peak-hour anchors (line-level, useful as model constraints, all pre-COVID):
+- PCEP FTA Core Capacity profiles (FY18 & AR22): 5 peak-hour peak-direction
+  trains, 3,403 seats, **96% seated-load factor** (~2016 counts); post-project
+  6 trains / 3,768 seats.
+- Caltrain Business Plan Corridor Booklet (May 2019, caltrain.com/media/11159):
+  "~3,900 riders per direction during its busiest hour" today; 2040 scenarios
+  6,400 / 7,500 / 11,000+ pphpd. Business Plan crowding results were published
+  only as summary matrices with a 135%-of-seats crowd constraint — no
+  train-level appendix exists.
+- DTX 2004 FEIS/EIR Ch. 3 (tjpa.org/media/30695/download): PM peak-hour
+  outbound max-load-point 1,900 riders vs 2,900 capacity (July 2001) — history
+  only.
+
+Dead ends: The Portal's modern FTA CIG profiles (FY25/FY26) report only daily/
+annual linked trips (16,500 daily in 2023; 48,000 in 2045); its detailed
+"Travel Forecast Results Report" is an unpublished FTA submittal; the DTX
+SEIS/EIR (2015/2018) has only combined-operator screenline utilization; the
+underlying 2005 Cambridge Systematics ridership analysis is cited but not
+posted; PCEP EIR Appendix I (ridership tech memo) is station-level, not
+per-train.
+
+**Implication for the model:** project filings add no post-electrification
+per-train observations. Their value is as constraints: the 96% pre-COVID
+seated-load factor and the 135% crowd cap corroborate capacity assumptions,
+and the Fullest Trains tables give known 2019 peaks to check the prior
+against.
 
 ## Bonus — Cal-ITP GTFS-RT stop metrics
 
