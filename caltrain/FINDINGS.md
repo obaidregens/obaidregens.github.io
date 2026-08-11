@@ -6,11 +6,13 @@ ridership on each individual northbound Caltrain train. Date of research:
 
 ## TL;DR
 
-- **Q1 (GTFS-RT occupancy_status): blocked on a 511 API key** — the token form
-  is reCAPTCHA-protected, so a human has to request it (511.org/open-data/token,
-  emailed instantly). The 511 SIRI spec does define an optional `Occupancy`
-  element on `MonitoredVehicleJourney`, so the pipeline supports it; whether
-  Caltrain populates it is a one-request check once a key exists.
+- **Q1 (GTFS-RT occupancy_status): No.** Tested live with a 511 key:
+  Caltrain's VehiclePositions entities carry no `occupancy_status`, no
+  `occupancy_percentage`, no `multi_carriage_details`; SIRI's `Occupancy`
+  element is null on every train. Control test the same minute: Muni 454/456
+  and AC Transit 132/132 vehicles populated — the pipeline works, Caltrain
+  just doesn't send it (APCs still in calibration). The assignment model is
+  necessary.
 - **Q2 (2016–2019 shape stability): the prior is trustworthy.** Adjacent-year
   Pearson correlation of per-train share of daily NB boardings is 0.94–0.99;
   median absolute share change is ~5% (2017→2018 is the noisy pair at ~9–10%,
@@ -33,7 +35,29 @@ ridership on each individual northbound Caltrain train. Date of research:
 
 ## Q1 — occupancy_status in Caltrain's GTFS-RT VehiclePositions
 
-**Status: needs a 511 API key; could not be tested empirically.**
+**Status: ANSWERED (empirically, with a 511 key): No. Caltrain does not
+populate occupancy in either GTFS-RT or SIRI.**
+
+Tested 2026-08-11 ~06:12 UTC (Mon ~11:12 PM Pacific, 5 trains live):
+
+- `Transit/VehiclePositions?agency=CT`: 5 entities; `occupancy_status` unset
+  on all, `occupancy_percentage` unset, `multi_carriage_details` empty.
+- SIRI `VehicleMonitoring?agency=CT`: every `MonitoredVehicleJourney` carries
+  an `Occupancy` key — **value `null` on all trains** (511 emits the field
+  regardless of agency data).
+- **Control test** (rules out "511 strips it" and the late-hour objection):
+  same key, same minute — SF Muni `occupancy_status` populated on 454/456
+  vehicles (EMPTY/MANY_SEATS/FEW_SEATS/STANDING_ROOM), AC Transit 132/132.
+  Agencies that feed occupancy report it even on empty late-night vehicles,
+  so Caltrain's 0/5 is absence of the data, not time of day.
+
+Consistent with the EMU APCs still being in calibration. Worth a periodic
+re-check (one request) — if occupancy ever appears, most of the assignment
+model becomes a validation tool rather than the estimate. The SIRI
+`MonitoredCall` does confirm aimed+expected arrival *and departure* times
+per stop, so the live dwell-proxy plan stands.
+
+Original access notes (kept for reference):
 
 - The token request form (https://511.org/open-data/token) requires first/last
   name, email, TOS checkbox — and reCAPTCHA v3 plus Drupal antibot/honeypot
