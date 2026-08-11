@@ -1,0 +1,26 @@
+direction,time_period,service_type,avg_weekday_riders_jan2023,target_completes,trains_sampled,completes
+NB,Early AM,Bullet,93,8,1,19
+NB,Early AM,Limited,611,56,4,64
+NB,Early AM,Local,201,18,2,14
+NB,AM Peak,Bullet,534,49,4,74
+NB,AM Peak,Limited,1426,130,7,226
+NB,AM Peak,Local,733,67,2,98
+NB,Midday,Limited,871,79,7,142
+NB,Midday,Local,753,69,4,140
+NB,PM Peak,Bullet,414,38,2,103
+NB,PM Peak,Limited,1559,142,7,189
+NB,PM Peak,Local,598,54,3,97
+NB,Evening,Limited,135,12,1,19
+NB,Evening,Local,341,31,3,28
+SB,Early AM,Limited,30,3,1,5
+SB,Early AM,Local,92,8,1,12
+SB,AM Peak,Bullet,627,57,4,63
+SB,AM Peak,Limited,1015,92,4,82
+SB,AM Peak,Local,597,54,3,86
+SB,Midday,Limited,714,65,9,192
+SB,Midday,Local,883,80,8,150
+SB,PM Peak,Bullet,806,73,6,105
+SB,PM Peak,Limited,1796,163,10,280
+SB,PM Peak,Local,825,75,3,89
+SB,Evening,Limited,239,22,1,39
+SB,Evening,Local,598,55,7,83

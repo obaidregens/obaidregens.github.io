@@ -2,7 +2,50 @@
 
 Continues `FINDINGS.md`. Date: 2026-08-11.
 
-## 1. Time dimension in the MTC 2024 O-D microdata
+## Ground rule adopted mid-round: no request-gated data
+
+Anything that requires human approval on the other end — the MTC microdata
+extract, Cal-ITP warehouse access, future asks to Caltrain staff — is **out of
+scope**. The model is built from public, instantly-fetchable sources only.
+`mtc_email_draft.md` is retained in case that ever changes, but nothing
+depends on it. Consequences are folded into items 1 and 2 below; the headline
+is that the 2024 O&D report itself publishes enough (Table 9 sampling frame +
+Table 3 zone matrix) to substitute for the microdata at reduced granularity,
+and a self-run SIRI archiver (needs only the existing 511 key) substitutes
+for the warehouse going forward.
+
+### The public time-of-day anchor (replaces the microdata ask)
+
+Table 9 of the O&D report (p. 20) prints the survey's sampling frame:
+**average weekday boardings by direction × time period × service type,
+January 2023** — the only published post-COVID time-of-day distribution of
+Caltrain ridership. Digitized to
+`data/od2024_table9_jan2023_frame.csv` (checksums match the printed totals:
+NB 8,269 / all 16,491).
+
+It directly measures the peak flattening that was this round's central risk
+(2019 figures from the Key Findings report's market table, which counts early
+AM within peak):
+
+| Share of weekday boardings | 2019 census | Jan 2023 frame |
+|---|---|---|
+| Peak (incl. early AM) | 84.6% | 72.5% |
+| Midday | 11.0% | 19.5% |
+| Evening | 4.4% | 8.0% |
+
+Northbound Jan 2023: Early AM 10.9%, AM peak 32.6%, Midday 19.6%, PM peak
+31.1%, Evening 5.8%.
+
+Caveats: the frame's absolute total (16,491) runs ~11% above the Tableau
+Jan-2023 Mon–Thu AWR (14,822) — it's a frame, likely from a specific count
+week, so **use its shares, never its levels**; it's Mon–Thu, pre-electrification
+schedule (Jan 2023 service types), and now 3.5 years old. But as a
+period-level reweighting of the 2019 within-period shape it's exactly the
+right correction: apply 2019 shapes *within* each time-period × service-type
+cell, and the Jan-2023 (or newer, if ever published) distribution *across*
+cells.
+
+## 1. Time dimension in the MTC 2024 O-D microdata — route closed; public substitute above
 
 **Answered: YES — every record carries the surveyed train's number, and time
 period is a weighting dimension.** This upgrades the microdata request from
@@ -43,6 +86,14 @@ noisy for any single train — treat as calibration targets by service type ×
 time period, not as a per-train census. The email draft
 (`mtc_email_draft.md`) cites Table 4 and §3.5 and asks for train number
 explicitly.
+
+**Status under the no-request-gated-data rule: the request path is closed.**
+The findings above document that the time dimension exists in the microdata,
+but the model proceeds without it, using what the report itself publishes:
+the Table 3 zone-group O-D matrix (spatial seed, weighted to May 2024) and
+the Table 9 Jan-2023 direction × time-period × service-type frame (temporal
+seed) — see "The public time-of-day anchor" at the top of this file. The
+draft stays on file in case the constraint ever lifts.
 
 ## 2. Cal-ITP warehouse: departures, or arrival-only?
 
@@ -93,10 +144,15 @@ access instead of self-archiving.**
   precise: `fct_stop_time_updates` where `gtfs_dataset_name = 'Bay Area 511
   Caltrain TripUpdates'`, bounded dates.
 
-**Decision: warehouse over self-archiving.** Self-archiving only wins on
-immediacy; the warehouse has four years of history including the entire
-electrified era. A lightweight SIRI archiver is still cheap insurance while
-the access request is pending.
+**Decision (revised under the no-request-gated-data rule): self-archive.**
+Warehouse access requires a human-approved grant, so it's out. The
+warehouse findings above stand as documentation of what exists, but the
+operative path is a lightweight SIRI StopMonitoring/VehicleMonitoring
+archiver using the existing 511 key (instant, no approval): poll every
+~30–60s during service hours, keep expected arrival/departure per
+train-stop, derive actuals by last-prediction-before-dropout. It only
+yields data going forward, so it should start before the model needs it —
+validation can use whatever window has accumulated by then.
 
 ## 3. Ridership lineage for scaling: use the Tableau series
 
