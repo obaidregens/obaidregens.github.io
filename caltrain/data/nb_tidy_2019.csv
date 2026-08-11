@@ -1,0 +1,1427 @@
+train,station,on,off,onboard
+101,Gilroy,0.0,0.0,0.0
+101,San Martin,0.0,0.0,0.0
+101,Morgan Hill,0.0,0.0,0.0
+101,Blossom Hill,0.0,0.0,0.0
+101,Capitol,0.0,0.0,0.0
+101,Tamien,0.0,0.0,0.0
+101,San Jose Diridon,13.0,0.0,13.0
+101,College Park,0.0,0.0,13.0
+101,Santa Clara,4.5,0.0,17.5
+101,Lawrence,2.5,0.0,20.0
+101,Sunnyvale,11.0,0.0,31.0
+101,Mountain View,6.5,0.0,37.5
+101,San Antonio,3.0,0.0,40.5
+101,California Avenue,3.0,0.0,43.5
+101,Palo Alto,8.0,3.0,48.5
+101,Menlo Park,2.0,2.0,48.5
+101,Atherton,0.0,0.0,48.5
+101,Redwood City,9.5,0.5,57.5
+101,San Carlos,4.0,1.0,60.5
+101,Belmont,1.5,0.0,62.0
+101,Hillsdale,13.0,0.5,74.5
+101,Hayward Park,5.0,0.0,79.5
+101,San Mateo,10.0,1.5,88.0
+101,Burlingame,7.5,4.5,91.0
+101,Broadway,0.0,0.0,91.0
+101,Millbrae,6.0,16.0,81.0
+101,San Bruno,3.5,2.5,82.0
+101,South San Francisco,1.0,2.0,81.0
+101,Bayshore,1.0,0.5,81.5
+101,22nd Street,0.0,7.0,74.5
+101,San Francisco,0.0,74.5,0.0
+103,Gilroy,0.0,0.0,0.0
+103,San Martin,0.0,0.0,0.0
+103,Morgan Hill,0.0,0.0,0.0
+103,Blossom Hill,0.0,0.0,0.0
+103,Capitol,0.0,0.0,0.0
+103,Tamien,12.0,0.0,12.0
+103,San Jose Diridon,26.0,0.0,38.0
+103,College Park,0.0,0.0,38.0
+103,Santa Clara,8.0,0.5,45.5
+103,Lawrence,5.5,0.5,50.5
+103,Sunnyvale,14.0,2.5,62.0
+103,Mountain View,8.0,2.0,68.0
+103,San Antonio,3.5,1.0,70.5
+103,California Avenue,3.5,2.0,72.0
+103,Palo Alto,7.0,26.5,52.5
+103,Menlo Park,4.5,2.0,55.0
+103,Atherton,0.0,0.0,55.0
+103,Redwood City,22.5,5.0,72.5
+103,San Carlos,11.0,1.0,82.5
+103,Belmont,12.0,1.5,93.0
+103,Hillsdale,16.0,1.0,108.0
+103,Hayward Park,5.5,2.0,111.5
+103,San Mateo,20.0,1.0,130.5
+103,Burlingame,17.0,4.0,143.5
+103,Broadway,0.0,0.0,143.5
+103,Millbrae,6.5,26.0,124.0
+103,San Bruno,17.0,3.5,137.5
+103,South San Francisco,6.5,12.0,132.0
+103,Bayshore,5.0,3.5,133.5
+103,22nd Street,0.0,14.0,119.5
+103,San Francisco,0.0,119.5,0.0
+305,Gilroy,0.0,0.0,0.0
+305,San Martin,0.0,0.0,0.0
+305,Morgan Hill,0.0,0.0,0.0
+305,Blossom Hill,0.0,0.0,0.0
+305,Capitol,0.0,0.0,0.0
+305,Tamien,0.0,0.0,0.0
+305,San Jose Diridon,186.0,0.0,186.0
+305,College Park,0.0,0.0,186.0
+305,Santa Clara,0.0,0.0,186.0
+305,Lawrence,0.0,0.0,186.0
+305,Sunnyvale,0.0,0.0,186.0
+305,Mountain View,84.0,8.5,261.5
+305,San Antonio,0.0,0.0,261.5
+305,California Avenue,0.0,0.0,261.5
+305,Palo Alto,54.0,74.0,241.5
+305,Menlo Park,0.0,0.0,241.5
+305,Atherton,0.0,0.0,241.5
+305,Redwood City,0.0,0.0,241.5
+305,San Carlos,0.0,0.0,241.5
+305,Belmont,0.0,0.0,241.5
+305,Hillsdale,54.5,11.5,284.5
+305,Hayward Park,0.0,0.0,284.5
+305,San Mateo,0.0,0.0,284.5
+305,Burlingame,0.0,0.0,284.5
+305,Broadway,0.0,0.0,284.5
+305,Millbrae,12.5,30.5,266.5
+305,San Bruno,0.0,0.0,266.5
+305,South San Francisco,0.0,0.0,266.5
+305,Bayshore,0.0,0.0,266.5
+305,22nd Street,0.0,0.0,266.5
+305,San Francisco,0.0,266.5,0.0
+207,Gilroy,0.0,0.0,0.0
+207,San Martin,0.0,0.0,0.0
+207,Morgan Hill,0.0,0.0,0.0
+207,Blossom Hill,0.0,0.0,0.0
+207,Capitol,0.0,0.0,0.0
+207,Tamien,20.0,0.0,20.0
+207,San Jose Diridon,30.5,0.5,50.0
+207,College Park,0.0,0.0,50.0
+207,Santa Clara,26.0,1.5,74.5
+207,Lawrence,33.0,1.5,106.0
+207,Sunnyvale,35.0,0.5,140.5
+207,Mountain View,56.5,4.0,193.0
+207,San Antonio,41.5,9.0,225.5
+207,California Avenue,24.5,11.5,238.5
+207,Palo Alto,18.0,47.5,209.0
+207,Menlo Park,38.5,15.5,232.0
+207,Atherton,0.0,0.0,232.0
+207,Redwood City,89.5,13.5,308.0
+207,San Carlos,0.0,0.0,308.0
+207,Belmont,0.0,0.0,308.0
+207,Hillsdale,115.0,12.5,410.5
+207,Hayward Park,0.0,0.0,410.5
+207,San Mateo,0.0,0.0,410.5
+207,Burlingame,0.0,0.0,410.5
+207,Broadway,0.0,0.0,410.5
+207,Millbrae,12.0,39.5,383.0
+207,San Bruno,0.0,0.0,383.0
+207,South San Francisco,14.0,33.5,363.5
+207,Bayshore,0.0,0.0,363.5
+207,22nd Street,0.0,0.0,363.5
+207,San Francisco,0.0,363.5,0.0
+309,Gilroy,0.0,0.0,0.0
+309,San Martin,0.0,0.0,0.0
+309,Morgan Hill,0.0,0.0,0.0
+309,Blossom Hill,0.0,0.0,0.0
+309,Capitol,0.0,0.0,0.0
+309,Tamien,170.5,0.0,170.5
+309,San Jose Diridon,147.0,3.0,314.5
+309,College Park,0.0,0.0,314.5
+309,Santa Clara,0.0,0.0,314.5
+309,Lawrence,0.0,0.0,314.5
+309,Sunnyvale,175.0,8.5,481.0
+309,Mountain View,0.0,0.0,481.0
+309,San Antonio,0.0,0.0,481.0
+309,California Avenue,0.0,0.0,481.0
+309,Palo Alto,30.0,142.5,368.5
+309,Menlo Park,0.0,0.0,368.5
+309,Atherton,0.0,0.0,368.5
+309,Redwood City,84.5,31.0,422.0
+309,San Carlos,0.0,0.0,422.0
+309,Belmont,0.0,0.0,422.0
+309,Hillsdale,0.0,0.0,422.0
+309,Hayward Park,0.0,0.0,422.0
+309,San Mateo,72.5,9.5,485.0
+309,Burlingame,0.0,0.0,485.0
+309,Broadway,0.0,0.0,485.0
+309,Millbrae,26.5,50.0,461.5
+309,San Bruno,0.0,0.0,461.5
+309,South San Francisco,0.0,0.0,461.5
+309,Bayshore,0.0,0.0,461.5
+309,22nd Street,0.0,0.0,461.5
+309,San Francisco,0.0,461.5,0.0
+211,Gilroy,0.0,0.0,0.0
+211,San Martin,0.0,0.0,0.0
+211,Morgan Hill,0.0,0.0,0.0
+211,Blossom Hill,0.0,0.0,0.0
+211,Capitol,0.0,0.0,0.0
+211,Tamien,0.0,0.0,0.0
+211,San Jose Diridon,71.5,0.0,71.5
+211,College Park,0.0,0.0,71.5
+211,Santa Clara,43.5,0.5,114.5
+211,Lawrence,0.0,0.0,114.5
+211,Sunnyvale,42.0,1.5,155.0
+211,Mountain View,27.0,5.5,176.5
+211,San Antonio,0.0,0.0,176.5
+211,California Avenue,9.5,11.5,174.5
+211,Palo Alto,0.0,0.0,174.5
+211,Menlo Park,13.0,32.0,155.5
+211,Atherton,0.0,0.0,155.5
+211,Redwood City,30.0,25.5,160.0
+211,San Carlos,29.5,18.5,171.0
+211,Belmont,33.5,11.5,193.0
+211,Hillsdale,38.5,7.0,224.5
+211,Hayward Park,27.0,13.5,238.0
+211,San Mateo,47.5,9.5,276.0
+211,Burlingame,63.0,9.0,330.0
+211,Broadway,0.0,0.0,330.0
+211,Millbrae,6.0,67.5,268.5
+211,San Bruno,36.5,10.0,295.0
+211,South San Francisco,21.0,29.5,286.5
+211,Bayshore,13.5,9.0,291.0
+211,22nd Street,2.5,31.0,262.5
+211,San Francisco,0.0,262.5,0.0
+313,Gilroy,0.0,0.0,0.0
+313,San Martin,0.0,0.0,0.0
+313,Morgan Hill,0.0,0.0,0.0
+313,Blossom Hill,0.0,0.0,0.0
+313,Capitol,0.0,0.0,0.0
+313,Tamien,0.0,0.0,0.0
+313,San Jose Diridon,560.5,1.0,559.5
+313,College Park,0.0,0.0,559.5
+313,Santa Clara,0.0,0.0,559.5
+313,Lawrence,0.0,0.0,559.5
+313,Sunnyvale,0.0,0.0,559.5
+313,Mountain View,275.0,16.5,818.0
+313,San Antonio,0.0,0.0,818.0
+313,California Avenue,0.0,0.0,818.0
+313,Palo Alto,138.0,203.0,753.0
+313,Menlo Park,0.0,0.0,753.0
+313,Atherton,0.0,0.0,753.0
+313,Redwood City,0.0,0.0,753.0
+313,San Carlos,0.0,0.0,753.0
+313,Belmont,0.0,0.0,753.0
+313,Hillsdale,152.5,32.0,873.5
+313,Hayward Park,0.0,0.0,873.5
+313,San Mateo,0.0,0.0,873.5
+313,Burlingame,0.0,0.0,873.5
+313,Broadway,0.0,0.0,873.5
+313,Millbrae,47.0,89.0,831.5
+313,San Bruno,0.0,0.0,831.5
+313,South San Francisco,0.0,0.0,831.5
+313,Bayshore,0.0,0.0,831.5
+313,22nd Street,0.0,0.0,831.5
+313,San Francisco,0.0,831.5,0.0
+215,Gilroy,0.0,0.0,0.0
+215,San Martin,0.0,0.0,0.0
+215,Morgan Hill,0.0,0.0,0.0
+215,Blossom Hill,0.0,0.0,0.0
+215,Capitol,0.0,0.0,0.0
+215,Tamien,0.0,0.0,0.0
+215,San Jose Diridon,145.0,0.0,145.0
+215,College Park,0.0,0.0,145.0
+215,Santa Clara,0.0,0.0,145.0
+215,Lawrence,0.0,0.0,145.0
+215,Sunnyvale,257.5,6.5,396.0
+215,Mountain View,88.5,7.0,477.5
+215,San Antonio,0.0,0.0,477.5
+215,California Avenue,62.5,27.0,513.0
+215,Palo Alto,74.5,92.5,495.0
+215,Menlo Park,0.0,0.0,495.0
+215,Atherton,0.0,0.0,495.0
+215,Redwood City,0.0,0.0,495.0
+215,San Carlos,104.5,49.5,550.0
+215,Belmont,0.0,0.0,550.0
+215,Hillsdale,89.5,30.0,609.5
+215,Hayward Park,0.0,0.0,609.5
+215,San Mateo,111.0,24.0,696.5
+215,Burlingame,110.0,19.0,787.5
+215,Broadway,0.0,0.0,787.5
+215,Millbrae,0.0,0.0,787.5
+215,San Bruno,47.0,15.0,819.5
+215,South San Francisco,0.0,0.0,819.5
+215,Bayshore,0.0,0.0,819.5
+215,22nd Street,0.0,0.0,819.5
+215,San Francisco,0.0,819.5,0.0
+217,Gilroy,70.0,0.0,70.0
+217,San Martin,30.0,0.0,100.0
+217,Morgan Hill,89.5,0.0,189.5
+217,Blossom Hill,39.5,0.0,229.0
+217,Capitol,13.5,0.0,242.5
+217,Tamien,46.0,91.5,197.0
+217,San Jose Diridon,49.0,4.5,241.5
+217,College Park,0.0,0.0,241.5
+217,Santa Clara,83.5,8.0,317.0
+217,Lawrence,63.5,34.5,346.0
+217,Sunnyvale,111.0,11.5,445.5
+217,Mountain View,137.0,39.5,543.0
+217,San Antonio,121.5,28.0,636.5
+217,California Avenue,75.0,27.5,684.0
+217,Palo Alto,78.5,150.5,612.0
+217,Menlo Park,116.0,53.0,675.0
+217,Atherton,0.0,0.0,675.0
+217,Redwood City,186.0,24.5,836.5
+217,San Carlos,0.0,0.0,836.5
+217,Belmont,0.0,0.0,836.5
+217,Hillsdale,198.5,46.5,988.5
+217,Hayward Park,0.0,0.0,988.5
+217,San Mateo,0.0,0.0,988.5
+217,Burlingame,0.0,0.0,988.5
+217,Broadway,0.0,0.0,988.5
+217,Millbrae,44.0,75.5,957.0
+217,San Bruno,0.0,0.0,957.0
+217,South San Francisco,17.0,43.0,931.0
+217,Bayshore,0.0,0.0,931.0
+217,22nd Street,0.0,0.0,931.0
+217,San Francisco,0.0,931.0,0.0
+319,Gilroy,0.0,0.0,0.0
+319,San Martin,0.0,0.0,0.0
+319,Morgan Hill,0.0,0.0,0.0
+319,Blossom Hill,0.0,0.0,0.0
+319,Capitol,0.0,0.0,0.0
+319,Tamien,453.0,0.5,452.5
+319,San Jose Diridon,266.5,1.0,718.0
+319,College Park,0.0,0.0,718.0
+319,Santa Clara,0.0,0.0,718.0
+319,Lawrence,0.0,0.0,718.0
+319,Sunnyvale,211.5,21.5,908.0
+319,Mountain View,0.0,0.0,908.0
+319,San Antonio,0.0,0.0,908.0
+319,California Avenue,0.0,0.0,908.0
+319,Palo Alto,95.0,347.5,655.5
+319,Menlo Park,0.0,0.0,655.5
+319,Atherton,0.0,0.0,655.5
+319,Redwood City,175.0,112.0,718.5
+319,San Carlos,0.0,0.0,718.5
+319,Belmont,0.0,0.0,718.5
+319,Hillsdale,0.0,0.0,718.5
+319,Hayward Park,0.0,0.0,718.5
+319,San Mateo,62.0,20.0,760.5
+319,Burlingame,0.0,0.0,760.5
+319,Broadway,0.0,0.0,760.5
+319,Millbrae,61.0,86.0,735.5
+319,San Bruno,0.0,0.0,735.5
+319,South San Francisco,0.0,0.0,735.5
+319,Bayshore,0.0,0.0,735.5
+319,22nd Street,0.0,0.0,735.5
+319,San Francisco,0.0,735.5,0.0
+221,Gilroy,42.5,0.0,42.5
+221,San Martin,22.0,0.0,64.5
+221,Morgan Hill,46.5,0.0,111.0
+221,Blossom Hill,26.5,0.0,137.5
+221,Capitol,16.5,0.5,153.5
+221,Tamien,67.0,10.0,210.5
+221,San Jose Diridon,121.5,15.0,317.0
+221,College Park,0.0,0.0,317.0
+221,Santa Clara,96.0,15.0,398.0
+221,Lawrence,45.0,25.5,417.5
+221,Sunnyvale,116.5,17.5,516.5
+221,Mountain View,91.0,52.5,555.0
+221,San Antonio,0.0,0.0,555.0
+221,California Avenue,45.0,46.5,553.5
+221,Palo Alto,0.0,0.0,553.5
+221,Menlo Park,62.5,100.0,516.0
+221,Atherton,0.0,0.0,516.0
+221,Redwood City,77.5,93.0,500.5
+221,San Carlos,55.0,36.0,519.5
+221,Belmont,56.0,63.5,512.0
+221,Hillsdale,49.5,59.5,502.0
+221,Hayward Park,42.5,40.5,504.0
+221,San Mateo,74.0,43.0,535.0
+221,Burlingame,71.5,18.0,588.5
+221,Broadway,0.0,0.0,588.5
+221,Millbrae,28.5,137.5,479.5
+221,San Bruno,30.5,12.5,497.5
+221,South San Francisco,10.0,43.5,464.0
+221,Bayshore,17.5,14.0,467.5
+221,22nd Street,8.0,63.0,412.5
+221,San Francisco,0.0,412.5,0.0
+323,Gilroy,0.0,0.0,0.0
+323,San Martin,0.0,0.0,0.0
+323,Morgan Hill,0.0,0.0,0.0
+323,Blossom Hill,0.0,0.0,0.0
+323,Capitol,0.0,0.0,0.0
+323,Tamien,0.0,0.0,0.0
+323,San Jose Diridon,527.0,0.0,527.0
+323,College Park,0.0,0.0,527.0
+323,Santa Clara,0.0,0.0,527.0
+323,Lawrence,0.0,0.0,527.0
+323,Sunnyvale,0.0,0.0,527.0
+323,Mountain View,325.5,40.5,812.0
+323,San Antonio,0.0,0.0,812.0
+323,California Avenue,0.0,0.0,812.0
+323,Palo Alto,171.0,252.0,731.0
+323,Menlo Park,0.0,0.0,731.0
+323,Atherton,0.0,0.0,731.0
+323,Redwood City,0.0,0.0,731.0
+323,San Carlos,0.0,0.0,731.0
+323,Belmont,0.0,0.0,731.0
+323,Hillsdale,193.0,98.5,825.5
+323,Hayward Park,0.0,0.0,825.5
+323,San Mateo,0.0,0.0,825.5
+323,Burlingame,0.0,0.0,825.5
+323,Broadway,0.0,0.0,825.5
+323,Millbrae,58.5,75.5,808.5
+323,San Bruno,0.0,0.0,808.5
+323,South San Francisco,0.0,0.0,808.5
+323,Bayshore,0.0,0.0,808.5
+323,22nd Street,0.0,0.0,808.5
+323,San Francisco,0.0,808.5,0.0
+225,Gilroy,0.0,0.0,0.0
+225,San Martin,0.0,0.0,0.0
+225,Morgan Hill,0.0,0.0,0.0
+225,Blossom Hill,0.0,0.0,0.0
+225,Capitol,0.0,0.0,0.0
+225,Tamien,0.0,0.0,0.0
+225,San Jose Diridon,153.0,0.0,153.0
+225,College Park,0.0,0.0,153.0
+225,Santa Clara,0.0,0.0,153.0
+225,Lawrence,0.0,0.0,153.0
+225,Sunnyvale,357.0,13.5,496.5
+225,Mountain View,154.0,20.0,630.5
+225,San Antonio,0.0,0.0,630.5
+225,California Avenue,91.0,44.5,677.0
+225,Palo Alto,75.5,117.0,635.5
+225,Menlo Park,0.0,0.0,635.5
+225,Atherton,0.0,0.0,635.5
+225,Redwood City,0.0,0.0,635.5
+225,San Carlos,106.5,32.5,709.5
+225,Belmont,0.0,0.0,709.5
+225,Hillsdale,107.0,61.5,755.0
+225,Hayward Park,0.0,0.0,755.0
+225,San Mateo,87.0,38.5,803.5
+225,Burlingame,92.0,16.0,879.5
+225,Broadway,0.0,0.0,879.5
+225,Millbrae,0.0,0.0,879.5
+225,San Bruno,66.5,21.5,924.5
+225,South San Francisco,0.0,0.0,924.5
+225,Bayshore,0.0,0.0,924.5
+225,22nd Street,0.0,0.0,924.5
+225,San Francisco,0.0,924.5,0.0
+227,Gilroy,74.0,0.0,74.0
+227,San Martin,32.0,0.0,106.0
+227,Morgan Hill,113.0,0.0,219.0
+227,Blossom Hill,90.0,0.5,308.5
+227,Capitol,38.0,1.5,345.0
+227,Tamien,40.0,82.5,302.5
+227,San Jose Diridon,67.5,34.5,335.5
+227,College Park,15.0,49.5,301.0
+227,Santa Clara,104.5,20.0,385.5
+227,Lawrence,93.0,43.5,435.0
+227,Sunnyvale,137.0,35.5,536.5
+227,Mountain View,154.0,60.5,630.0
+227,San Antonio,115.5,37.0,708.5
+227,California Avenue,80.0,64.5,724.0
+227,Palo Alto,58.0,140.0,642.0
+227,Menlo Park,71.5,40.0,673.5
+227,Atherton,0.0,0.0,673.5
+227,Redwood City,119.0,66.5,726.0
+227,San Carlos,0.0,0.0,726.0
+227,Belmont,0.0,0.0,726.0
+227,Hillsdale,165.0,68.5,822.5
+227,Hayward Park,0.0,0.0,822.5
+227,San Mateo,0.0,0.0,822.5
+227,Burlingame,0.0,0.0,822.5
+227,Broadway,0.0,0.0,822.5
+227,Millbrae,25.0,58.5,789.0
+227,San Bruno,0.0,0.0,789.0
+227,South San Francisco,17.0,22.5,783.5
+227,Bayshore,0.0,0.0,783.5
+227,22nd Street,0.0,0.0,783.5
+227,San Francisco,0.0,783.5,0.0
+329,Gilroy,0.0,0.0,0.0
+329,San Martin,0.0,0.0,0.0
+329,Morgan Hill,0.0,0.0,0.0
+329,Blossom Hill,0.0,0.0,0.0
+329,Capitol,0.0,0.0,0.0
+329,Tamien,375.5,0.0,375.5
+329,San Jose Diridon,291.0,0.0,666.5
+329,College Park,0.0,0.0,666.5
+329,Santa Clara,0.0,0.0,666.5
+329,Lawrence,0.0,0.0,666.5
+329,Sunnyvale,334.0,31.0,969.5
+329,Mountain View,0.0,0.0,969.5
+329,San Antonio,0.0,0.0,969.5
+329,California Avenue,0.0,0.0,969.5
+329,Palo Alto,73.5,299.5,743.5
+329,Menlo Park,0.0,0.0,743.5
+329,Atherton,0.0,0.0,743.5
+329,Redwood City,181.0,112.0,812.5
+329,San Carlos,0.0,0.0,812.5
+329,Belmont,0.0,0.0,812.5
+329,Hillsdale,0.0,0.0,812.5
+329,Hayward Park,0.0,0.0,812.5
+329,San Mateo,99.5,45.5,866.5
+329,Burlingame,0.0,0.0,866.5
+329,Broadway,0.0,0.0,866.5
+329,Millbrae,48.0,79.0,835.5
+329,San Bruno,0.0,0.0,835.5
+329,South San Francisco,0.0,0.0,835.5
+329,Bayshore,0.0,0.0,835.5
+329,22nd Street,0.0,0.0,835.5
+329,San Francisco,0.0,835.5,0.0
+231,Gilroy,0.0,0.0,0.0
+231,San Martin,0.0,0.0,0.0
+231,Morgan Hill,0.0,0.0,0.0
+231,Blossom Hill,0.0,0.0,0.0
+231,Capitol,0.0,0.0,0.0
+231,Tamien,0.0,0.0,0.0
+231,San Jose Diridon,249.5,0.0,249.5
+231,College Park,0.0,0.0,249.5
+231,Santa Clara,102.5,6.0,346.0
+231,Lawrence,0.0,0.0,346.0
+231,Sunnyvale,124.0,21.5,448.5
+231,Mountain View,80.0,42.0,486.5
+231,San Antonio,0.0,0.0,486.5
+231,California Avenue,0.0,0.0,486.5
+231,Palo Alto,0.0,0.0,486.5
+231,Menlo Park,16.5,56.0,447.0
+231,Atherton,0.0,0.0,447.0
+231,Redwood City,31.5,98.5,380.0
+231,San Carlos,30.0,33.0,377.0
+231,Belmont,26.0,17.0,386.0
+231,Hillsdale,41.5,36.0,391.5
+231,Hayward Park,25.5,21.5,395.5
+231,San Mateo,55.5,35.0,416.0
+231,Burlingame,34.5,17.0,433.5
+231,Broadway,0.0,0.0,433.5
+231,Millbrae,16.5,39.0,411.0
+231,San Bruno,21.5,12.0,420.5
+231,South San Francisco,9.5,16.5,413.5
+231,Bayshore,9.5,2.0,421.0
+231,22nd Street,2.0,34.5,388.5
+231,San Francisco,0.0,388.5,0.0
+233,Gilroy,0.0,0.0,0.0
+233,San Martin,0.0,0.0,0.0
+233,Morgan Hill,0.0,0.0,0.0
+233,Blossom Hill,0.0,0.0,0.0
+233,Capitol,0.0,0.0,0.0
+233,Tamien,165.0,0.0,165.0
+233,San Jose Diridon,191.0,0.0,356.0
+233,College Park,0.0,0.0,356.0
+233,Santa Clara,84.5,1.5,439.0
+233,Lawrence,76.5,17.5,498.0
+233,Sunnyvale,192.5,26.5,664.0
+233,Mountain View,128.5,43.5,749.0
+233,San Antonio,68.5,28.0,789.5
+233,California Avenue,53.5,61.0,782.0
+233,Palo Alto,56.0,250.0,588.0
+233,Menlo Park,28.0,25.5,590.5
+233,Atherton,0.0,0.0,590.5
+233,Redwood City,62.0,77.0,575.5
+233,San Carlos,26.5,11.5,590.5
+233,Belmont,23.5,7.5,606.5
+233,Hillsdale,57.0,36.0,627.5
+233,Hayward Park,0.0,0.0,627.5
+233,San Mateo,62.5,20.5,669.5
+233,Burlingame,23.5,12.5,680.5
+233,Broadway,0.0,0.0,680.5
+233,Millbrae,19.5,47.0,653.0
+233,San Bruno,27.0,7.0,673.0
+233,South San Francisco,0.0,0.0,673.0
+233,Bayshore,0.0,0.0,673.0
+233,22nd Street,0.0,0.0,673.0
+233,San Francisco,0.0,673.0,0.0
+135,Gilroy,0.0,0.0,0.0
+135,San Martin,0.0,0.0,0.0
+135,Morgan Hill,0.0,0.0,0.0
+135,Blossom Hill,0.0,0.0,0.0
+135,Capitol,0.0,0.0,0.0
+135,Tamien,0.0,0.0,0.0
+135,San Jose Diridon,179.0,0.0,179.0
+135,College Park,0.0,0.0,179.0
+135,Santa Clara,89.0,0.5,267.5
+135,Lawrence,51.5,7.5,311.5
+135,Sunnyvale,142.0,27.5,426.0
+135,Mountain View,95.0,32.5,488.5
+135,San Antonio,47.5,12.0,524.0
+135,California Avenue,20.0,53.0,491.0
+135,Palo Alto,37.5,163.5,365.0
+135,Menlo Park,13.0,31.5,346.5
+135,Atherton,0.0,0.0,346.5
+135,Redwood City,36.0,79.0,303.5
+135,San Carlos,8.5,11.0,301.0
+135,Belmont,13.0,6.0,308.0
+135,Hillsdale,18.5,24.5,302.0
+135,Hayward Park,6.0,11.0,297.0
+135,San Mateo,21.0,23.0,295.0
+135,Burlingame,11.5,9.0,297.5
+135,Broadway,0.0,0.0,297.5
+135,Millbrae,7.0,40.0,264.5
+135,San Bruno,5.0,4.5,265.0
+135,South San Francisco,3.5,6.5,262.0
+135,Bayshore,2.0,2.5,261.5
+135,22nd Street,1.0,18.0,244.5
+135,San Francisco,0.0,244.5,0.0
+237,Gilroy,0.0,0.0,0.0
+237,San Martin,0.0,0.0,0.0
+237,Morgan Hill,0.0,0.0,0.0
+237,Blossom Hill,0.0,0.0,0.0
+237,Capitol,0.0,0.0,0.0
+237,Tamien,35.0,0.0,35.0
+237,San Jose Diridon,112.0,0.5,146.5
+237,College Park,0.0,0.0,146.5
+237,Santa Clara,37.0,1.5,182.0
+237,Lawrence,27.0,2.5,206.5
+237,Sunnyvale,95.5,7.5,294.5
+237,Mountain View,66.5,15.0,346.0
+237,San Antonio,20.5,7.0,359.5
+237,California Avenue,26.5,34.5,351.5
+237,Palo Alto,33.5,84.5,300.5
+237,Menlo Park,23.0,11.5,312.0
+237,Atherton,0.0,0.0,312.0
+237,Redwood City,36.5,40.5,308.0
+237,San Carlos,5.0,4.0,309.0
+237,Belmont,7.5,3.0,313.5
+237,Hillsdale,17.0,12.5,318.0
+237,Hayward Park,0.0,0.0,318.0
+237,San Mateo,16.0,14.5,319.5
+237,Burlingame,9.0,10.5,318.0
+237,Broadway,0.0,0.0,318.0
+237,Millbrae,7.5,42.0,283.5
+237,San Bruno,5.5,5.0,284.0
+237,South San Francisco,0.0,0.0,284.0
+237,Bayshore,0.0,0.0,284.0
+237,22nd Street,0.0,0.0,284.0
+237,San Francisco,0.0,284.0,0.0
+139,Gilroy,0.0,0.0,0.0
+139,San Martin,0.0,0.0,0.0
+139,Morgan Hill,0.0,0.0,0.0
+139,Blossom Hill,0.0,0.0,0.0
+139,Capitol,0.0,0.0,0.0
+139,Tamien,0.0,0.0,0.0
+139,San Jose Diridon,56.5,0.0,56.5
+139,College Park,0.0,0.0,56.5
+139,Santa Clara,23.0,0.0,79.5
+139,Lawrence,18.5,0.5,97.5
+139,Sunnyvale,41.5,2.0,137.0
+139,Mountain View,43.0,8.5,171.5
+139,San Antonio,15.0,6.5,180.0
+139,California Avenue,11.0,10.5,180.5
+139,Palo Alto,17.5,40.5,157.5
+139,Menlo Park,10.5,13.0,155.0
+139,Atherton,0.0,0.0,155.0
+139,Redwood City,22.0,23.5,153.5
+139,San Carlos,9.0,5.0,157.5
+139,Belmont,4.0,2.0,159.5
+139,Hillsdale,8.0,5.5,162.0
+139,Hayward Park,7.0,5.0,164.0
+139,San Mateo,14.0,5.0,173.0
+139,Burlingame,6.0,3.5,175.5
+139,Broadway,0.0,0.0,175.5
+139,Millbrae,3.0,28.0,150.5
+139,San Bruno,2.0,1.5,151.0
+139,South San Francisco,5.5,4.5,152.0
+139,Bayshore,0.5,3.5,149.0
+139,22nd Street,1.0,9.5,140.5
+139,San Francisco,0.0,140.5,0.0
+143,Gilroy,0.0,0.0,0.0
+143,San Martin,0.0,0.0,0.0
+143,Morgan Hill,0.0,0.0,0.0
+143,Blossom Hill,0.0,0.0,0.0
+143,Capitol,0.0,0.0,0.0
+143,Tamien,0.0,0.0,0.0
+143,San Jose Diridon,79.0,0.0,79.0
+143,College Park,0.0,0.0,79.0
+143,Santa Clara,19.0,1.0,97.0
+143,Lawrence,14.0,2.5,108.5
+143,Sunnyvale,40.0,2.5,146.0
+143,Mountain View,40.5,5.0,181.5
+143,San Antonio,14.5,1.0,195.0
+143,California Avenue,17.0,10.5,201.5
+143,Palo Alto,39.0,38.5,202.0
+143,Menlo Park,21.5,11.5,212.0
+143,Atherton,0.0,0.0,212.0
+143,Redwood City,43.0,15.0,240.0
+143,San Carlos,7.0,7.0,240.0
+143,Belmont,4.5,4.5,240.0
+143,Hillsdale,15.5,10.0,245.5
+143,Hayward Park,3.0,2.0,246.5
+143,San Mateo,14.0,16.0,244.5
+143,Burlingame,9.0,9.0,244.5
+143,Broadway,0.0,0.0,244.5
+143,Millbrae,1.5,48.5,197.5
+143,San Bruno,4.0,5.5,196.0
+143,South San Francisco,1.5,8.0,189.5
+143,Bayshore,0.5,4.0,186.0
+143,22nd Street,1.0,8.0,179.0
+143,San Francisco,0.0,179.0,0.0
+147,Gilroy,0.0,0.0,0.0
+147,San Martin,0.0,0.0,0.0
+147,Morgan Hill,0.0,0.0,0.0
+147,Blossom Hill,0.0,0.0,0.0
+147,Capitol,0.0,0.0,0.0
+147,Tamien,0.0,0.0,0.0
+147,San Jose Diridon,64.0,0.0,64.0
+147,College Park,0.0,0.0,64.0
+147,Santa Clara,17.5,1.0,80.5
+147,Lawrence,10.5,0.5,90.5
+147,Sunnyvale,26.0,2.5,114.0
+147,Mountain View,40.5,3.0,151.5
+147,San Antonio,12.0,1.0,162.5
+147,California Avenue,17.5,16.5,163.5
+147,Palo Alto,43.0,27.0,179.5
+147,Menlo Park,9.5,15.0,174.0
+147,Atherton,0.0,0.0,174.0
+147,Redwood City,29.5,15.0,188.5
+147,San Carlos,7.5,10.0,186.0
+147,Belmont,14.0,4.0,196.0
+147,Hillsdale,13.0,10.5,198.5
+147,Hayward Park,6.0,3.0,201.5
+147,San Mateo,12.0,13.5,200.0
+147,Burlingame,10.0,10.5,199.5
+147,Broadway,0.0,0.0,199.5
+147,Millbrae,5.0,41.5,163.0
+147,San Bruno,3.0,5.5,160.5
+147,South San Francisco,1.5,3.5,158.5
+147,Bayshore,3.5,4.5,157.5
+147,22nd Street,0.5,15.5,142.5
+147,San Francisco,0.0,142.5,0.0
+151,Gilroy,0.0,0.0,0.0
+151,San Martin,0.0,0.0,0.0
+151,Morgan Hill,0.0,0.0,0.0
+151,Blossom Hill,0.0,0.0,0.0
+151,Capitol,0.0,0.0,0.0
+151,Tamien,0.0,0.0,0.0
+151,San Jose Diridon,48.5,0.0,48.5
+151,College Park,0.0,0.0,48.5
+151,Santa Clara,13.0,0.5,61.0
+151,Lawrence,6.5,1.0,66.5
+151,Sunnyvale,24.5,5.0,86.0
+151,Mountain View,40.5,2.0,124.5
+151,San Antonio,12.5,2.0,135.0
+151,California Avenue,16.0,5.0,146.0
+151,Palo Alto,62.5,25.5,183.0
+151,Menlo Park,12.0,11.0,184.0
+151,Atherton,0.0,0.0,184.0
+151,Redwood City,37.5,13.5,208.0
+151,San Carlos,6.0,7.0,207.0
+151,Belmont,12.5,8.5,211.0
+151,Hillsdale,10.5,14.0,207.5
+151,Hayward Park,7.5,3.5,211.5
+151,San Mateo,18.0,17.5,212.0
+151,Burlingame,5.5,11.5,206.0
+151,Broadway,0.0,0.0,206.0
+151,Millbrae,4.5,50.0,160.5
+151,San Bruno,6.0,5.5,161.0
+151,South San Francisco,1.5,3.0,159.5
+151,Bayshore,0.0,7.0,152.5
+151,22nd Street,0.0,16.5,136.0
+151,San Francisco,0.0,136.0,0.0
+155,Gilroy,0.0,0.0,0.0
+155,San Martin,0.0,0.0,0.0
+155,Morgan Hill,0.0,0.0,0.0
+155,Blossom Hill,0.0,0.0,0.0
+155,Capitol,0.0,0.0,0.0
+155,Tamien,0.0,0.0,0.0
+155,San Jose Diridon,56.5,0.0,56.5
+155,College Park,0.0,0.0,56.5
+155,Santa Clara,19.0,3.0,72.5
+155,Lawrence,5.5,5.0,73.0
+155,Sunnyvale,16.5,2.5,87.0
+155,Mountain View,45.5,4.5,128.0
+155,San Antonio,10.5,3.5,135.0
+155,California Avenue,21.5,6.0,150.5
+155,Palo Alto,75.5,17.0,209.0
+155,Menlo Park,26.5,7.0,228.5
+155,Atherton,0.0,0.0,228.5
+155,Redwood City,37.0,21.5,244.0
+155,San Carlos,7.0,10.5,240.5
+155,Belmont,14.5,8.5,246.5
+155,Hillsdale,15.0,15.0,246.5
+155,Hayward Park,10.5,6.0,251.0
+155,San Mateo,10.5,21.5,240.0
+155,Burlingame,10.0,11.0,239.0
+155,Broadway,0.0,0.0,239.0
+155,Millbrae,4.5,64.5,179.0
+155,San Bruno,3.0,15.0,167.0
+155,South San Francisco,3.5,6.0,164.5
+155,Bayshore,1.0,16.0,149.5
+155,22nd Street,2.0,29.5,122.0
+155,San Francisco,0.0,122.0,0.0
+257,Gilroy,0.0,0.0,0.0
+257,San Martin,0.0,0.0,0.0
+257,Morgan Hill,0.0,0.0,0.0
+257,Blossom Hill,0.0,0.0,0.0
+257,Capitol,0.0,0.0,0.0
+257,Tamien,3.0,0.0,3.0
+257,San Jose Diridon,26.0,0.0,29.0
+257,College Park,0.0,0.0,29.0
+257,Santa Clara,6.5,0.0,35.5
+257,Lawrence,3.0,0.5,38.0
+257,Sunnyvale,9.5,0.5,47.0
+257,Mountain View,19.5,1.0,65.5
+257,San Antonio,5.5,1.0,70.0
+257,California Avenue,6.5,1.5,75.0
+257,Palo Alto,33.0,4.5,103.5
+257,Menlo Park,12.0,6.0,109.5
+257,Atherton,0.0,0.0,109.5
+257,Redwood City,16.0,8.0,117.5
+257,San Carlos,4.5,3.0,119.0
+257,Belmont,17.5,2.0,134.5
+257,Hillsdale,12.0,5.5,141.0
+257,Hayward Park,0.0,0.0,141.0
+257,San Mateo,6.5,13.0,134.5
+257,Burlingame,0.0,9.0,125.5
+257,Broadway,0.0,0.0,125.5
+257,Millbrae,1.0,28.5,98.0
+257,San Bruno,0.0,3.5,94.5
+257,South San Francisco,0.0,0.0,94.5
+257,Bayshore,0.0,0.0,94.5
+257,22nd Street,0.0,0.0,94.5
+257,San Francisco,0.0,94.5,0.0
+159,Gilroy,0.0,0.0,0.0
+159,San Martin,0.0,0.0,0.0
+159,Morgan Hill,0.0,0.0,0.0
+159,Blossom Hill,0.0,0.0,0.0
+159,Capitol,0.0,0.0,0.0
+159,Tamien,0.0,0.0,0.0
+159,San Jose Diridon,58.5,0.0,58.5
+159,College Park,47.5,0.0,106.0
+159,Santa Clara,15.0,0.0,121.0
+159,Lawrence,11.0,6.5,125.5
+159,Sunnyvale,25.5,5.5,145.5
+159,Mountain View,66.5,19.0,193.0
+159,San Antonio,22.5,7.0,208.5
+159,California Avenue,36.5,11.0,234.0
+159,Palo Alto,152.0,30.0,356.0
+159,Menlo Park,52.5,25.5,383.0
+159,Atherton,0.0,0.0,383.0
+159,Redwood City,69.0,45.5,406.5
+159,San Carlos,23.0,27.0,402.5
+159,Belmont,65.0,22.5,445.0
+159,Hillsdale,67.5,39.0,473.5
+159,Hayward Park,20.0,27.0,466.5
+159,San Mateo,24.5,49.0,442.0
+159,Burlingame,23.0,65.0,400.0
+159,Broadway,0.0,0.0,400.0
+159,Millbrae,9.5,122.0,287.5
+159,San Bruno,6.0,27.5,266.0
+159,South San Francisco,8.0,16.0,258.0
+159,Bayshore,1.0,23.0,236.0
+159,22nd Street,2.0,51.5,186.5
+159,San Francisco,0.0,186.5,0.0
+261,Gilroy,0.0,0.0,0.0
+261,San Martin,0.0,0.0,0.0
+261,Morgan Hill,0.0,0.0,0.0
+261,Blossom Hill,0.0,0.0,0.0
+261,Capitol,0.0,0.0,0.0
+261,Tamien,4.5,0.0,4.5
+261,San Jose Diridon,37.0,0.0,41.5
+261,College Park,0.0,0.0,41.5
+261,Santa Clara,10.5,2.0,50.0
+261,Lawrence,20.5,0.5,70.0
+261,Sunnyvale,49.5,3.5,116.0
+261,Mountain View,81.5,6.0,191.5
+261,San Antonio,45.5,1.5,235.5
+261,California Avenue,86.0,6.0,315.5
+261,Palo Alto,198.5,18.5,495.5
+261,Menlo Park,58.0,9.5,544.0
+261,Atherton,0.0,0.0,544.0
+261,Redwood City,127.0,33.0,638.0
+261,San Carlos,39.5,39.5,638.0
+261,Belmont,0.0,0.0,638.0
+261,Hillsdale,0.0,0.0,638.0
+261,Hayward Park,0.0,0.0,638.0
+261,San Mateo,25.0,62.0,601.0
+261,Burlingame,0.0,0.0,601.0
+261,Broadway,0.0,0.0,601.0
+261,Millbrae,4.0,162.5,442.5
+261,San Bruno,0.0,0.0,442.5
+261,South San Francisco,0.0,0.0,442.5
+261,Bayshore,0.0,0.0,442.5
+261,22nd Street,2.0,117.5,327.0
+261,San Francisco,0.0,327.0,0.0
+263,Gilroy,0.0,0.0,0.0
+263,San Martin,0.0,0.0,0.0
+263,Morgan Hill,0.0,0.0,0.0
+263,Blossom Hill,0.0,0.0,0.0
+263,Capitol,0.0,0.0,0.0
+263,Tamien,0.0,0.0,0.0
+263,San Jose Diridon,41.5,0.0,41.5
+263,College Park,0.0,0.0,41.5
+263,Santa Clara,25.5,0.5,66.5
+263,Lawrence,0.0,0.0,66.5
+263,Sunnyvale,0.0,0.0,66.5
+263,Mountain View,0.0,0.0,66.5
+263,San Antonio,0.0,0.0,66.5
+263,California Avenue,0.0,0.0,66.5
+263,Palo Alto,158.0,11.5,213.0
+263,Menlo Park,0.0,0.0,213.0
+263,Atherton,0.0,0.0,213.0
+263,Redwood City,62.5,23.5,252.0
+263,San Carlos,28.5,16.5,264.0
+263,Belmont,22.5,21.0,265.5
+263,Hillsdale,54.5,40.5,279.5
+263,Hayward Park,33.5,11.0,302.0
+263,San Mateo,29.0,35.0,296.0
+263,Burlingame,20.0,35.5,280.5
+263,Broadway,0.0,0.0,280.5
+263,Millbrae,5.5,100.0,186.0
+263,San Bruno,6.5,32.5,160.0
+263,South San Francisco,20.0,11.0,169.0
+263,Bayshore,3.0,26.5,145.5
+263,22nd Street,1.0,26.0,120.5
+263,San Francisco,0.0,120.5,0.0
+365,Gilroy,0.0,0.0,0.0
+365,San Martin,0.0,0.0,0.0
+365,Morgan Hill,0.0,0.0,0.0
+365,Blossom Hill,0.0,0.0,0.0
+365,Capitol,0.0,0.0,0.0
+365,Tamien,0.0,0.0,0.0
+365,San Jose Diridon,78.0,0.0,78.0
+365,College Park,0.0,0.0,78.0
+365,Santa Clara,0.0,0.0,78.0
+365,Lawrence,0.0,0.0,78.0
+365,Sunnyvale,0.0,0.0,78.0
+365,Mountain View,224.5,11.5,291.0
+365,San Antonio,0.0,0.0,291.0
+365,California Avenue,0.0,0.0,291.0
+365,Palo Alto,237.5,10.0,518.5
+365,Menlo Park,43.5,9.0,553.0
+365,Atherton,0.0,0.0,553.0
+365,Redwood City,110.0,38.0,625.0
+365,San Carlos,0.0,0.0,625.0
+365,Belmont,0.0,0.0,625.0
+365,Hillsdale,0.0,0.0,625.0
+365,Hayward Park,0.0,0.0,625.0
+365,San Mateo,0.0,0.0,625.0
+365,Burlingame,0.0,0.0,625.0
+365,Broadway,0.0,0.0,625.0
+365,Millbrae,14.0,181.0,458.0
+365,San Bruno,0.0,0.0,458.0
+365,South San Francisco,0.0,0.0,458.0
+365,Bayshore,0.0,0.0,458.0
+365,22nd Street,7.0,119.0,346.0
+365,San Francisco,0.0,346.0,0.0
+267,Gilroy,0.0,0.0,0.0
+267,San Martin,0.0,0.0,0.0
+267,Morgan Hill,0.0,0.0,0.0
+267,Blossom Hill,0.0,0.0,0.0
+267,Capitol,0.0,0.0,0.0
+267,Tamien,0.0,0.0,0.0
+267,San Jose Diridon,16.5,0.0,16.5
+267,College Park,0.0,0.0,16.5
+267,Santa Clara,0.0,0.0,16.5
+267,Lawrence,80.5,1.0,96.0
+267,Sunnyvale,0.0,0.0,96.0
+267,Mountain View,136.0,4.5,227.5
+267,San Antonio,0.0,0.0,227.5
+267,California Avenue,0.0,0.0,227.5
+267,Palo Alto,142.5,11.5,358.5
+267,Menlo Park,40.0,13.0,385.5
+267,Atherton,0.0,0.0,385.5
+267,Redwood City,0.0,0.0,385.5
+267,San Carlos,34.5,38.0,382.0
+267,Belmont,0.0,0.0,382.0
+267,Hillsdale,74.5,83.0,373.5
+267,Hayward Park,0.0,0.0,373.5
+267,San Mateo,41.5,60.5,354.5
+267,Burlingame,15.0,48.0,321.5
+267,Broadway,0.0,0.0,321.5
+267,Millbrae,0.0,0.0,321.5
+267,San Bruno,4.5,43.0,283.0
+267,South San Francisco,0.0,0.0,283.0
+267,Bayshore,0.0,0.0,283.0
+267,22nd Street,1.5,73.0,211.5
+267,San Francisco,0.0,211.5,0.0
+269,Gilroy,0.0,0.0,0.0
+269,San Martin,0.0,0.0,0.0
+269,Morgan Hill,0.0,0.0,0.0
+269,Blossom Hill,0.0,0.0,0.0
+269,Capitol,0.0,0.0,0.0
+269,Tamien,5.5,0.0,5.5
+269,San Jose Diridon,11.0,0.5,16.0
+269,College Park,0.0,0.0,16.0
+269,Santa Clara,24.0,0.5,39.5
+269,Lawrence,34.0,2.5,71.0
+269,Sunnyvale,101.0,5.5,166.5
+269,Mountain View,65.5,6.5,225.5
+269,San Antonio,97.5,11.5,311.5
+269,California Avenue,155.0,13.5,453.0
+269,Palo Alto,206.5,23.5,636.0
+269,Menlo Park,61.0,22.0,675.0
+269,Atherton,0.0,0.0,675.0
+269,Redwood City,144.0,53.0,766.0
+269,San Carlos,50.0,61.0,755.0
+269,Belmont,0.0,0.0,755.0
+269,Hillsdale,0.0,0.0,755.0
+269,Hayward Park,0.0,0.0,755.0
+269,San Mateo,55.5,124.0,686.5
+269,Burlingame,0.0,0.0,686.5
+269,Broadway,0.0,0.0,686.5
+269,Millbrae,8.0,164.5,530.0
+269,San Bruno,0.0,0.0,530.0
+269,South San Francisco,0.0,0.0,530.0
+269,Bayshore,0.0,0.0,530.0
+269,22nd Street,6.5,160.0,376.5
+269,San Francisco,0.0,376.5,0.0
+371,Gilroy,0.0,0.0,0.0
+371,San Martin,0.0,0.0,0.0
+371,Morgan Hill,0.0,0.0,0.0
+371,Blossom Hill,0.0,0.0,0.0
+371,Capitol,0.0,0.0,0.0
+371,Tamien,0.0,0.0,0.0
+371,San Jose Diridon,72.5,0.0,72.5
+371,College Park,0.0,0.0,72.5
+371,Santa Clara,0.0,0.0,72.5
+371,Lawrence,0.0,0.0,72.5
+371,Sunnyvale,0.0,0.0,72.5
+371,Mountain View,162.5,4.0,231.0
+371,San Antonio,0.0,0.0,231.0
+371,California Avenue,0.0,0.0,231.0
+371,Palo Alto,221.0,15.5,436.5
+371,Menlo Park,0.0,0.0,436.5
+371,Atherton,0.0,0.0,436.5
+371,Redwood City,132.5,50.5,518.5
+371,San Carlos,0.0,0.0,518.5
+371,Belmont,0.0,0.0,518.5
+371,Hillsdale,61.5,61.0,519.0
+371,Hayward Park,0.0,0.0,519.0
+371,San Mateo,0.0,0.0,519.0
+371,Burlingame,0.0,0.0,519.0
+371,Broadway,0.0,0.0,519.0
+371,Millbrae,10.5,151.5,378.0
+371,San Bruno,0.0,0.0,378.0
+371,South San Francisco,0.0,0.0,378.0
+371,Bayshore,0.0,0.0,378.0
+371,22nd Street,1.5,126.0,253.5
+371,San Francisco,0.0,253.5,0.0
+273,Gilroy,0.0,0.0,0.0
+273,San Martin,0.0,0.0,0.0
+273,Morgan Hill,0.0,0.0,0.0
+273,Blossom Hill,0.0,0.0,0.0
+273,Capitol,0.0,0.0,0.0
+273,Tamien,0.0,0.0,0.0
+273,San Jose Diridon,59.0,1.0,58.0
+273,College Park,0.0,0.0,58.0
+273,Santa Clara,47.0,0.0,105.0
+273,Lawrence,0.0,0.0,105.0
+273,Sunnyvale,0.0,0.0,105.0
+273,Mountain View,0.0,0.0,105.0
+273,San Antonio,0.0,0.0,105.0
+273,California Avenue,0.0,0.0,105.0
+273,Palo Alto,237.5,13.0,329.5
+273,Menlo Park,0.0,0.0,329.5
+273,Atherton,0.0,0.0,329.5
+273,Redwood City,73.5,37.5,365.5
+273,San Carlos,28.0,22.5,371.0
+273,Belmont,31.0,48.5,353.5
+273,Hillsdale,58.5,67.5,344.5
+273,Hayward Park,40.5,31.5,353.5
+273,San Mateo,30.0,37.5,346.0
+273,Burlingame,17.0,55.5,307.5
+273,Broadway,0.0,0.0,307.5
+273,Millbrae,8.0,82.0,233.5
+273,San Bruno,7.5,34.0,207.0
+273,South San Francisco,16.5,10.0,213.5
+273,Bayshore,0.5,44.5,169.5
+273,22nd Street,0.0,40.0,129.5
+273,San Francisco,0.0,129.5,0.0
+375,Gilroy,0.0,0.0,0.0
+375,San Martin,0.0,0.0,0.0
+375,Morgan Hill,0.0,0.0,0.0
+375,Blossom Hill,0.0,0.0,0.0
+375,Capitol,0.0,0.0,0.0
+375,Tamien,0.0,0.0,0.0
+375,San Jose Diridon,78.0,0.0,78.0
+375,College Park,0.0,0.0,78.0
+375,Santa Clara,0.0,0.0,78.0
+375,Lawrence,0.0,0.0,78.0
+375,Sunnyvale,0.0,0.0,78.0
+375,Mountain View,298.5,14.5,362.0
+375,San Antonio,0.0,0.0,362.0
+375,California Avenue,0.0,0.0,362.0
+375,Palo Alto,235.0,24.5,572.5
+375,Menlo Park,41.5,16.5,597.5
+375,Atherton,0.0,0.0,597.5
+375,Redwood City,121.0,70.0,648.5
+375,San Carlos,0.0,0.0,648.5
+375,Belmont,0.0,0.0,648.5
+375,Hillsdale,0.0,0.0,648.5
+375,Hayward Park,0.0,0.0,648.5
+375,San Mateo,0.0,0.0,648.5
+375,Burlingame,0.0,0.0,648.5
+375,Broadway,0.0,0.0,648.5
+375,Millbrae,19.5,126.0,542.0
+375,San Bruno,0.0,0.0,542.0
+375,South San Francisco,0.0,0.0,542.0
+375,Bayshore,0.0,0.0,542.0
+375,22nd Street,4.5,170.5,376.0
+375,San Francisco,0.0,376.0,0.0
+277,Gilroy,0.0,0.0,0.0
+277,San Martin,0.0,0.0,0.0
+277,Morgan Hill,0.0,0.0,0.0
+277,Blossom Hill,0.0,0.0,0.0
+277,Capitol,0.0,0.0,0.0
+277,Tamien,0.0,0.0,0.0
+277,San Jose Diridon,50.0,0.0,50.0
+277,College Park,0.0,0.0,50.0
+277,Santa Clara,0.0,0.0,50.0
+277,Lawrence,106.5,7.0,149.5
+277,Sunnyvale,0.0,0.0,149.5
+277,Mountain View,171.5,9.0,312.0
+277,San Antonio,0.0,0.0,312.0
+277,California Avenue,0.0,0.0,312.0
+277,Palo Alto,214.0,20.0,506.0
+277,Menlo Park,43.0,19.5,529.5
+277,Atherton,0.0,0.0,529.5
+277,Redwood City,0.0,0.0,529.5
+277,San Carlos,24.5,61.5,492.5
+277,Belmont,0.0,0.0,492.5
+277,Hillsdale,57.5,89.0,461.0
+277,Hayward Park,0.0,0.0,461.0
+277,San Mateo,36.0,89.0,408.0
+277,Burlingame,15.0,62.0,361.0
+277,Broadway,0.0,0.0,361.0
+277,Millbrae,0.0,0.0,361.0
+277,San Bruno,3.5,42.5,322.0
+277,South San Francisco,0.0,0.0,322.0
+277,Bayshore,0.0,0.0,322.0
+277,22nd Street,2.0,125.0,199.0
+277,San Francisco,0.0,199.0,0.0
+279,Gilroy,0.0,0.0,0.0
+279,San Martin,0.0,0.0,0.0
+279,Morgan Hill,0.0,0.0,0.0
+279,Blossom Hill,0.0,0.0,0.0
+279,Capitol,0.0,0.0,0.0
+279,Tamien,2.5,0.0,2.5
+279,San Jose Diridon,17.0,0.5,19.0
+279,College Park,0.0,0.0,19.0
+279,Santa Clara,22.5,1.5,40.0
+279,Lawrence,34.0,3.0,71.0
+279,Sunnyvale,75.5,8.5,138.0
+279,Mountain View,58.5,8.0,188.5
+279,San Antonio,84.5,12.5,260.5
+279,California Avenue,108.5,18.0,351.0
+279,Palo Alto,146.5,24.5,473.0
+279,Menlo Park,50.0,15.0,508.0
+279,Atherton,0.0,0.0,508.0
+279,Redwood City,90.0,60.5,537.5
+279,San Carlos,31.5,36.0,533.0
+279,Belmont,0.0,0.0,533.0
+279,Hillsdale,0.0,0.0,533.0
+279,Hayward Park,0.0,0.0,533.0
+279,San Mateo,30.5,85.0,478.5
+279,Burlingame,0.0,0.0,478.5
+279,Broadway,0.0,0.0,478.5
+279,Millbrae,5.5,91.0,393.0
+279,San Bruno,0.0,0.0,393.0
+279,South San Francisco,0.0,0.0,393.0
+279,Bayshore,0.0,0.0,393.0
+279,22nd Street,1.5,146.0,248.5
+279,San Francisco,0.0,248.5,0.0
+381,Gilroy,0.0,0.0,0.0
+381,San Martin,0.0,0.0,0.0
+381,Morgan Hill,0.0,0.0,0.0
+381,Blossom Hill,0.0,0.0,0.0
+381,Capitol,0.0,0.0,0.0
+381,Tamien,0.0,0.0,0.0
+381,San Jose Diridon,63.0,0.0,63.0
+381,College Park,0.0,0.0,63.0
+381,Santa Clara,0.0,0.0,63.0
+381,Lawrence,0.0,0.0,63.0
+381,Sunnyvale,0.0,0.0,63.0
+381,Mountain View,175.0,6.5,231.5
+381,San Antonio,0.0,0.0,231.5
+381,California Avenue,0.0,0.0,231.5
+381,Palo Alto,164.0,19.0,376.5
+381,Menlo Park,0.0,0.0,376.5
+381,Atherton,0.0,0.0,376.5
+381,Redwood City,113.5,52.0,438.0
+381,San Carlos,0.0,0.0,438.0
+381,Belmont,0.0,0.0,438.0
+381,Hillsdale,47.0,50.0,435.0
+381,Hayward Park,0.0,0.0,435.0
+381,San Mateo,0.0,0.0,435.0
+381,Burlingame,0.0,0.0,435.0
+381,Broadway,0.0,0.0,435.0
+381,Millbrae,9.5,120.5,324.0
+381,San Bruno,0.0,0.0,324.0
+381,South San Francisco,0.0,0.0,324.0
+381,Bayshore,0.0,0.0,324.0
+381,22nd Street,0.5,110.0,214.5
+381,San Francisco,0.0,214.5,0.0
+283,Gilroy,0.0,0.0,0.0
+283,San Martin,0.0,0.0,0.0
+283,Morgan Hill,0.0,0.0,0.0
+283,Blossom Hill,0.0,0.0,0.0
+283,Capitol,0.0,0.0,0.0
+283,Tamien,0.0,0.0,0.0
+283,San Jose Diridon,47.0,0.0,47.0
+283,College Park,0.0,0.0,47.0
+283,Santa Clara,31.5,2.5,76.0
+283,Lawrence,0.0,0.0,76.0
+283,Sunnyvale,0.0,0.0,76.0
+283,Mountain View,0.0,0.0,76.0
+283,San Antonio,0.0,0.0,76.0
+283,California Avenue,0.0,0.0,76.0
+283,Palo Alto,111.0,20.0,167.0
+283,Menlo Park,0.0,0.0,167.0
+283,Atherton,0.0,0.0,167.0
+283,Redwood City,36.5,17.0,186.5
+283,San Carlos,10.5,14.0,183.0
+283,Belmont,10.0,21.5,171.5
+283,Hillsdale,33.0,36.5,168.0
+283,Hayward Park,18.5,18.0,168.5
+283,San Mateo,14.5,19.0,164.0
+283,Burlingame,7.0,26.0,145.0
+283,Broadway,0.0,0.0,145.0
+283,Millbrae,3.0,45.5,102.5
+283,San Bruno,0.5,13.5,89.5
+283,South San Francisco,6.0,5.0,90.5
+283,Bayshore,0.0,17.5,73.0
+283,22nd Street,0.0,19.0,54.0
+283,San Francisco,0.0,54.0,0.0
+385,Gilroy,0.0,0.0,0.0
+385,San Martin,0.0,0.0,0.0
+385,Morgan Hill,0.0,0.0,0.0
+385,Blossom Hill,0.0,0.0,0.0
+385,Capitol,0.0,0.0,0.0
+385,Tamien,0.0,0.0,0.0
+385,San Jose Diridon,76.5,0.0,76.5
+385,College Park,0.0,0.0,76.5
+385,Santa Clara,0.0,0.0,76.5
+385,Lawrence,0.0,0.0,76.5
+385,Sunnyvale,0.0,0.0,76.5
+385,Mountain View,180.5,13.5,243.5
+385,San Antonio,0.0,0.0,243.5
+385,California Avenue,0.0,0.0,243.5
+385,Palo Alto,155.0,14.5,384.0
+385,Menlo Park,21.5,13.0,392.5
+385,Atherton,0.0,0.0,392.5
+385,Redwood City,80.0,38.5,434.0
+385,San Carlos,0.0,0.0,434.0
+385,Belmont,0.0,0.0,434.0
+385,Hillsdale,0.0,0.0,434.0
+385,Hayward Park,0.0,0.0,434.0
+385,San Mateo,0.0,0.0,434.0
+385,Burlingame,0.0,0.0,434.0
+385,Broadway,0.0,0.0,434.0
+385,Millbrae,14.5,69.5,379.0
+385,San Bruno,0.0,0.0,379.0
+385,South San Francisco,0.0,0.0,379.0
+385,Bayshore,0.0,0.0,379.0
+385,22nd Street,0.5,123.5,256.0
+385,San Francisco,0.0,256.0,0.0
+287,Gilroy,0.0,0.0,0.0
+287,San Martin,0.0,0.0,0.0
+287,Morgan Hill,0.0,0.0,0.0
+287,Blossom Hill,0.0,0.0,0.0
+287,Capitol,0.0,0.0,0.0
+287,Tamien,0.0,0.0,0.0
+287,San Jose Diridon,26.5,0.0,26.5
+287,College Park,0.0,0.0,26.5
+287,Santa Clara,0.0,0.0,26.5
+287,Lawrence,40.0,1.5,65.0
+287,Sunnyvale,36.0,4.5,96.5
+287,Mountain View,86.0,7.0,175.5
+287,San Antonio,0.0,0.0,175.5
+287,California Avenue,0.0,0.0,175.5
+287,Palo Alto,140.5,14.0,302.0
+287,Menlo Park,17.0,16.5,302.5
+287,Atherton,0.0,0.0,302.5
+287,Redwood City,0.0,0.0,302.5
+287,San Carlos,13.0,23.0,292.5
+287,Belmont,0.0,0.0,292.5
+287,Hillsdale,26.0,43.5,275.0
+287,Hayward Park,0.0,0.0,275.0
+287,San Mateo,16.5,32.0,259.5
+287,Burlingame,4.5,27.5,236.5
+287,Broadway,0.0,0.0,236.5
+287,Millbrae,0.0,0.0,236.5
+287,San Bruno,1.5,18.5,219.5
+287,South San Francisco,0.0,0.0,219.5
+287,Bayshore,0.0,0.0,219.5
+287,22nd Street,0.0,67.5,152.0
+287,San Francisco,0.0,152.0,0.0
+289,Gilroy,0.0,0.0,0.0
+289,San Martin,0.0,0.0,0.0
+289,Morgan Hill,0.0,0.0,0.0
+289,Blossom Hill,0.0,0.0,0.0
+289,Capitol,0.0,0.0,0.0
+289,Tamien,1.5,0.0,1.5
+289,San Jose Diridon,26.0,0.5,27.0
+289,College Park,0.0,0.0,27.0
+289,Santa Clara,0.0,0.0,27.0
+289,Lawrence,17.0,1.5,42.5
+289,Sunnyvale,0.0,0.0,42.5
+289,Mountain View,39.5,3.5,78.5
+289,San Antonio,0.0,0.0,78.5
+289,California Avenue,31.5,4.0,106.0
+289,Palo Alto,89.0,3.5,191.5
+289,Menlo Park,12.5,7.0,197.0
+289,Atherton,0.0,0.0,197.0
+289,Redwood City,65.5,28.0,234.5
+289,San Carlos,8.0,5.0,237.5
+289,Belmont,0.0,0.0,237.5
+289,Hillsdale,19.5,13.5,243.5
+289,Hayward Park,0.0,0.0,243.5
+289,San Mateo,15.0,18.0,240.5
+289,Burlingame,6.5,10.5,236.5
+289,Broadway,0.0,0.0,236.5
+289,Millbrae,3.0,74.5,165.0
+289,San Bruno,0.0,0.0,165.0
+289,South San Francisco,0.0,0.0,165.0
+289,Bayshore,0.0,0.0,165.0
+289,22nd Street,0.5,51.5,114.0
+289,San Francisco,0.0,114.0,0.0
+191,Gilroy,0.0,0.0,0.0
+191,San Martin,0.0,0.0,0.0
+191,Morgan Hill,0.0,0.0,0.0
+191,Blossom Hill,0.0,0.0,0.0
+191,Capitol,0.0,0.0,0.0
+191,Tamien,0.0,0.0,0.0
+191,San Jose Diridon,31.5,0.0,31.5
+191,College Park,0.0,0.0,31.5
+191,Santa Clara,22.5,0.5,53.5
+191,Lawrence,7.5,2.0,59.0
+191,Sunnyvale,30.0,2.0,87.0
+191,Mountain View,55.5,10.0,132.5
+191,San Antonio,23.5,8.0,148.0
+191,California Avenue,16.0,6.0,158.0
+191,Palo Alto,84.5,13.0,229.5
+191,Menlo Park,16.0,7.5,238.0
+191,Atherton,0.0,0.0,238.0
+191,Redwood City,35.5,18.5,255.0
+191,San Carlos,5.0,12.5,247.5
+191,Belmont,4.0,10.0,241.5
+191,Hillsdale,17.0,20.5,238.0
+191,Hayward Park,9.5,5.0,242.5
+191,San Mateo,12.5,21.5,233.5
+191,Burlingame,7.5,13.5,227.5
+191,Broadway,0.0,0.0,227.5
+191,Millbrae,0.0,49.0,178.5
+191,San Bruno,1.5,9.0,171.0
+191,South San Francisco,0.5,5.5,166.0
+191,Bayshore,0.0,7.0,159.0
+191,22nd Street,0.5,47.0,112.5
+191,San Francisco,0.0,112.5,0.0
+193,Gilroy,0.0,0.0,0.0
+193,San Martin,0.0,0.0,0.0
+193,Morgan Hill,0.0,0.0,0.0
+193,Blossom Hill,0.0,0.0,0.0
+193,Capitol,0.0,0.0,0.0
+193,Tamien,0.0,0.0,0.0
+193,San Jose Diridon,27.0,0.0,27.0
+193,College Park,0.0,0.0,27.0
+193,Santa Clara,7.5,1.0,33.5
+193,Lawrence,10.0,0.0,43.5
+193,Sunnyvale,15.5,3.5,55.5
+193,Mountain View,54.5,5.5,104.5
+193,San Antonio,6.5,3.0,108.0
+193,California Avenue,17.5,4.0,121.5
+193,Palo Alto,80.5,9.5,192.5
+193,Menlo Park,11.0,7.0,196.5
+193,Atherton,0.0,0.0,196.5
+193,Redwood City,24.0,22.5,198.0
+193,San Carlos,6.0,4.5,199.5
+193,Belmont,3.5,4.5,198.5
+193,Hillsdale,8.0,12.0,194.5
+193,Hayward Park,1.0,3.0,192.5
+193,San Mateo,15.0,19.5,188.0
+193,Burlingame,5.5,10.0,183.5
+193,Broadway,0.0,0.0,183.5
+193,Millbrae,3.5,38.5,148.5
+193,San Bruno,1.5,9.0,141.0
+193,South San Francisco,0.0,2.5,138.5
+193,Bayshore,0.0,10.0,128.5
+193,22nd Street,1.0,42.5,87.0
+193,San Francisco,0.0,87.0,0.0
+195,Gilroy,0.0,0.0,0.0
+195,San Martin,0.0,0.0,0.0
+195,Morgan Hill,0.0,0.0,0.0
+195,Blossom Hill,0.0,0.0,0.0
+195,Capitol,0.0,0.0,0.0
+195,Tamien,2.0,0.0,2.0
+195,San Jose Diridon,28.5,0.0,30.5
+195,College Park,0.0,0.0,30.5
+195,Santa Clara,10.0,1.0,39.5
+195,Lawrence,8.0,1.5,46.0
+195,Sunnyvale,17.0,3.5,59.5
+195,Mountain View,39.5,4.0,95.0
+195,San Antonio,11.5,3.5,103.0
+195,California Avenue,17.5,1.0,119.5
+195,Palo Alto,71.0,7.0,183.5
+195,Menlo Park,13.5,10.0,187.0
+195,Atherton,0.0,0.0,187.0
+195,Redwood City,23.0,17.5,192.5
+195,San Carlos,3.0,9.5,186.0
+195,Belmont,7.0,6.0,187.0
+195,Hillsdale,18.5,14.5,191.0
+195,Hayward Park,3.0,6.5,187.5
+195,San Mateo,8.0,12.5,183.0
+195,Burlingame,8.0,4.5,186.5
+195,Broadway,0.0,0.0,186.5
+195,Millbrae,6.5,41.0,152.0
+195,San Bruno,4.0,9.0,147.0
+195,South San Francisco,0.0,5.5,141.5
+195,Bayshore,0.0,7.0,134.5
+195,22nd Street,1.0,30.5,105.0
+195,San Francisco,0.0,105.0,0.0
+197,Gilroy,0.0,0.0,0.0
+197,San Martin,0.0,0.0,0.0
+197,Morgan Hill,0.0,0.0,0.0
+197,Blossom Hill,0.0,0.0,0.0
+197,Capitol,0.0,0.0,0.0
+197,Tamien,3.5,0.0,3.5
+197,San Jose Diridon,18.5,0.0,22.0
+197,College Park,0.0,0.0,22.0
+197,Santa Clara,8.5,0.0,30.5
+197,Lawrence,3.0,0.0,33.5
+197,Sunnyvale,9.5,1.5,41.5
+197,Mountain View,15.0,2.0,54.5
+197,San Antonio,5.0,3.0,56.5
+197,California Avenue,7.0,2.0,61.5
+197,Palo Alto,25.5,2.0,85.0
+197,Menlo Park,6.0,5.0,86.0
+197,Atherton,0.0,0.0,86.0
+197,Redwood City,15.0,6.0,95.0
+197,San Carlos,1.0,3.5,92.5
+197,Belmont,3.5,2.0,94.0
+197,Hillsdale,1.5,5.0,90.5
+197,Hayward Park,2.0,1.5,91.0
+197,San Mateo,4.0,7.5,87.5
+197,Burlingame,2.5,4.5,85.5
+197,Broadway,0.0,0.0,85.5
+197,Millbrae,1.0,17.0,69.5
+197,San Bruno,1.5,4.5,66.5
+197,South San Francisco,1.0,1.5,66.0
+197,Bayshore,0.0,2.5,63.5
+197,22nd Street,0.0,13.0,50.5
+197,San Francisco,0.0,50.5,0.0
+199,Gilroy,0.0,0.0,0.0
+199,San Martin,0.0,0.0,0.0
+199,Morgan Hill,0.0,0.0,0.0
+199,Blossom Hill,0.0,0.0,0.0
+199,Capitol,0.0,0.0,0.0
+199,Tamien,0.0,0.0,0.0
+199,San Jose Diridon,25.5,0.0,25.5
+199,College Park,0.0,0.0,25.5
+199,Santa Clara,2.0,1.0,26.5
+199,Lawrence,1.5,0.0,28.0
+199,Sunnyvale,7.0,1.5,33.5
+199,Mountain View,12.0,3.0,42.5
+199,San Antonio,4.5,2.5,44.5
+199,California Avenue,6.0,2.5,48.0
+199,Palo Alto,15.5,4.5,59.0
+199,Menlo Park,2.0,3.5,57.5
+199,Atherton,0.0,0.0,57.5
+199,Redwood City,5.0,10.5,52.0
+199,San Carlos,1.5,0.5,53.0
+199,Belmont,1.0,1.5,52.5
+199,Hillsdale,1.0,3.5,50.0
+199,Hayward Park,1.5,1.5,50.0
+199,San Mateo,3.0,4.0,49.0
+199,Burlingame,0.5,3.0,46.5
+199,Broadway,0.0,0.0,46.5
+199,Millbrae,0.5,7.5,39.5
+199,San Bruno,0.5,2.5,37.5
+199,South San Francisco,0.0,1.0,36.5
+199,Bayshore,0.0,4.0,32.5
+199,22nd Street,0.0,3.0,29.5
+199,San Francisco,0.0,29.5,0.0
