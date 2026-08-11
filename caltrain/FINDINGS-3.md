@@ -42,10 +42,19 @@ the model should rescale the Jan-2023 cells so the three-bucket totals match
 Fall 2025 (small correction), keeping Jan-2023's direction and service-type
 splits within buckets.
 
+Companion documents (checked; nothing more is published): the TOPS committee
+deck (Apr 29 2026, caltrain.com/media/37004/download; CAC copy media/37086)
+and the 2-page staff report (TOPS packet media/36978 pp. 38–39) contain no
+time-period tables; the surveys page posts only the Summary Report; the
+crosstabs volume is "under separate cover" and unpublished (request-only →
+out of scope); no press coverage quotes time splits. The p. 7 stratum table
+is the public source, full stop.
+
 Caveats:
 - The report never defines the peak-hour boundaries; they belong to the
-  cited count. Assumed to match the O&D-survey definitions pending the
-  companion documents.
+  cited count and no companion document pins them. Assumed to match the
+  O&D-survey definitions (AM 6:00–8:59, PM 15:00–18:59); the GTFS
+  supply-side comparison in item 2 is insensitive to ±1h boundary choices.
 - Strata are direction-blind and service-type-blind — Jan-2023 remains the
   only public source for those splits.
 - "Caltrain's 2025 Station Ridership Count" (Sept–Nov 2025) is itself a
@@ -56,13 +65,38 @@ Caveats:
   peak/off-peak/weekend splits by station in percent — a secondary public
   time-split spatial signal (2,129 peak / 935 off-peak completes).
 
-## 2. Jan-2023 vintage bias — largely resolved by item 1
+## 2. Jan-2023 vintage bias — resolved (item 1 rescale + GTFS corroboration)
 
-The three-bucket rescale above absorbs the level shift. Remaining exposure is
-within-bucket: early-AM/midday/evening composition of "off-peak," and
-direction splits, still Jan-2023-vintage. The planned GTFS 2023-vs-current
-trips-by-period comparison is now a second-order refinement scoped to those
-sub-splits. (GTFS archive sourcing in progress; will be added here.)
+The three-bucket rescale from item 1 absorbs the level shift. The remaining
+exposure (within-off-peak composition, direction splits) was checked against
+scheduled service, comparing an archived Jan-2023 Caltrain GTFS (511 feed
+version 2023-02-03, valid 2022-12-19→2023-05-01; found in a GitHub repo,
+zip verified —
+raw.githubusercontent.com/Ovlic/caltrain_alerts_twitter/d1c58b42…/gtfs_testing/Caltrain_GTFS.zip)
+against the current Trillium feed (valid 2026-01-31→2027-01-31,
+data.trilliumtransit.com/gtfs/caltrain-ca-us/caltrain-ca-us.zip). Weekday
+trips by origin-departure period:
+
+| NB trips | Early AM | AM peak | Midday | PM peak | Evening |
+|---|---|---|---|---|---|
+| Jan 2023 | 7 | 10 | 12 | 15 | 8 |
+| 2026 | 5 | 15 | 12 | 16 | 8 |
+
+(SB mirrors it: PM peak 15→20, midday/evening flat.) Service growth went
+almost entirely to the traditional peaks; midday and evening frequency is
+unchanged since Jan 2023 — consistent with the Triennial's demand shares.
+
+**Conclusion: no further correction warranted.** Model carries (a) the
+three-bucket rescale to Fall-2025 totals, (b) Jan-2023 within-bucket splits
+unchanged, and (c) a stated residual uncertainty note: within-off-peak
+composition is Jan-2023-vintage, direction splits are Jan-2023-vintage,
+both corroborated as stable by the supply-side comparison. Not silent.
+
+Note on the archived feed: it is the 511-flavored CT feed (slightly
+different IDs than Trillium's caltrain-ca-us); schedule content identical.
+transitfeeds.com (Cloudflare-blocked here), Mobility Database historical
+(token-gated), Cal-ITP GCS (private), and Wayback (egress-blocked) were all
+dead ends from this environment.
 
 ## 3. Max-load link — computed; the hand count moves to San Mateo
 
