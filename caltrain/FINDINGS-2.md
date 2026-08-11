@@ -62,7 +62,41 @@ actual departure (and same for arrival). So the question "warehouse vs
 self-archiving" turns on whether Cal-ITP retains every poll of the TripUpdates
 feed (they poll ~every 20s) or only latest-per-trip.
 
-(warehouse schema/retention/access — pending agent research)
+**Warehouse half, answered: the warehouse retains everything needed — request
+access instead of self-archiving.**
+
+- `mart_gtfs.fct_stop_time_updates` (BigQuery, project `cal-itp-data-infra`)
+  keeps one row per stop_time_update **per 20-second scrape tick**
+  (`_extract_ts` at :00/:20/:40), with `arrival_time/delay/uncertainty` AND
+  `departure_time/delay/uncertainty`, trip/stop identifiers, and
+  `service_date`. The model SQL explicitly parses both StopTimeEvents; the
+  staging layer keeps the raw array untouched. No arrival-only limitation.
+- History: `GTFS_RT_START = 2022-09-15` — **~4 years of Caltrain tick-level
+  prediction history already exists**, spanning pre/post electrification.
+  Dataset name: `Bay Area 511 Caltrain TripUpdates`. (Models are views over
+  hive-partitioned external tables — queries must filter on `dt` to be
+  affordable.)
+- Convenience models (`fct_trip_updates_stop_metrics`,
+  `fct_trip_updates_trip_summaries`, `fct_observed_trips`) don't provide
+  actual arrival+departure directly; dwell inference works from the tick
+  series in `fct_stop_time_updates` (last-prediction-before-dropout, exactly
+  the derivation a self-archive would need — but retroactive to 2022).
+- Because Caltrain's *predicted* departures are synthetic (+60s), the
+  derivation should use prediction-sliding: while a train dwells past its
+  predicted departure, the prediction keeps advancing tick over tick; the
+  final tick before the stop drops out bounds the actual departure to ±20s.
+- **Access:** no public/anonymous route (data.ca.gov publication is
+  schedule-only). IAM on the project via Caltrans DDS technical onboarding;
+  for outsiders the realistic path is emailing **hello@calitp.org**
+  describing the research — they've granted external analyst access before,
+  or can export a bounded extract. The dbt docs are public, so the ask can be
+  precise: `fct_stop_time_updates` where `gtfs_dataset_name = 'Bay Area 511
+  Caltrain TripUpdates'`, bounded dates.
+
+**Decision: warehouse over self-archiving.** Self-archiving only wins on
+immediacy; the warehouse has four years of history including the entire
+electrified era. A lightweight SIRI archiver is still cheap insurance while
+the access request is pending.
 
 ## 3. Ridership lineage for scaling: use the Tableau series
 
@@ -92,8 +126,50 @@ throughout; NTD as an external cross-check only.**
 
 ## 4. GoPass distortion
 
-**Partially answered from the extracted fare-media data (methodology
-provenance pending agent research on the FY2024/25 annual reports).**
+**Answered — and the premise was wrong in a helpful way: the "37
+trips/month" constant is the MONTHLY PASS assumption, not GoPass. GoPass is
+mostly tap-data-driven, so its origin-station attribution is largely
+observed, not assumed.**
+
+Methodology (FY2024 report caltrain.com/media/34265 Table 1 p.7; FY2025
+report caltrain.com/media/35885 Table 1 p.6; CAC "Fare Media Sales-Based
+Ridership Model" deck Dec 20 2023, caltrain.com/media/32376/download,
+Appendices A–B):
+
+- **Clipper GoPass** (13.7% of FY2025 trips): trips, days, and origin
+  stations come **directly from Clipper tap data** — no constant involved.
+- **Sticker GoPass** (3.9% of FY2025 trips, was 7.6% FY2024, being phased
+  out with Clipper 2.0): each sticker assumed to generate the same monthly
+  trips as the average utilized Clipper GoPass **that month** (a dynamic
+  ratio), distributed to stations by GoPass-survey responses weighted by trip
+  frequency, and across days by that month's Clipper GoPass daily pattern.
+- **Monthly Pass** is the assumption-heavy category: flat 26 trips/pass/month
+  through Dec 2024, **revised to 37 in January 2025** based on the 2024 O&D
+  survey; distributed to stations by that month's Clipper tags, across days
+  at 2022 Clipper GoPass rates. One-Way = 1 trip/ticket; Day Pass = 2.
+
+Revised distortion envelope: the truly assumption-driven slice is Monthly
+Pass (~20%) + Sticker GoPass (~4%) ≈ **24%** of estimated riders — not the
+~36% feared — and the biggest single risk is the flat 37/month Monthly Pass
+constant applied uniformly across stations and days.
+
+**Two consequences for the model:**
+
+1. **The Tableau series has a methodological break at January 2025** (Monthly
+   Pass 26→37; the model itself only exists since Nov 2023, conductor-count
+   ratios before that). Part of the FY2025 "+47%" is this recalibration, not
+   riders. Any cross-break comparison (e.g. scaling factors spanning Jan
+   2025) should either use the post-Jan-2025 segment only or adjust
+   pre-break Monthly Pass ridership up by 37/26 (~+8.5% on that slice ≈ +1.7%
+   systemwide).
+2. **The model's days are numbered in the best way**: both annual reports
+   state the validated EMU APC system "will take the place of the Fare Media
+   Model for reporting purposes," expected during FY2026. When that happens,
+   per-train counts exist internally — a records request or a data ask to
+   Caltrain staff becomes the endgame for this whole project.
+
+Share numbers (from `data/caltrain_daily_fare_media.csv`, consistent with the
+reports' Table 7: GoPass 20.4% FY2024, 17.6% FY2025):
 
 Share of estimated ridership by ticket type (from
 `data/caltrain_daily_fare_media.csv`):
