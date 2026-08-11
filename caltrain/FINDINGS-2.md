@@ -208,11 +208,50 @@ Share of estimated ridership by ticket type (from
 
 ## 6. EMU capacity
 
-(pending agent research)
+**Answered with official numbers: 675 seats, 810 at Caltrain's planning load
+factor.**
+
+- **Seated: 675 per 7-car Stadler KISS set** — two official sources agree
+  (Caltrain Electric Train FAQ, caltrain.com/electrictrainfaq; **2025 Title
+  VI Program**, caltrain.com/media/36677/download: "seated capacity of 675
+  seats and can hold 72 bicycles. With peak load factor of 1.2 this equates
+  to 810 passengers").
+- **Standing:** no official crush figure. Caltrain's planning number is
+  **1.2 × seats = 810**. The Stadler spec-sheet crush estimate (AW3, 6
+  standees/m²) is >1,400 — engineering limit, not an operating figure. For
+  the model: soft cap 810, and note the diesel-era Business Plan used a
+  135%-of-seats cap (would be 911) — a reasonable upper band; observed 2019
+  peaks hit 130–143% of seats.
+- History: original 2016 order was 6-car sets at 573 seats; the seventh car
+  (~100-seat trailer, Dec 2018 option) brings 675. 72 bike spaces, 14 seats
+  in bike cars. (A 667-seat figure floats in 2019-era secondary coverage;
+  675 is the as-delivered official number.)
+- Comparison to the prior's era: diesel consists averaged ~680 seats (PCEP:
+  3,403 seats / 5 trains), so **seats per train are essentially unchanged**
+  (675 vs ~680) — the capacity constant transfers cleanly.
 
 ## 7. Consist uniformity
 
-(pending agent research)
+**Answered: uniform 675-seat sets on the electric mainline; the only
+exception is the 4-roundtrip diesel Gilroy shuttle.**
+
+- All ~104 weekday mainline (SF–San Jose/Tamien) trains are **fixed 7-car
+  EMUs** — Title VI calls them "fixed 7-car" units; the FAQ says "no plans
+  for other configurations." No doubled (2×7) or short sets in service.
+  Fleet: 19 sets at launch, 23 as the Aug 2023 option delivers.
+- **Gilroy service (South County Connector) is diesel and is not a through
+  service post-electrification**: 4 weekday roundtrips San Jose
+  Diridon–Gilroy with a timed 3-minute cross-platform transfer at Diridon
+  (Final Service Plan Fall 2024, caltrain.com/media/32274/download).
+  Equipment: MP36PH-3C/F40PH-2C + Bombardier BiLevels, 2–5 cars, **official
+  seated range 254–690** (~127–138 seats/car); no published per-train
+  consist.
+- **Model consequence bigger than capacity:** in the 2019 prior, Gilroy
+  trains were *through* trains to SF; today Gilroy riders transfer at
+  Diridon and appear on mainline EMUs as Diridon boardings. The assignment
+  model should treat the 4 connector trips as a separate stub service
+  feeding transfer volumes into specific mainline trains, and use a single
+  675-seat / 810-soft-cap constant for every mainline train.
 
 ## Standing item — hand count
 
