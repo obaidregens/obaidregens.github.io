@@ -12,22 +12,30 @@ discontinued.
 
 The published 2024 Caltrain Origin & Destination Customer Survey report (RSG,
 January 2025) presents boarding-to-alighting flows aggregated to nine zone
-groups, and notes that the underlying data were delivered at the
-boarding/alighting-station level. The Transit Passenger Survey program's data
-page indicates data summaries and microdata are available on request, so I'm
-hoping you can help with the following, in order of preference:
+groups, and notes (§2.6) that the underlying data were delivered at the
+boarding/alighting-station level. Table 4 of the report shows that each
+record also captured "Train number (recorded)" and "Time of day (recorded)",
+and §3.5 describes weighting by Time Period × Service Type × Direction — so
+the time dimension I need exists on the delivered file. The Transit Passenger
+Survey program's data page indicates data summaries and microdata are
+available on request, so I'm hoping you can help with the following, in order
+of preference:
 
 1. A de-identified respondent-level extract of the 2024 Caltrain O&D survey
-   containing, per record: boarding station, alighting station, **the time
-   dimension — departure/boarding time, time period, or the train/run
-   surveyed** — plus direction, weekday/weekend flag, and the expansion
-   weight. Home/work locations and any other PII are not needed, so a
-   PII-stripped extract (as I understand you provide for partner requests) is
-   entirely fine — TAZ/tract geography can be dropped too.
+   (I believe the deliverable is "2024 Caltrain OD Data (sent 11.7.2024)")
+   containing, per record: boarding station, alighting station, **recorded
+   train number and/or time period**, service type, direction,
+   weekday/weekend flag, and the expansion weights (e.g.
+   weekday_expanded_weight / week_weight), plus the Data Dictionary sheet.
+   The On-to-Off dataset (5,521 records) with the same fields would be just
+   as valuable. Home/work/origin/destination locations and any other PII are
+   not needed — a PII-stripped extract (as I understand you provide for
+   partner requests) is entirely fine, and all lat/lon and TAZ/tract fields
+   can be dropped.
 
 2. If respondent-level data isn't possible: a weighted station-to-station O-D
-   matrix, split by time period (e.g. AM peak / midday / PM peak / evening)
-   or by train, for weekdays.
+   matrix split by time period (early AM / AM peak / midday / PM peak /
+   evening, as defined in the report) or by train, for weekdays.
 
 3. If neither is possible: the weighted station-to-station matrix without the
    time dimension.

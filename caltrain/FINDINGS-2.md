@@ -4,7 +4,45 @@ Continues `FINDINGS.md`. Date: 2026-08-11.
 
 ## 1. Time dimension in the MTC 2024 O-D microdata
 
-(pending — agent research + see `mtc_email_draft.md` for the request letter)
+**Answered: YES — every record carries the surveyed train's number, and time
+period is a weighting dimension.** This upgrades the microdata request from
+"spatial improvement" to potentially **direct per-train station-pair flows**
+for surveyed trains.
+
+Evidence (RSG report, caltrain.com/media/34860):
+
+- Table 4 (p. 13) lists "Train number (recorded)" and "Time of day
+  (recorded)" as captured fields — recorded by surveyors, not asked of
+  riders. (There is no respondent-reported departure-time question; time
+  comes entirely from the recorded train.)
+- On-to-Off component (5,521 completes): "Each response also captured the
+  train number allowing for time of day and service type to be associated
+  with the record" (§2.1); surveyors entered the train number once per
+  boarding (§2.3). Even postcard/online O-D responses are train-linked via
+  tracked password ranges (p. 14).
+- Weighting (§3.5, pp. 21–22) was done in cells of boarding/alighting zone ×
+  Service Type (L1, L3, L4, L5, B7) × **Time Period (early AM, AM peak,
+  midday, PM peak, evening)** × Direction — impossible unless each record has
+  a time period. Period definitions: early AM <6:00, AM peak 6:00–8:59,
+  midday 9:00–14:59, PM peak 15:00–18:59, evening 19:00+ (pp. 7, 15).
+- Known field names in the delivered workbook ("2024 Caltrain OD Data (sent
+  11.7.2024).xlsx", sheets Data / Data with Labels / Data Dictionary), from
+  MTC's processing code: `train_dow`, `weekday_expanded_weight`,
+  `week_weight`, `id`, origin/destination lat/lon. The exact train-number /
+  time-period column spellings weren't referenced in any script, but the
+  "Data Dictionary" sheet defines them. (MTC's standardized TPS schema uses
+  `day_part`, `weekpart`, `depart_hour` etc.; Caltrain 2024 is not yet
+  ingested into that standard database.)
+- The published report contains completes-counts by Direction × Time Period ×
+  Service Type (Tables 1, 9, 10) but no ridership results split by time —
+  those tabs only exist in the microdata.
+
+Caveat for model design: surveyed-train coverage is a sample (Tables 9–10
+list which trains were surveyed), so per-train flows from the survey will be
+noisy for any single train — treat as calibration targets by service type ×
+time period, not as a per-train census. The email draft
+(`mtc_email_draft.md`) cites Table 4 and §3.5 and asks for train number
+explicitly.
 
 ## 2. Cal-ITP warehouse: departures, or arrival-only?
 

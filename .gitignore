@@ -32,3 +32,6 @@ data/attendees*
 worker/schedule/allowlist.json
 *ss26-secrets*
 worker/schedule/.dev.vars
+
+# python bytecode
+__pycache__/
